@@ -1,0 +1,1238 @@
+tok_count,time,question,answer,note
+30,2.6764533009845763,"Write a Python program that prints ""Hello, World!"" to the console.","Write a Python program that prints ""Hello, World!"" to the console.
+
+# Solution
+print(""Hello, World!"")
+",nf4 4bit quantization bitsandbytes
+91,5.289908780017868,Write a function that takes two parameters and returns their sum.,"Write a function that takes two parameters and returns their sum.
+
+Assign the function to a variable called ""add"".
+
+## Source
+
+### Created by
+
+- @SleeplessByte
+
+### Contributed to by
+
+- @maharg101
+- @matthewmorgan
+
+### Based on
+
+Javascript 6kyu - Basic-add",nf4 4bit quantization bitsandbytes
+88,5.045546016888693,Write a function to calculate the factorial of a given number.,"Write a function to calculate the factorial of a given number.
+
+# Solution
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+# Test Cases
+
+print(factorial(0))
+print(factorial(1))
+print(factorial(5))
+",nf4 4bit quantization bitsandbytes
+512,32.31912799598649,Write a function to determine if a given string is a palindrome.,"Write a function to determine if a given string is a palindrome.
+
+A palindrome is a string that reads the same forward and backward.
+
+For example, ""tacocat"" is a palindrome, as are ""radar"", ""rotator"", and ""10000000000000000"".
+
+Note:
+
+A palindrome can be an empty string.
+A palindrome does not need to be a single word.
+A palindrome can have punctuation and symbol characters.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",nf4 4bit quantization bitsandbytes
+512,29.126745075918734,"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""","Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""
+
+```
+$ python fizzbuzz.py
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+F
+19
+Buzz
+Fizz
+22
+23
+Fizz
+Buzz
+26
+Fizz
+28
+29
+FizzBuzz
+31
+32
+Fizz
+34
+Buzz
+Fizz
+37
+38
+Fizz
+Buzz
+41
+Fizz
+43
+44
+FizzBuzz
+46
+47
+F
+49
+Buzz
+51
+Fizz
+53
+54
+FizzBuzz
+56
+57
+F
+59
+Buzz
+61
+Fizz
+63
+64
+FizzBuzz
+66
+67
+F
+69
+Buzz
+71
+Fizz
+73
+74
+FizzBuzz
+76
+77
+F
+79
+Buzz
+81
+Fizz
+83
+84
+FizzBuzz
+86
+87
+F
+89
+Buzz
+91
+Fizz
+93
+94
+FizzBuzz
+96
+97
+F
+99
+Buzz
+```
+
+### 2. FizzBuzz Test
+
+Write a test that prints ""Fizz"" if a number is divisible by 3, ""Buzz"" if a number is divisible by 5, and ""FizzBuzz"" if a number is divisible by both 3 and 5.
+
+```
+$ python fizzbuzz_test.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+```
+
+### 3. FizzBuzz Test (again)
+
+",nf4 4bit quantization bitsandbytes
+512,32.523393294075504,Implement a function to reverse a singly linked list.,"Implement a function to reverse a singly linked list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",nf4 4bit quantization bitsandbytes
+512,32.11323532206006,"Given an unsorted array of integers, find the length of the longest increasing subsequence.","Given an unsorted array of integers, find the length of the longest increasing subsequence.
+
+For example,
+Given [10, 9, 2, 5, 3, 7, 101, 18],
+The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.
+
+Your algorithm should run in O(n2) complexity.
+
+Follow up: Could you improve it to O(n log n) time complexity?
+
+Credits:
+Special thanks to @pbrother for adding this problem and creating all test cases.
+""""""
+
+class Solution(object):
+    def lengthOfLIS(self, nums):
+        """"""
+        :type nums: List[int]
+        :rtype: int
+        """"""
+        # longest increasing subsequence
+        # longest common subsequence
+        # longest subsequence
+        # dp[i] represents the length of the longest subsequence that ends with nums[i]
+        # dp[i] = max(dp[j]) + 1 where j < i and nums[j] < nums[i]
+        # O(n^2)
+        # O(n logn)
+        # https://leetcode.com/discuss/40092/o-n-log-n-with-explanation
+        # https://leetcode.com/discuss/40107/o-n-log-n-10-lines-solution-and-explanation
+        # https://leetcode.com/discuss/40108/o-n-log-n-solution-based-on-longest-increasing-subsequence
+        # https://leetcode.com/discuss/40110/o-nlogn-solution-with-binary-search-and-explanation
+        # https://leetcode.com/discuss/40111/o-nlogn-solution-in-c-with-explanation
+        # https://leetcode.com",nf4 4bit quantization bitsandbytes
+512,32.201284172944725,"Given a sequence of matrices, find the most efficient way to multiply these matrices.","Given a sequence of matrices, find the most efficient way to multiply these matrices. The only constraint is that the matrices must be multiplied in the given order.
+
+Example:
+Input: A[2], B[3], C[4], D[5]
+Output: 7
+
+Explanation: The most efficient way to multiply these matrices is : (A * B) * (C * D).
+So the cost is 2 + 4 = 7.
+
+Input: A[2], B[3], C[4], D[5], E[6]
+Output: 11
+
+Explanation: The most efficient way to multiply these matrices is : (A * B) * (C * (D * E)).
+So the cost is 2 + 4 + 6 = 12.
+
+Input: A[2], B[3], C[4], D[5], E[6], F[7]
+Output: 15
+
+Explanation: The most efficient way to multiply these matrices is : ((A * B) * (C * D)) * (E * F).
+So the cost is 2 + 4 + 7 = 13.
+
+Input: A[2], B[3], C[4], D[5], E[6], F[7], G[8]
+Output: 19
+
+Explanation: The most efficient way to multiply these matrices is : (A * (B * (C * D))) * (E * (F * G)).
+So the cost is 2 + 4 + 8 = 14.
+
+Input: A[2], B[3], C[4], D[5], E[6], F[7], G[8], H[9]
+Output: 22
+
+Explanation: The most efficient way to multiply these matrices is : ((A * B) * (C * D)) * ((E * F) * (G * H)).
+So the cost is 2 + 4 + 9 = 15.
+
+Input: A[2], B[3], C[4], D[5], E[6], F[7], G[8], H[9], I[10]
+Output: 27
+
+Explanation: The most efficient",nf4 4bit quantization bitsandbytes
+380,23.63812858518213,"Given a binary search tree, write a function to find the Kth smallest element.","Given a binary search tree, write a function to find the Kth smallest element.
+
+# Example
+
+For example, given a binary search tree:
+
+	  5
+	 /
+	3
+	 \
+	  6
+	 / \
+	2   7
+
+# K = 1, return 2.
+# K = 2, return 3.
+# K = 3, return 5.
+# K = 4, return 6.
+# K = 5, return 7.
+
+# Note
+
+# You may assume k is always valid, 1 ≤ k ≤ node number in the BST.
+
+# Tags Expand
+
+# Binary Search Tree
+
+# Thought:
+
+# 1. Inorder traversal
+# 2. Recursion
+
+
+""""""
+Definition of TreeNode:
+class TreeNode:
+    def __	init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+""""""
+
+class Solution:
+    """"""
+    @param root: root of the given tree
+    @param k: An integer
+    @return: the kth smallest element in BST
+    """"""
+    def kthSmallest(self, root, k):
+        # write your code here
+        result = []
+        self.traverse(root, result)
+        return result[k - 1]
+
+    def traverse(self, node, result):
+        if node:
+            self.traverse(node.left, result)
+            result.append(node.val)
+            self.traverse(node.right, result)
+
+
+",nf4 4bit quantization bitsandbytes
+278,16.61430056509562,"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.","Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.
+
+### Input
+
+The first line of the input contains two integers N and M, denoting the number of vertices and edges in the graph.
+
+The next M lines contain three integers each, denoting the source vertex, destination vertex and the weight of the edge.
+
+The last line contains two integers, denoting the source and destination vertices.
+
+### Output
+
+Output a single integer, denoting the shortest path between the source and destination vertices.
+
+### Constraints
+
+1 ≤ N ≤ 100000
+
+1 ≤ M ≤ 100000
+
+1 ≤ Weight ≤ 100000
+
+1 ≤ Source, Destination ≤ N
+
+### Sample Input
+
+```
+4 4
+1 2 3
+1 3 2
+2 4 1
+3 4 8
+1 4
+```
+
+### Sample Output
+
+```
+5
+```
+
+### Explanation
+
+The shortest path between vertices 1 and 4 is 1 → 2 → 4.
+",nf4 4bit quantization bitsandbytes
