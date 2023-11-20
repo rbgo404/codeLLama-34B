@@ -1,0 +1,302 @@
+tok_count,time,question,answer,note
+29,2.6476736951153725,"Write a Python program that prints ""Hello, World!"" to the console.","Write a Python program that prints ""Hello, World!"" to the console.
+
+# Solution
+print(""Hello, World!"")",nf4 4bit quantization bitsandbytes
+112,6.753353790845722,Write a function that takes two parameters and returns their sum.,"Write a function that takes two parameters and returns their sum.
+
+Examples
+addition(5, 6) ➞ 11
+
+addition(3, 2) ➞ 5
+
+addition(0, 0) ➞ 0
+Notes
+Don't forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+If you're really stuck, unlock solutions in the Solutions tab.",nf4 4bit quantization bitsandbytes
+132,7.9892728929407895,Write a function to calculate the factorial of a given number.,"Write a function to calculate the factorial of a given number.
+
+#include <iostream>
+using namespace std;
+
+int factorial(int n)
+{
+    if (n == 0)
+        return 1;
+    return n * factorial(n - 1);
+}
+
+int main()
+{
+    int n;
+    cout << ""Enter a number to find its factorial: "";
+    cin >> n;
+    cout << ""Factorial of "" << n << "" is "" << factorial(n);
+    return 0;
+}
+",nf4 4bit quantization bitsandbytes
+71,3.87789944303222,Write a function to determine if a given string is a palindrome.,"Write a function to determine if a given string is a palindrome.
+
+A palindrome is a string that reads the same forward and backward.
+
+Example:
+
+```
+""tacocat"" is a palindrome.
+""taco-cat"" is not a palindrome.
+```
+",nf4 4bit quantization bitsandbytes
+200,9.031314870109782,"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""","Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""
+
+```
+function fizzBuzz() {
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log(""FizzBuzz"");
+    } else if (i % 3 === 0) {
+      console.log(""Fizz"");
+    } else if (i % 5 === 0) {
+      console.log(""Buzz"");
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+",nf4 4bit quantization bitsandbytes
+200,12.4560563841369,Implement a function to reverse a singly linked list.,"Implement a function to reverse a singly linked list.
+
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def push(self, new_data):
+        new_node = Node(new_data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def reverse(self):
+        prev = None
+        current = self.head
+
+        while current is not None:
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev
+
+    def print_list(self):
+        temp = self.head
+        while temp:
+            print(temp.data)
+",nf4 4bit quantization bitsandbytes
+200,12.051295367069542,"Given an unsorted array of integers, find the length of the longest increasing subsequence.","Given an unsorted array of integers, find the length of the longest increasing subsequence.
+
+For example,
+Given [10, 9, 2, 5, 3, 7, 101, 18],
+The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.
+
+Your algorithm should run in O(n2) complexity.
+
+Follow up: Could you improve it to O(n log n) time complexity?
+
+Credits:
+Special thanks to @pbrother for adding this problem and creating all test cases.
+
+# Note:
+
+The length of the given array will not exceed 2000 and the answer is guaranteed to be less than or equal to 100",nf4 4bit quantization bitsandbytes
+200,12.185267388122156,"Given a sequence of matrices, find the most efficient way to multiply these matrices.","Given a sequence of matrices, find the most efficient way to multiply these matrices. The efficient way is defined as the one with the least number of scalar multiplications.
+
+For example, given the following sequence of matrices:
+
+A B C D
+
+The minimum number of multiplications are 7: (AB)C = ACB = A(BC) = (AB)CD = (AB)(CD) = (A(BC))D = (AC)(BD) = (AC)(BD)
+
+Given an array of integers representing the dimensions of the matrices. Find the minimum number of multiplications needed to multiply the sequence of matrices.
+
+Input Format
+
+First line contains T, the number of test cases.
+
+Each test case consists of two lines.
+
+The first line consists of a single integer N, the size of the sequence.
+
+The second line consists of N space separated integers where the ith integer denotes the number",nf4 4bit quantization bitsandbytes
+200,12.109146744012833,"Given a binary search tree, write a function to find the Kth smallest element.","Given a binary search tree, write a function to find the Kth smallest element.
+
+Example :
+
+Input : 
+  2
+ / \
+1   3
+
+and K = 2
+
+Return : 2
+
+As 2 is the second smallest element in the tree.
+
+Note : You may assume 1 <= K <= Total number of Nodes in BST
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",nf4 4bit quantization bitsandbytes
+200,11.687589207896963,"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.","Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+struct Edge
+{
+    int src, dest, weight;
+};
+
+struct Graph
+{
+    int V, E;
+    struct Edge* edge;
+};
+
+struct Graph* createGraph(int V, int E)
+{
+    struct Graph* graph = (struct Graph*)malloc(sizeof(struct Graph));
+    graph->V = V;
+    graph->E = E;
+
+    graph->edge = (struct Edge*)malloc(graph->E * sizeof(struct Edge));
+
+    return graph;
+}
+
+struct MinHeapNode
+{
+    int v;
+    int dist;
+
+    MinHeapNode(int _v, int _dist)
+    {",nf4 4bit quantization bitsandbytes
