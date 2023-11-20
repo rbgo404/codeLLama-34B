@@ -8,7 +8,7 @@ class InferlessPythonModel:
         tokenizer = AutoTokenizer.from_pretrained("codellama/CodeLlama-7b-hf")
         pipeline = transformers.pipeline(
             "text-generation",
-            model="codellama/CodeLlama-7b-hf",
+            model="codellama/CodeLlama-34b-Python-hf",
             torch_dtype=torch.float16,
             device_map="auto",
         )
