@@ -1,0 +1,359 @@
+tok_count,time,question,answer,note
+None,4.2464589308947325,"Write a Python program that prints ""Hello, World!"" to the console.","Write a Python program that prints ""Hello, World!"" to the console.
+
+# Solution 1
+print(""Hello, World!"")
+
+# Solution 2
+print(""Hello,"", end="" "")
+print(""World!"")
+
+# Solution 3
+print(""Hello,"", end="""")
+print(""World!"")
+
+# Solution 4
+print(""Hello, World!"", end="""")
+",
+None,4.215219584992155,Write a function that takes two parameters and returns their sum.,"Write a function that takes two parameters and returns their sum.
+# Assume the two parameters are integers.
+# Example:
+# add(3, 2) # returns 5
+# add(9, -3) # returns 6
+
+def add(x, y):
+    return x + y
+
+
+print(add(3, 2))
+print(add(9, -3))
+",
+None,5.683119508903474,Write a function to calculate the factorial of a given number.,"Write a function to calculate the factorial of a given number.
+# The results should be printed in a comma-separated sequence on a single line.
+# Suppose the following input is supplied to the program:
+# 8
+# Then, the output should be:
+# 40320
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+
+print(factorial(int(input())))
+",
+None,27.423058103071526,Write a function to determine if a given string is a palindrome.,"Write a function to determine if a given string is a palindrome.
+# A palindrome is a string that reads the same forward and backward.
+
+
+def is_palindrome(string):
+    return string == string[::-1]
+
+
+def is_palindrome_recursive(string):
+    if len(string) <= 1:
+        return True
+    else:
+        return string[0] == string[-1] and is_palindrome_recursive(string[1:-1])
+
+
+# Test cases:
+print(is_palindrome('aba'))
+print(is_palindrome('abba'))
+print(is_palindrome(''))
+print(is_palindrome('a'))
+print(is_palindrome('bb'))
+print(is_palindrome('abcba'))
+print(is_palindrome('abc'))
+print(is_palindrome('aba'))
+print(is_palindrome('abba'))
+print(is_palindrome(''))
+print(is_palindrome('a'))
+print(is_palindrome('bb'))
+print(is_palindrome('abcba'))
+print(is_palindrome('abc'))
+print(is_palindrome('aba'))
+print(is_palindrome('abba'))
+print(is_palindrome(''))
+print(is_palindrome('a'))
+print(is_palindrome('bb'))
+print(is_palindrome('abcba'))
+print(is_palindrome('abc'))
+print(is_palindrome('aba'))
+print(is_palindrome('abba'))
+print(is_palindrome(''))
+print(is_palindrome('a'))
+print(is_palindrome('bb'))
+print(is_palindrome('abcba'))
+print(is_palindrome('abc'))
+print(is_palindrome('aba'))
+print(is_palindrome('abba'))
+print(is_palindrome(''))
+print(is_palindrome('a'))
+print(is_palindrome('bb'))
+print(is_palindrome('abcba'))
+print(is_palindrome",
+None,24.750768925994635,"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""","Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""
+
+# 1. FizzBuzz
+
+# 2. FizzBuzz, but print the number if it's not divisible by 3 or 5
+
+# 3. FizzBuzz, but with the words reversed
+
+# 4. FizzBuzz, but find the largest prime factor
+
+# 5. FizzBuzz, but using a for loop
+
+# 6. FizzBuzz, but only print the numbers in an array
+
+# 7. FizzBuzz, but with the words in an array
+
+# 8. FizzBuzz, but with the words in a hash
+
+# 9. FizzBuzz, but with the words in a hash, and find the largest prime factor
+
+# 10. FizzBuzz, but with the words in a hash, and find the largest palindrome
+
+# 11. FizzBuzz, but with the words in a hash, and find the largest palindrome that's a prime number
+
+# 12. FizzBuzz, but with the words in a hash, and find the largest palindrome that's a prime number, and print the number if it's not divisible by 3 or 5
+
+# 13. FizzBuzz, but with the words in a hash, and find the largest palindrome that's a prime number, and print the number if it's not divisible by 3 or 5, and with the words in an array
+
+# 14. FizzBuzz, but with the words in a hash, and find the largest palindrome that's a prime number, and print the number if it's not divisible by 3 or 5, and with the words in an array, and find the largest prime factor
+
+# 15. FizzBuzz, but with the words in a hash, and find the largest palindrome that's a prime number, and print the number if it's not",
+None,15.11281501990743,Implement a function to reverse a singly linked list.,"Implement a function to reverse a singly linked list.
+
+Example:
+
+Input: 1->2->3->4->5->NULL
+Output: 5->4->3->2->1->NULL
+Follow up:
+
+A linked list can be reversed either iteratively or recursively. Could you implement both?
+""""""
+
+
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        if head is None or head.next is None:
+            return head
+        p = self.reverseList(head.next)
+        head.next.next = head
+        head.next = None
+        return p
+
+
+class Solution2:
+    def reverseList(self, head: ListNode) -> ListNode:
+        if head is None or head.next is None:
+            return head
+        p = head
+        c = p.next
+        p.next = None
+        while c is not None:
+            t = c.next
+            c.next = p
+            p = c
+            c = t
+        return p
+",
+None,17.17768459999934,"Given an unsorted array of integers, find the length of the longest increasing subsequence.","Given an unsorted array of integers, find the length of the longest increasing subsequence.
+
+For example,
+Given [10, 9, 2, 5, 3, 7, 101, 18],
+The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.
+
+Your algorithm should run in O(n2) complexity.
+
+Follow up: Could you improve it to O(n log n) time complexity?
+
+Credits:
+Special thanks to @pbrother for adding this problem and creating all test cases.
+""""""
+
+class Solution(object):
+    def lengthOfLIS(self, nums):
+        """"""
+        :type nums: List[int]
+        :rtype: int
+        """"""
+        if len(nums) == 0:
+            return 0
+        dp = [1] * len(nums)
+        max_len = 1
+        for i in range(len(nums)):
+            for j in range(i):
+                if nums[j] < nums[i]:
+                    dp[i] = max(dp[i], dp[j] + 1)
+            max_len = max(max_len, dp[i])
+        return max_len
+",
+None,27.36155608505942,"Given a sequence of matrices, find the most efficient way to multiply these matrices.","Given a sequence of matrices, find the most efficient way to multiply these matrices.
+# Return a list of matrices that contains the product.
+
+# For example, given the following:
+
+# [ [1, 2],  [3, 4], [5, 6] ]
+
+# you should return:
+
+# [ [1, 2], [7, 10], [31, 38] ]
+
+# as 1*3*5 = 15, 2*4*6 = 48, and 15+48 = 63 = 31, 63*7 = 445, 445+48 = 493 = 38
+
+# The solution will always exist and will be unique.
+
+# This is a classic dynamic programming problem.
+
+# https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/
+
+def matrix_chain_order(p):
+    n = len(p) - 1
+    m = [[0 for x in range(n)] for x in range(n)]
+ 
+    # L is chain length for Ai to Aj 
+    # m[i,j] stores the minimum number of scalar 
+    # multiplications needed to compute Ai to Aj 
+    for L in range(2, n):
+        for i in range(1, n-L+1):
+            j = i+L-1
+            m[i][j] = float('inf')
+            for k in range(i, j):
+ 
+                # q = cost/scalar multiplications 
+                q = m[i][k] + m[k+1][j] + p[i-1]*p[k]*p[j] 
+                if q < m[i][j]:
+                    m[i][j] = q 
+ 
+    return m[1][n-1] 
+
+def matrix_chain_mult(p):
+    n = len(p) - 1
+    s = [ [0 for x in range(n)] for x in range(n) ]
+    m = [[0 for x in range(n)] for x in range(n)]
+   ",
+None,25.493733387906104,"Given a binary search tree, write a function to find the Kth smallest element.","Given a binary search tree, write a function to find the Kth smallest element.
+
+# Example:
+
+# Input: root = [3,1,4,null,2], k = 1
+#    3
+#   / \
+#  1   4
+#   \
+#    2
+# Output: 1
+# Note:
+# You may assume k is always valid, 1 ≤ k ≤ BST's total elements.
+
+# Follow up:
+# What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def kthSmallest(self, root: TreeNode, k: int) -> int:
+        # 中序遍历二叉树，得到的序列就是有序的
+        # 所以只需要中序遍历，然后返回第K个元素即可
+        # 中序遍历的方法：
+        # 1. 中序遍历左子树，并返回最后一个节点
+        # 2. 访问当前节点
+        # 3. 中序遍历右子树
+        
+        # 中序遍历
+        def inOrder(root):
+            if not root:
+                return None
+            inOrder(root.left)
+            if self.k == 0:
+                return
+            self.k -= 1
+            if self.k == 0:
+                self.res = root.val
+            inOrder(root.right)
+        
+        self.k = k
+        inOrder(root)
+        return self.res",
+None,26.94043491501361,"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.","Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.
+
+    Args:
+        graph (Graph): The graph to search.
+        start (int): The index of the starting vertex.
+        end (int): The index of the ending vertex.
+
+    Returns:
+        list: The shortest path between the two vertices.
+    """"""
+    # Initialize the distances to infinity
+    distances = [float(""inf"")] * graph.num_vertices
+
+    # Initialize the previous vertices to None
+    previous = [None] * graph.num_vertices
+
+    # Set the distance of the start vertex to 0
+    distances[start] = 0
+
+    # Create a priority queue
+    pq = PriorityQueue()
+
+    # Add all the vertices to the priority queue
+    for v in range(graph.num_vertices):
+        pq.push(v, distances[v])
+
+    # While the priority queue is not empty
+    while not pq.is_empty():
+        # Pop the vertex with the shortest distance
+        v = pq.pop()
+
+        # If the vertex is the end
+        if v == end:
+            # Initialize the path to empty
+            path = []
+
+            # Iterate until the previous vertex is None
+            while previous[v] is not None:
+                # Add the current vertex to the path
+                path.append(v)
+
+                # Set the current vertex to the previous vertex
+                v = previous[v]
+
+            # Add the start vertex to the path
+            path.append(start)
+
+            # Reverse the path
+            path.reverse()
+
+            # Return the path
+            return path
+
+        # Iterate over all the neighbors of the current vertex
+        for neighbor in graph.get_neighbors(v):
+            # Calculate the distance to the neighbor
+            distance = distances[v] + graph.get_weight(v, neighbor)
+
+            # If the distance is less than the current distance
+            if distance < distances[neighbor]:
+                # Set the distance to the calculated distance
+                distances[neighbor] = distance
+
+                # Set the previous vertex to the current vertex
+                previous[",
