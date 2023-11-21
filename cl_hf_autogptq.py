@@ -49,9 +49,10 @@ def predict(prompt:str):
 if __name__ == '__main__':
     responses = []
 
-    for q in questions:
-        responses.append(predict(q))
+    for idx in range(len(questions)):
+        prompt = "def factorial(int n):"
+        responses.append(predict(prompt))
 
     df = pd.DataFrame(responses)
-    df.to_csv('bench-hf-autogptq-512-w-triton-fa-false.csv', index=False)
+    df.to_csv('bench-hf-autogptq-512-w-triton-prompt-same.csv', index=False)
 
