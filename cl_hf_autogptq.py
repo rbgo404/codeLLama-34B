@@ -29,7 +29,7 @@ model = AutoGPTQForCausalLM.from_quantized(model_name_or_path,
         trust_remote_code=True,
         device="cuda:0",
         use_triton=use_triton,
-        #inject_fused_attention=False,
+        inject_fused_attention=False,
         quantize_config=None)
 
 
@@ -53,5 +53,5 @@ if __name__ == '__main__':
         responses.append(predict(q))
 
     df = pd.DataFrame(responses)
-    df.to_csv('bench-hf-autogptq-512-w-triton.csv', index=False)
+    df.to_csv('bench-hf-autogptq-512-w-triton-fa-false.csv', index=False)
 
