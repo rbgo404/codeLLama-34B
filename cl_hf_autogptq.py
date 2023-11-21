@@ -1,12 +1,8 @@
 # Load model directly
-from transformers import AutoTokenizer, AutoModelForCausalLM
-from transformers import BitsAndBytesConfig
-import torch
 import time
-
 import pandas as pd
-
-
+from transformers import AutoTokenizer
+from auto_gptq import AutoGPTQForCausalLM
 
 questions = [
     'Write a Python program that prints "Hello, World!" to the console.',
@@ -21,37 +17,41 @@ questions = [
     'Given a weighted graph and two vertices, find the shortest path between them using Dijkstra\'s algorithm.'
 ]
 
-model_id = "codellama/CodeLlama-34b-Python-hf"
-tokenizer = AutoTokenizer.from_pretrained(model_id)
-nf4_config = BitsAndBytesConfig(
-   load_in_4bit=True,
-   bnb_4bit_quant_type="fp4",
-   bnb_4bit_compute_dtype=torch.bfloat16
-)
-model_nf4 = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=nf4_config)
+
+model_name_or_path = "TheBloke/CodeLlama-34B-Python-GPTQ"
+
+use_triton = True
+
+tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, use_fast=True)
+
+model = AutoGPTQForCausalLM.from_quantized(model_name_or_path,
+        use_safetensors=True,
+        trust_remote_code=True,
+        device="cuda:0",
+        use_triton=use_triton,
+        #inject_fused_attention=False,
+        quantize_config=None)
 
 
 def predict(prompt:str):
     start_time = time.perf_counter()
     inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
-    generated_ids = model_nf4.generate(**inputs, max_length=512)
+    generated_ids = model.generate(**inputs, max_length=512)
     output = tokenizer.batch_decode(generated_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
     request_time = time.perf_counter() - start_time
     return {'tok_count': generated_ids.shape[1],
         'time': request_time,
         'question': prompt,
         'answer': output,
-        'note': 'nf4 4bit quantization bitsandbytes'}
+        'note': 'gptq'}
 
 
 if __name__ == '__main__':
-    counter = 1
     responses = []
 
     for q in questions:
         responses.append(predict(q))
-        #counter += 1
 
     df = pd.DataFrame(responses)
-    df.to_csv('bench-hf-bb-512-fp4.csv', index=False)
+    df.to_csv('bench-hf-autogptq-512-w-triton.csv', index=False)
 
