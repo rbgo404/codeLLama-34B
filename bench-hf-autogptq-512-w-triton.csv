@@ -1,0 +1,367 @@
+tok_count,time,question,answer,note
+30,7.148187089944258,"Write a Python program that prints ""Hello, World!"" to the console.","Write a Python program that prints ""Hello, World!"" to the console.
+
+'''
+
+print(""Hello, World!"")
+",gptq
+117,22.658122861059383,Write a function that takes two parameters and returns their sum.,"Write a function that takes two parameters and returns their sum.
+
+Examples
+add(1, 2) ➞ 3
+
+add(5, 10) ➞ 15
+
+add(9, 12) ➞ 21
+Notes
+Don't forget to return the result.
+If you get stuck on a challenge, get help from others or do it together with them.
+When you've finished, check your solution by pressing the ""Check"" button.",gptq
+110,20.90045686508529,Write a function to calculate the factorial of a given number.,"Write a function to calculate the factorial of a given number.
+
+#include <stdio.h>
+int main()
+{
+    int n, fact = 1;
+    printf(""Enter a number: "");
+    scanf(""%d"", &n);
+    for (int r = 1; r <= n; r++)
+        fact = fact * r;
+    printf(""Factorial of %d = %d"", n, fact);
+    return 0;
+}
+",gptq
+175,34.64904477796517,Write a function to determine if a given string is a palindrome.,"Write a function to determine if a given string is a palindrome.
+
+A palindrome is a word or phrase that is the same forwards and backwards.
+
+A few examples:
+
+""tacocat"" is a palindrome
+""taco cat"" is not a palindrome
+""racecar"" is a palindrome
+""race car"" is not a palindrome
+
+
+def is_palindrome(string):
+    # Check if string is a palindrome
+    return string == string[::-1]
+
+
+print(is_palindrome(""tacocat""))
+print(is_palindrome(""taco cat""))
+print(is_palindrome(""racecar""))
+print(is_palindrome(""race car""))
+",gptq
+512,99.50544185796753,"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""","Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""
+
+# 1
+# 2
+# Fizz
+# 4
+# Buzz
+# Fizz
+# 7
+# 8
+# Fizz
+# Buzz
+# 11
+# Fizz
+# 13
+# 14
+# FizzBuzz
+# 16
+# 17
+# Fizz
+# 19
+# Buzz
+# Fizz
+# 22
+# 23
+# Fizz
+# Buzz
+# 26
+# Fizz
+# 28
+# 29
+# FizzBuzz
+# 31
+# 32
+# Fizz
+# 34
+# Buzz
+# Fizz
+# 37
+# 38
+# Fizz
+# Buzz
+# 41
+# Fizz
+# 43
+# 44
+# FizzBuzz
+# 46
+# 47
+# Fizz
+# 49
+# Buzz
+# Fizz
+# 52
+# 53
+# Fizz
+# Buzz
+# 56
+# Fizz
+# 58
+# 59
+# FizzBuzz
+# 61
+# 62
+# Fizz
+# 64
+# Buzz
+# Fizz
+# 67
+# 68
+# Fizz
+# Buzz
+# 71
+# Fizz
+# 73
+# 74
+# FizzBuzz
+# 76
+# 77
+# Fizz
+# 79
+# Buzz
+# Fizz
+# 82
+# 83
+# Fizz
+# Buzz
+# Fizz
+# 87
+# 88
+# Fizz
+# Buzz
+# Fizz
+# 91
+# 92
+# Fizz
+# 94
+# Buzz
+# Fizz
+#",gptq
+349,73.37773313792422,Implement a function to reverse a singly linked list.,"Implement a function to reverse a singly linked list.
+
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def insert(self, data):
+        newNode = Node(data)
+        if(self.head is None):
+            self.head = newNode
+            return
+        last = self.head
+        while last.next:
+            last = last.next
+        last.next = newNode
+
+    def printList(self):
+        temp = self.head
+        while temp:
+            print(temp.data)
+            temp = temp.next
+
+    def reverseList(self):
+        prev = None
+        current = self.head
+        while current is not None:
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev
+
+
+if __name__ == ""__main__"":
+    linkedList = LinkedList()
+    linkedList.insert(1)
+    linkedList.insert(2)
+    linkedList.insert(3)
+    linkedList.insert(4)
+    linkedList.insert(5)
+    linkedList.insert(6)
+    linkedList.insert(7)
+    linkedList.insert(8)
+    linkedList.printList()
+    linkedList.reverseList()
+    linkedList.printList()
+",gptq
+512,108.00202856888063,"Given an unsorted array of integers, find the length of the longest increasing subsequence.","Given an unsorted array of integers, find the length of the longest increasing subsequence.
+
+For example,
+Given [10, 9, 2, 5, 3, 7, 101, 18],
+The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.
+
+Your algorithm should run in O(n2) complexity.
+
+Follow up: Could you improve it to O(n log n) time complexity?
+
+Credits:
+Special thanks to @pbrother for adding this problem and creating all test cases.
+
+# https://leetcode.com/discuss/26799/o-n-2-solution-easy-to-understand
+# https://leetcode.com/discuss/27395/o-n-log-n-solution-in-java
+# https://leetcode.com/discuss/37881/o-n-log-n-time-with-o-1-space-python-solution-using-binary-search
+# https://leetcode.com/discuss/37918/o-n-log-n-time-with-o-1-space-python-solution-using-binary-search
+
+# https://leetcode.com/discuss/37918/o-n-log-n-time-with-o-1-space-python-solution-using-binary-search
+# https://leetcode.com/discuss/37918/o-n-log-n-time-with-o-1-space-python-solution-using-binary-search
+
+# https://leetcode.com/discuss/37918/o-n-log-n-time-with-o-1-space-python-solution-using-binary-search
+# https://leetcode.com/discuss/37918/o-n-log-n-time-with-o-1-space-python-solution-using",gptq
+512,108.43283334816806,"Given a sequence of matrices, find the most efficient way to multiply these matrices.","Given a sequence of matrices, find the most efficient way to multiply these matrices.
+
+For example, given the following sequence of matrices:
+
+A = 10 x 30
+B = 30 x 5
+C = 5 x 60
+
+D = 60 x 20
+
+E = 20 x 30
+
+F = 30 x 10
+
+You should return the order of the elements in the given sequence above, along with the number of required operations.
+
+In the example above, you can multiply AB to get a 10 x 5 matrix, then multiply the resulting 10 x 5 matrix with C to get a 10 x 60 matrix.
+
+Then multiply D with the resulting 10 x 60 matrix to get a 20 x 60 matrix.
+
+Multiply the resulting 20 x 60 matrix with E to get a 20 x 30 matrix.
+
+Multiply the resulting 20 x 30 matrix with F to get a 20 x 10 matrix.
+
+This is the most efficient way to multiply the given sequence of matrices.
+
+Notice that simply multiplying the matrices in the order that they are given is not the most efficient way.
+
+If you multiply the matrices in the given order, the number of operations required is 1530.
+
+If you follow the method used above, the number of operations required is only 605.
+
+https://www.interviewbit.com/problems/matrix-chain-multiplication/
+""""""
+
+
+def MatrixChainMemorization(p, i, j):
+    if i == j:
+        return 0
+    if p[i][j] != -1:
+        return p[i][j]
+    min = 10 ** 9
+    for k in range(i, j):
+        val = MatrixChainMemorization(p, i, k) + MatrixChainMemorization(p, k + 1, j) + p[i][0] * p[0][j] * p[k][1]
+        if val < min:
+            min = val
+    p[i][j] = min
+    return min
+
+
+",gptq
+298,61.21424967586063,"Given a binary search tree, write a function to find the Kth smallest element.","Given a binary search tree, write a function to find the Kth smallest element.
+
+Example :
+
+Input : 
+  2
+ / \
+1   3
+
+and K = 2
+
+Return : 2
+
+As 2 is the second smallest element in the tree.
+ NOTE : You may assume 1 <= K <= Total number of Nodes.
+
+https://www.interviewbit.com/problems/kth-smallest-element-in-bst/
+""""""
+
+# Definition for a  binary tree node
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+
+class Solution:
+    # @param A : root node of tree
+    # @param K : integer
+    # @return an integer
+    def kthsmallest(self, A, K):
+        stack = []
+        node = A
+        while node:
+            stack.append(node)
+            node = node.left
+
+        for _ in range(K - 1):
+            node = stack.pop()
+            node = node.right
+            while node:
+                stack.append(node)
+                node = node.left
+
+        return stack[-1].val
+",gptq
+238,49.88280834699981,"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.","Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.
+
+### Input
+
+The first line of the input contains the number of vertices and edges. The next line contains the two vertices to find the shortest path between. The next lines contain the edges.
+
+### Output
+
+The first line of the output contains the shortest path between the two vertices. The next line contains the edges in the shortest path.
+
+### Constraints
+
+1 ≤ vertices ≤ 1000<br>
+1 ≤ edges ≤ 10000<br>
+1 ≤ weight ≤ 1000000<br>
+1 ≤ vertex ≤ vertices<br>
+
+### Example
+
+Input:
+```
+4 5
+1 4
+1 2
+2 3
+3 4
+1 3
+```
+
+Output:
+```
+1 2 3 4
+1 2
+2 3
+3 4
+```
+",gptq
