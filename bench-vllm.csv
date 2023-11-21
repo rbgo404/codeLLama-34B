@@ -1,0 +1,318 @@
+question,note,tok_count,time,answer
+"Write a Python program that prints ""Hello, World!"" to the console.",vLLM,512,24.505394012998295,"
+2. Write a Python program to print text with double quotes and single quotes.
+3. Write a Python program to print a long text inserting newlines ('\n') automatically.
+4. Write a Python program to use 'while' loop to iterate a set of strings.
+5. Write a Python program to use 'for' loop to iterate keyboard inputs.
+6. Write a Python program to find no of digits in an integer.
+7. Write a Python program to find Escape Sequences in Python.
+8. Write a Python program to check the type of a variable.
+9. Write a Python program to set a default value for an unassigned local variable.
+10. Write a Python program to generate a random number using the random module.
+11. Write a Python program to create a bytearray from a list.
+12. Write a Python program to check whether a bytearray contains a given bytes.
+13. Write a Python program to convert an integer to a bytearray.
+14. Write a Python program to check whether a string contains a given character.
+15. Write a Python program to count number of strings where a specified substring is present.
+16. Write a Python program to check whether a given string is palindrome or not.
+17. Write a Python program to find strings within a string.
+18. Write a Python program to split a string based on a delimiter.
+19. Write a Python program to split a string based on a delimiter and return a specific element of the list.
+20. Write a Python program to sort list of tuples based on 2nd element of tuple.
+21. Write a Python program to convert a list to a nested dictionary of keys.
+22. Write a Python program to check whether a list contains another list.
+23. Write a Python program to generate 'n' random lists of 'x' numbers.
+24. Write a Python program to get unique values from a list.
+25. Write a Python program to get the frequency of the elements in a list.
+26. Write a Python program to break a list into chunks of size 'n'.
+27. Write a Python program that echoes the user back if the input is not equal to ""quit"".
+28. Write a Python program to deep copy a list.
+29. Write a Python program"
+Write a function that takes two parameters and returns their sum.,vLLM,133,6.251187334000861," If the parameters are equal, then double the result. Return all results as a string concatenated with a ‘ – ‘.
+Input The input will consist of one parameter containing 2 strings, the first one representing the x and the second the y. The x and the y will be 2 integers separated by a status. All input data will be valid. Ignore all spaces.
+Output The output should consist of one line only containing the result.
+Precondition The largest of the numbers is equal to 10 000.
+14 14 14 – 14 – 14 28."
+Write a function to calculate the factorial of a given number.,vLLM,290,13.721396842000104," 
+The factorial of a number is the product of all the 
+integers smaller than it.
+
+For example, if we want to calculate the factorial of
+number 3, then the result will be:
+
+1 * 2 * 3 = 6
+
+What are the different ways you can write to calculate the factorial
+of a number?
+
+Hint:
+The fact that all of the numbers that you will use will be small integers (<= 10)
+will significantly help your algorithm! 
+**YOU DO NOT HAVE TO WORRY ABOUT THE SIZE OF THE NUMBER!**
+""""""
+
+def factorial(n):
+    """""" Function which returns n! (factorial of n) """"""
+    if type(n) == int and n >=0 and n<=10:
+        pass
+    else: 
+        raise RuntimeError(""Invalid input!"")
+
+    # Write your solution here
+
+
+
+    
+    
+
+
+
+# Test Cases
+print(factorial(3) == 6)
+print(factorial(4) == 24)
+print(factorial(5) == 120)
+
+a = 10
+print(factorial(a) == 3628800)
+"
+Write a function to determine if a given string is a palindrome.,vLLM,398,18.93546342600166," Character comparison should be case independent.
+
+_Solution Idea:_
+
+Using the string replace method to change all the uppercase string in the word to lowercase and lowercase to uppercase. Can we reverse compare these words.
+
+const palindrome = require(""./palindrome"");
+
+ describe(""isPalindrome"", () => {
+   test(""function is defined"", () => {
+    expect( typeof palindrome( ""amanda"" ) ).toBe(""boolean"");
+  });
+  
+  test(""test upper and lower case"", () => {
+    expect(palindrome(""A tree, a life, a bench"")).toEqual(true);
+  });
+  
+  test(""should return boolean"", () => {
+    expect(palindrome(""Show or choose"")).toEqual(false);
+  });
+  
+  test(""should return boolean"", () => {
+    expect(palindrome(""Madam, I’m Adam"")).toEqual(false);
+  });
+  
+  test(""should return boolean. Empty string return true"", () => {
+    expect(palindrome("""")).toEqual(true);
+  });
+  test(""test upper and lower case should return true"", () => {
+    expect(palindrome(""Go hang a salami. I'm a lasagna hog. Wise sir, can you: No, it is not easy to find a trustworthy stapir on maps, but it is with you"")).toEqual(true);
+  });
+});
+
+const _ = require(""lodash"");
+
+function palindrome(str) 
+{
+  return str === _.toLower(str.replace(/[^a-zA-Z0-9]/g, """"));
+}
+
+"
+"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""",vLLM,512,24.636730899001122,"
+ *By using a StringBuffer, you can refactor FizzBuzz to print the results.
+Write a program with a meaningful name that embeds the fizzbuzz algorithm.
+(e)CountString(String s, String word)
+递归算法，该函数有一个case就是s为空串时返回0，一个emptyCheck函数用于检查如果布尔值为真如何处理，我们定义他为抛出异常。在这个函数中定义了一个嵌套的Sum私有类，并且用static私有的方法调用了文件，它会将每个字符串的第一个字母取出并将剩余的字母组成一个新的字符串。然后用他自递归调用CountString函数。
+ * Physical Toll Booth Simulation Defines a program that simulates a toll booth. The customer has already decided not to drive though the conversion. The cashier at the toll booth first asks for the vehicle's license number. Then, the cashier checks the license plate data base and obtains the car's weight and the number of cents owed, records the number of cars using the computer (such as MS Access), and sends two cents out of every five to the county. prints a ticket number, the weight, and the toll (it is always two cents for a weight of less than 100 pounds).
+The above code is run in debug and repair mode. The defects are fixed by applying the right fix. All the bug fixes occur in the “Fix Defects” module.
+Overall description of the Software: The software is a car with counter which keeps count for the number of cars passing through a bridge at a particular Time. The software interrupts the vehicle when on the bridge and uses an Ultra sonic height sensor to calculate the height of a vehicle passing through the bridge, if height is less than or greater than 4 meters the software throws an Exception and shows “HIGHTHAN 4</HIETHAN 4″ exceptions.
+The Weight API could also be viewed as an interface"
+Implement a function to reverse a singly linked list.,vLLM,426,20.310582935002458,"
+
+This example explains some basic tests for your implementation and also gives some ideas in algorithm design.
+Attaching a screenshot or some sample output also helps.
+""""""
+
+from utils.linked_list_helper import *
+
+
+# Iterative
+# Time: O(n)
+# Space: O(1)
+def reverse_linked_list_simple(head: ListNode) -> ListNode:
+    """"""
+    :param: head - head of linked list
+    return: head of the reversed linked list
+    """"""
+    if not head or not head.next:
+        return head
+
+    curr, prev = head, None
+    while curr:
+        node = curr.next
+        curr.next = prev
+        prev = curr
+        curr = node
+    return prev
+
+
+# Recursive
+# Time: O(n)
+# Space: O(n)
+def reverse_linked_list_recursive(head: ListNode) -> ListNode:
+    """"""
+    :param: head - head of linked list
+    return: head of the reversed linked list
+    """"""
+    if not head or not head.next:
+        return head
+
+    node = head.next
+    head.next = None
+    new_head = reverse_linked_list_recursive(node)
+    node.next = head
+    return new_head
+
+
+if __name__ == '__main__':
+    # 1 -> 2 -> 3 -> 4 -> None
+    expected_output = ""4 3 2 1""
+    head = create_linked_list([1, 2, 3, 4])
+    # head = reverse_linked_list_recursive(head)
+    pretty_print(head)
+    actual_output = convert_to_list(head)
+    assert actual_output == expected_output
+"
+"Given an unsorted array of integers, find the length of the longest increasing subsequence.",vLLM,124,5.840645943997515,"
+
+For example,
+Given [10, 9, 2, 5, 3, 7, 101, 18],
+The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.
+
+Your algorithm should run in O(n2) complexity.
+
+Follow up: Could you improve it to O(n*log(n)) time complexity?"
+"Given a sequence of matrices, find the most efficient way to multiply these matrices.",vLLM,472,22.580054335001478," Assume all matrices are stored in row major order . You can only use column level parallelism.
+Input is a 2D array which is used to represent a 3D array i.e. a[i][j] represents (i,j) th position of matrix in the 3D array.
+Input 1:
+
+a = [ [ 1, 4, 5],
+      [ 3, 7, 2],
+      [ 5, 4, 6] ]
+
+Input 2:
+
+a = [ [ 1, 4, 5, 1],
+      [ 3, 7, 2, 5],
+      [ 5, 4, 6, 8],
+      [ 1, 7, 8, 9] ]
+
+Input 3:
+
+a = [ [ 9, 8, 7, 6, 5],
+       [ 1, 2, 3, 4, 5],
+       [ 5, 4, 3, 2, 1] ]
+Output 1:
+
+i11 i12 p i14 j14
+p multiply(i11,j11)
+p multiply(i12,j11)
+i13 i14
+multiply(p,j14)
+Output 2:
+
+i11 i12 i13 p i14 j14
+p multiply(i11, j11)
+p multiply(i12, j11)
+p multiply(i13, j11)
+multiply(p, j14)
+i14
+multiply(i14, j14)
+Output 3:
+
+i11 i12 i13 i14 p j14
+multiply(i11, j11)
+p multiply(i12, j12)
+p multiply(i13, j13)
+p multiply(i14, j14)
+multiply(p, j14)
+"
+"Given a binary search tree, write a function to find the Kth smallest element.",vLLM,239,11.306935103999422,"
+
+
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def kthSmallest(self, root, k):
+        """"""
+        :type root: TreeNode
+        :type k: int
+        :rtype: int
+        """"""
+        def get_height(self, root):
+            height = 0
+            while root:
+                height += 1
+                root = root.left
+            return height
+        
+        def inorder(self, root, k):
+            if not root:
+                return None
+            rh = self.get_height(root.right)
+            if k > rh:
+                return inorder(self, root.left, k - rh - 1)
+            elif k < rh:
+                return inorder(self, root.right, k)
+            else:
+                return root.val"
+"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.",vLLM,512,24.569233365997206,"
+    Args:
+        adj_matrix_lists: A dictionary mapping labels to all the labels that they are pointed to,
+                as well as the distance to that vertex. Example is {'A': [('B', 3), ('C', 7)]}
+                indicating that A has an edge to B with distance 3 and an edge to C with distance 7
+        from_vertex: the source vertex
+        to_vertex: the destination vertex
+     Returns:
+        path: An ordered list of vertices specifying the path, or None if no vertex exists.
+    """"""
+
+    distances = {vertex: float('inf') for vertex in adj_matrix_lists}
+    distances[from_vertex] = 0
+    Q = adj_matrix_lists.keys()
+    edges = []
+
+    while len(Q) > 0:
+        current_vertex = min(Q, key=lambda x: distances[x])
+
+        if current_vertex == to_vertex:
+            return []
+        Q.remove(current_vertex)
+        for neighbor, distance in adj_matrix_lists[current_vertex]:
+            tentative_distance = distances[current_vertex] + distance
+            if tentative_distance < distances[neighbor]:
+                distances[neighbor] = tentative_distance
+                neighbor.previous = current_vertex
+                neighbor.dist = tentative_distance
+                edges.append(Edge(current_vertex, neighbor, distance))
+
+        if current_vertex == to_vertex:
+            return []
+
+    # Reconstruct path upon fined min_dist
+    path = [current_vertex]
+    if min_dist is None:
+        return None
+    else:
+        for edge in reversed(edges):
+            if edge.end == current_vertex and edge.start in min_dist:
+                path.append(edge.start)
+                current_vertex = edge.start
+        return path
+
+def dijkstra_shortest_path(graph : Graph, from_vertex : str, to_vertex : str) -> (List[str], int):
+    """"""
+    Find the vertices in a shortest path from a start vertex to an end vertex using Dijk"
