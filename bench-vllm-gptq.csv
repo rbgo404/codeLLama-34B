@@ -1,0 +1,373 @@
+question,note,tok_count,time,answer
+"Write a Python program that prints ""Hello, World!"" to the console.",vLLM,512,8.562797255002806,"
+2. Write a Python program to sum all the items in a list.
+3. Write a Python program to multiplies all the items in a list.
+4. Write a Python program to get the largest number from a list.
+5. Write a Python program to get the smallest number from a list.
+for int_list in ele_var:
+6. Write a Python program to add two objects if both objects are an integer type.
+7. Write a Python program to create a new string with no duplicate consecutive letters from a given string.
+8. Write a Python program to check whether a specified element is present in a group of lists.
+9. Write a Python program to compute the similarity between two lists.
+10. Write a Python program to create a list with all elements"""" opposite in sign to those of another list.
+11. Write a Python program to get the unique common elements from two lists.
+13. Write a Python program to shuffle and print a list.
+14. Write a Python program to generate a 3*4*2 matrix.
+15. Write a Python program to get the depth of a dictionary.
+16. Write a Python program to count the number of items in a dictionary value that is a list.
+17. Write a Python program to find the maximum and minimum item values(key) in a dictionary.
+18. Write a Python program to find the list in a list of dictionaries.
+19. Write a Python program to get the top two items in a shop.
+20. Write a Python program to get the key, value and item in a dictionary.
+21. Write a Python program to get the sum of all the items in a dictionary.
+22. Write a Python program to select certain items from a list of items.
+23. Write a Python program to remove key values pairs from a list of dictionaries.
+24. Write a Python program to convert true to 1 and false to 0.
+25. Write a Python program to convert an array to a dictionary.
+26. Write a Python program to count the values associated with key in a dictionary.
+27. Write a Python program to check multiple keys exists in a dictionary.
+28. Write a Python program to count number of key-value pairs in a dictionary.
+29. Write a Python program to print a dictionary line"
+Write a function that takes two parameters and returns their sum.,vLLM,50,0.868831682997552," If one of the parameters is null then return 0.
+Define a function with the name MyLogClassifier that has one parameter and returns true if value passed into the function is greater than or equal to the x value in MyClass."
+Write a function to calculate the factorial of a given number.,vLLM,512,8.560421496000345,"
+Factorial of a positive integer, is the multiplication of all the integers till the number.
+Note: Factorials for negative numbers do not exist.
+In mathematics, the factorial of a non-negative integer n represents the product of all positive integers from 1 to n. In terms of the gamma function, it is written as n! = Γ(n + 1).
+The factorial of one or any positive integer is the simplest expression by using product notation for a multiple number of items.
+For example 5! = 5 · 4 · 3 · 2 · 1 = 120.
+Once the maximum value exceeds the environment-variable MAXINT, which is 268435455, the function will need a different formula to calculate the factorial.
+5! = 120, but the sum of n! is 5! ÷ 3! and 3·2·1 (divided by the implied 3!).
+This solution skips the multiplication of 1, which is the same as removing it from your function to begin with. That's a minor optimization.
+the other way, you can keep the duplicates and get the same results with unique(). be aware that this has shenanigans riding on top of it that make it slower for really large arrays, and odd projects.
+Other people's solutions will return 1 even when 0! is passed in. My solution returns 1 whenever n >= 0, and error message when n < 0.
+works with negative values too.
+Now I feel like I learned something about JavaScript. Not sure about all the downvotes, but I'll +1 for that note. Thanks!
+""Always test your code with extremely large values""
+""The factorial of zero is defined to be 1 by some definitions and conventions.""
+so it got stuck in that state. Can't get it out.
+You can also use zero factorial is 1 to speed up your maths.
+Maybe there will be a flurry of edits upon the answers until the one that is the fastest is on the top?
+I have not voted on nor commented about any of these answers per se, but rather to get the votes and to achieve community up votes.
+I've been about down voting them since January 14"
+Write a function to determine if a given string is a palindrome.,vLLM,283,4.712806778999948,"
+
+Stings will be lowercase with no punctuation.
+""""""
+
+text = ""a man a plan a canal panama""
+
+
+def string_reverse(text_data):
+    """"""
+    We iterate the string in full and at the same time we iterate from behind so at a given step
+    we compare both halves.
+    """"""
+    reversed_text = text_data[::-1]
+    if text_data == reversed_text:
+        return True
+    else:
+        return False
+
+
+print(string_reverse(text))
+
+
+def optimization(text_data):
+    """"""We can optimize the complexity cutting it in 3 (first half, middle element, last half)
+    
+    Comp: O(3) instead O(2) with longer strings.
+    """"""
+    middle = len(text) // 2
+    if len(text) % 2 == 0:
+        return text[0: middle] == text[middle + 1:][::-1]
+    else:
+        middle -= 1
+        return text[0: middle] == text[(middle + 1):][::-1]
+
+
+print(""Opt: {0}"".format(optimization(text)))
+"
+"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""",vLLM,279,4.727341502002673,"
+Write your solution in the editor below, and run it from the terminal by pressing Shift+Enter. Output anything else and you'll be thrown off course.
+Try to solve this task in the fewest lines possible.
+Take a look at how other people solved this challenge before you check your code. And be sure to have a look at the resluts from your own code before you submit!
+Share you code with us. Or write a comment.
+Your code was run in the terminal.
+Copy the URL of your solution and be ready to share it.
+Send you URL to any of our tutors for a personal check and review.
+See how you ranked. Share your result!
+To run your code in the terminal, go to the terminal, change the working directory to FizzBuzz and press Shift+Enter.
+No dialog boxes shown please!
+Copy & paste the URL printed in the terminal, click on JOIN and be ready to share your code.
+Its quite simple to show the code editor. Go to your papaerbasket account and click on the tab CODE in the top menu. Select the project FizzBuzz and click on EDIT and paste you code in the code area.
+How many lines of code did you write?
+Write your comment in the box Talk back."
+Implement a function to reverse a singly linked list.,vLLM,213,3.5478831929976877,"
+
+input: 1->2->3->4->5->null
+output: 5->4->3->2->1->null
+
+Input: 1->2
+Output: 2->1
+
+Input: []
+Output: []
+
+=========================================
+Simple reversing, save next and make the prev to next.
+    Time Complexity:    O(N)
+    Space Complexity:   O(1)
+'''
+
+
+############
+# Solution #
+############
+
+# import ListNode class from ll_helpers.py
+from ll_helpers import ListNode
+
+def reverse(head):
+    prev = None
+
+    while head is not None:
+        # save curr node
+        curr = head
+        # save next node
+        head = curr.next
+        # reverse the pointer
+        curr.next = prev
+        # save curr node as the previous one
+        prev = curr
+
+    return prev"
+"Given an unsorted array of integers, find the length of the longest increasing subsequence.",vLLM,512,8.58097363500201,"
+
+For example,
+Given [10, 9, 2, 5, 3, 7, 101, 18],
+The longest increasing subsequence is [2, 3, 7, 101], 
+therefore the length is 4. Note that there may be more than one LIS combination, 
+it is only necessary for you to return the length.
+
+Your algorithm should run in O(n2) complexity.
+
+Follow up: Could you improve it to O(n log n) time complexity?
+""""""
+
+from time import sleep
+
+class Solution:
+    # @param {integer[]} nums
+    # @return {integer}
+    def longestIncreasingSubsequence(self, nums):
+
+        mylist = sorted(set(nums)) # remove duplication
+
+        successors = [[] for x in range(len(mylist))]
+        rank = {}
+        ranks = [0] * len(mylist)
+
+        for i, x in enumerate(mylist):
+             rank[x] = i
+             ranks[i] = i
+
+        for i in xrange(len(mylist)-1, -1, -1):
+
+            # O(n)
+            for p in xrange(i-1, -1, -1):
+                num = mylist[i]
+                pre_num = mylist[p]
+                #if num > pre_num: # no timeit
+                if ranks[pre_num] > ranks[num]:
+                    if ranks[pre_num] > ranks[num]:
+                        ranks[pre_num] = ranks[num]
+                    successors[p].append(mylist[i])
+                    break
+            else:
+                continue
+
+        longest = []
+        #O(n)
+        longest.append(mylist[ranks.index(max(ranks))])
+        i = 0
+        #O(n)
+        while(len(successors[rank[longest[-1]]])):
+            longest.append(successors[rank[longest[-1]]].pop())
+            i -= 1
+
+        return len(longest)
+
+# Timeit info
+"
+"Given a sequence of matrices, find the most efficient way to multiply these matrices.",vLLM,512,8.588894512002298," In other words, determine where to place parentheses to minimize the number of multiplications.
+You can assume that all input numbers are positive integers.
+from collections import deque
+
+class Solution(object):
+
+    # naive solution, just basic multiply
+    def optimize_multiplication(self, matrices):
+        if not any(matrices):
+            return
+        res = matrices[0]
+        for matrix in matrices[1:]:
+            res = self.multiply(res, matrix)
+        return res
+
+    def multiply(self, a, b):
+        m, n = len(b), len(a[0])
+        res = [[0]*n for _ in range(m)]
+        for i in range(m):
+            for j in range(n):
+                res[i][j] = sum(a[k][j] * b[i][k] for k in range(len(a)))
+        return res
+
+    # given 4 matrices a, b, c and d (in this order). Returns the minimum number of multiplications to compute the
+    # product (((a*b)*c)*d)
+    def brute_force(self, a, b, c, d):
+        # TODO: This solution isn't really correct, why?
+        p = 4
+        min_p = len(a)*len(b)*len(c)*len(d)
+        res = 0
+        for i in range(p):
+            matrix_chain = a * (i + 1) + \
+                b * (p - i - 1) + \
+                c * (i) + d * (p - i - 2)
+            res = self.chain_order(matrix_chain)
+            min_p = min(min_p, res)
+        return min_p
+
+    def chain_order(self, matrices):
+        if len(matrices) < 3:
+            return 0
+        order = [len(matrix) for matrix in matrices]
+        n = len(order)
+        table = [[0 for x in range(n)] for y in range(n)]
+
+        # Fill diagonal elements of L
+        for i in range(1, n):
+            table[i][i"
+"Given a binary search tree, write a function to find the Kth smallest element.",vLLM,512,8.604227586001798,"
+
+
+
+ Example 1:
+
+	Input: root = [3,1,4,null,2], k = 1
+	Output: 1
+
+ Example 2:
+
+	Input: root = [5,3,6,2,4,null,null,1], k = 3
+	Output: 3
+ Note:
+
+	The number of nodes in the tree is between 1 and 1000.
+	You may assume the 1st, 2nd, and 3rd null connectors are connected already (i.e., you do not need add any connections).
+
+
+## Solution:
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+
+/**
+ * @param {TreeNode} root
+ * @param {number} k
+ * @return {number}
+ */
+
+ var kthSmallest = function(root, k) {
+	let num = [];
+	kthSmallestRec(root, num);
+	return num[k-1];
+ };
+ 
+ var kthSmallestRec = function (node, num) {
+	if (!node) return;
+	
+	if (node.left) kthSmallestRec(node.left, num);
+	num.push(node.val);
+	if (node.right) kthSmallestRec(node.right, num);
+}
+```
+
+
+# Solution 2, Half in Binary Search Tree
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+
+ * @param {TreeNode} root
+ * @param {number} k
+ * @return {number}
+ */
+var kthSmallest = function(root, k) {
+	const tmpArray = [];
+	kthSmallestRec(root, tmpArray);
+	return tmp"
+"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.",vLLM,512,8.63584649599943,"
+
+Given a weight_matrix and path_matrix as a 2D numpy arrays, output: shortest distance from the start point to end point as integer, each step from the start to end as an array of indices.
+
+For example, if we have the following matrix:
+weight = 
+    array([[ inf,   10.,   50.,   inf],
+           [  11.,   inf,   30.,   inf],
+           [ inf,   10.,   inf,   inf],
+           [ inf,  200.,  410.,   30.]])
+
+cluster = 
+    array([[ 0,   1,   2,   3],
+           [ 0,   1,   2,   3],
+           [ 0,   1,   2,   3],
+           [ 0,   1,   2,   3]])
+
+shortest_path(weight, cluster, 0, 3) => 291 (path is: [0, 1, 2, 3]).
+
+Complexity: O(E) , E is the number of edges
+'''
+
+from prioqueue import PrioQueue, PrioQueueKeyError
+
+
+class UnionFind(object):
+    def __init__(self, n):
+        self._n = n
+        self._parent = [-1] * n
+        self._dist = [float('inf')] * n
+
+
+
+def int_skeleton(matrix):
+    new_matrix = matrix.view(int)
+    return new_matrix
+
+
+def shortest_path(weight_matrix, path_matrix, start_node, end_node):
+
+    n = weight_matrix.shape[0]
+    adj = weight_matrix
+    vis = [False] * n
+    dis = [99999999999] * n
+    parents = [-1] * n
+    queue = PrioQueue()
+    weighted_pair = (0, start_node,)
+    queue.insert(weighted_pair)
+    dis[start_node] = adj[start_node][end_node]
+    parents[start_node] = start_node
+
+
+    for i in range(n"
