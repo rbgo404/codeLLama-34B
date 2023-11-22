@@ -1,0 +1,1086 @@
+tok_count,time,question,answer,note
+36,0.6143280600081198,"Write a Python program that prints ""Hello, World!"" to the console.","Write a Python program that prints ""Hello, World!"" to the console.
+
+### Solution
+
+```python
+print(""Hello, World!"")
+```
+",triton-vllm-awq
+116,2.9587893080024514,Write a function that takes two parameters and returns their sum.,"Write a function that takes two parameters and returns their sum.
+
+Examples
+add(1, 2) ➞ 3
+
+add(10, 10) ➞ 20
+
+add(90, 100) ➞ 190
+
+Notes
+Don't forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+If you're really stuck, unlock solutions in the Solutions tab.",triton-vllm-awq
+57,1.2633942569955252,Write a function to calculate the factorial of a given number.,"Write a function to calculate the factorial of a given number.
+
+```py
+def factorial(n):
+  if n == 0:
+    return 1
+  else:
+    return n * factorial(n-1)
+```
+",triton-vllm-awq
+114,2.8192122949985787,Write a function to determine if a given string is a palindrome.,"Write a function to determine if a given string is a palindrome.
+
+### Examples
+
+```
+isPalindrome(""racecar"") // true
+isPalindrome(""racecarx"") // false
+isPalindrome(""123454321"") // true
+```
+
+### Notes
+
+- A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward, such as ""madam"" or ""racecar"".
+",triton-vllm-awq
+210,4.209500311000738,"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""","Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""
+
+### Examples
+
+```
+fizzBuzz(3) ➞ [1, 2, ""Fizz""]
+
+fizzBuzz(5) ➞ [1, 2, ""Fizz"", 4, ""Buzz""]
+
+fizzBuzz(15) ➞ [1, 2, ""Fizz"", 4, ""Buzz"", ""Fizz"", 7, 8, ""Fizz"", ""Buzz"", 11, ""Fizz"", 13, 14, ""FizzBuzz""]
+```
+
+### Notes
+
+N/A",triton-vllm-awq
+525,14.668824752006913,Implement a function to reverse a singly linked list.,"Implement a function to reverse a singly linked list.
+
+Example:
+
+Input: 1->2->3->4->5->NULL
+Output: 5->4->3->2->1->NULL
+
+Follow up:
+
+A linked list can be reversed either iteratively or recursively. Could you implement both?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",triton-vllm-awq
+531,14.743306818010751,"Given an unsorted array of integers, find the length of the longest increasing subsequence.","Given an unsorted array of integers, find the length of the longest increasing subsequence.
+
+Example:
+
+Input: [10,9,2,5,3,7,101,18]
+Output: 4 
+Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. 
+Note:
+
+There may be more than one LIS combination, it is only necessary for you to return the length.
+Your algorithm should run in O(n2) complexity.
+Follow up: Could you improve it to O(n log n) time complexity?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",triton-vllm-awq
+395,10.910779437996098,"Given a sequence of matrices, find the most efficient way to multiply these matrices.","Given a sequence of matrices, find the most efficient way to multiply these matrices.
+
+The problem is not actually to perform the multiplications, but merely to decide in which order to perform the multiplications.
+
+For example, suppose you are given the following sequence of matrices:
+
+A[1] A[2] A[3] A[4] A[5]
+
+Suppose you want to compute the product A[1]A[2]A[3]A[4]A[5].
+
+Notice that A[5]A[4]A[3]A[2]A[1] is not the most efficient way to compute the product.
+
+### Example 1:
+```
+Input: [10, 20, 30]
+Output: 6000
+Explanation: 10 * 20 * 30 = 6000
+```
+
+### Example 2:
+```
+Input: [1, 10, 2, 3]
+Output: 1000
+Explanation: 1 * 10 * 2 * 3 = 60
+```
+
+### Example 3:
+```
+Input: [1, 2, 3]
+Output: 6
+```
+
+### Example 4:
+```
+Input: [1, 2, 3, 4]
+Output: 24
+```
+
+### Example 5:
+```
+Input: [1, 2, 3, 4, 5]
+Output: 120
+```
+
+### Constraints:
+- 1 <= matrices.length <= 10
+- 2 <= matrices[i][j] <= 10
+",triton-vllm-awq
+397,10.958918347008876,"Given a binary search tree, write a function to find the Kth smallest element.","Given a binary search tree, write a function to find the Kth smallest element.
+
+**Example 1:**
+
+```
+Input: root = [3,1,4,null,2], k = 1
+   3
+  / \
+ 1   4
+  \
+   2
+Output: 1
+```
+
+**Example 2:**
+
+```
+Input: root = [5,3,6,2,4,null,null,1], k = 3
+       5
+      / \
+     3   6
+    / \
+   2   4
+  /
+ 1
+Output: 3
+```
+
+**Follow up:**
+
+What if the BST is modified (insert/delete operations) often and you need to find the Kth smallest frequently? How would you optimize the Kth smallest query?
+
+**Solution:**
+
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func kthSmallest(root *TreeNode, k int) int {
+  var count int
+  var dfs func(root *TreeNode) int
+  dfs = func(root *TreeNode) int {
+    if root == nil {
+      return 0
+    }
+    left := dfs(root.Left)
+    if left + 1 == k {
+      return root.Val
+    }
+    right := dfs(root.Right)
+    if right + 1 == k {
+      return root.Val
+    }
+    return left + right + 1
+  }
+
+  return dfs(root)
+}
+```
+",triton-vllm-awq
+388,10.536001278000185,"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.","Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.
+
+### Input
+
+The first line of the input contains an integer T denoting the number of test cases. Then T test cases follow. Each test case consists of three lines. The first line of each test case contains two space separated integers N and M denoting the number of vertices and the number of edges respectively. The second line of each test case contains N space separated integers denoting the weight of each vertex. The third line of each test case contains three space separated integers u, v and k denoting the starting vertex, the destination vertex and the position of the edge in the graph respectively.
+
+### Output
+
+For each test case, print the shortest distance from the starting vertex to the destination vertex.
+
+### Constraints
+
+1 ≤ T ≤ 100
+
+1 ≤ N ≤ 1000
+
+1 ≤ M ≤ 1000
+
+1 ≤ u, v ≤ N
+
+1 ≤ k ≤ M
+
+1 ≤ Weight of each vertex ≤ 1000
+
+### Example
+
+Input
+
+```
+2
+4 4
+1 2 3 4
+1 2 3
+4 4 4
+1 2 3 4
+1 2 3
+```
+
+Output
+
+```
+3
+1
+```
+
+### Explanation
+
+Testcase 1: The shortest path from vertex 1 to vertex 3 is 1 → 2 → 3.
+
+Testcase 2: The shortest path from vertex 1 to vertex 3 is 1 → 2 → 3.
+",triton-vllm-awq
