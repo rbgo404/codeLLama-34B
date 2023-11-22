@@ -1,0 +1,467 @@
+tok_count,time,question,answer,note
+28,0.6413699120021192,"Write a Python program that prints ""Hello, World!"" to the console.","Write a Python program that prints ""Hello, World!"" to the console.
+
+# Solution
+print(""Hello, World!"")",triton-vllm-awq
+525,24.960467331999098,Write a function that takes two parameters and returns their sum.,"Write a function that takes two parameters and returns their sum.
+
+def add(a, b):
+    return a + b
+
+
+print(add(1, 2))
+print(add(1, 2))
+print(add(1, 2))
+
+
+# Write a function that takes two parameters and returns their product.
+
+def mult(a, b):
+    return a * b
+
+
+print(mult(1, 2))
+print(mult(1, 2))
+print(mult(1, 2))
+
+
+# Write a function that takes two parameters and returns their quotient.
+
+def div(a, b):
+    return a / b
+
+
+print(div(1, 2))
+print(div(1, 2))
+print(div(1, 2))
+
+
+# Write a function that takes two parameters and returns their remainder.
+
+def mod(a, b):
+    return a % b
+
+
+print(mod(1, 2))
+print(mod(1, 2))
+print(mod(1, 2))
+
+
+# Write a function that takes two parameters and returns their distance.
+
+def distance(a, b):
+    return abs(a - b)
+
+
+print(distance(1, 2))
+print(distance(1, 2))
+print(distance(1, 2))
+
+
+# Write a function that takes two parameters and returns their maximum.
+
+def max(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+
+print(max(1, 2))
+print(max(1, 2))
+print(max(1, 2))
+
+
+# Write a function that takes two parameters and returns their minimum.
+
+def min(a, b):
+    if a < b:
+        return a
+    else:
+        return b
+
+
+print(min(1, 2))
+print(min(1, 2))
+print(min(1, 2))
+
+
+# Write a function that takes three parameters and returns the sum of their cubes.
+
+def sum_cubes(a, b, c):
+    return a ** 3 + b ** 3 + c ** 3
+
+
+print(",triton-vllm-awq
+134,5.79912543699902,Write a function to calculate the factorial of a given number.,"Write a function to calculate the factorial of a given number.
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the extraLongFactorials function below.
+def extraLongFactorials(n):
+    fact = 1
+    for i in range(1,n+1):
+        fact *= i
+    return fact
+
+if __name__ == '__main__':
+    n = int(input())
+
+    result = extraLongFactorials(n)
+
+    print(result)
+",triton-vllm-awq
+366,16.98790520300099,Write a function to determine if a given string is a palindrome.,"Write a function to determine if a given string is a palindrome.
+
+A palindrome is a string that reads the same forward and backward.
+
+Example 1:
+
+Input: ""A man, a plan, a canal: Panama""
+Output: true
+Example 2:
+
+Input: ""race a car""
+Output: false
+
+
+Solution:
+1. Two pointers
+2. Reverse
+""""""
+
+
+# Two Pointers
+# Time: O(n), n is the length of s
+# Space: O(1)
+class Solution(object):
+    def isPalindrome(self, s):
+        """"""
+        :type s: str
+        :rtype: bool
+        """"""
+        l, r = 0, len(s)-1
+        while l < r:
+            while l < r and not s[l].isalnum():
+                l += 1
+            while l < r and not s[r].isalnum():
+                r -= 1
+            if s[l].lower() != s[r].lower():
+                return False
+            l += 1
+            r -= 1
+        return True
+
+
+# Reverse
+# Time: O(n), n is the length of s
+# Space: O(n)
+class Solution(object):
+    def isPalindrome(self, s):
+        """"""
+        :type s: str
+        :rtype: bool
+        """"""
+        s = [c.lower() for c in s if c.isalnum()]
+        return s == s[::-1]
+",triton-vllm-awq
+379,15.269735442998353,"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""","Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""
+
+```
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
+Fizz
+22
+23
+Fizz
+Buzz
+26
+Fizz
+28
+29
+FizzBuzz
+31
+32
+Fizz
+34
+Buzz
+Fizz
+37
+38
+Fizz
+Buzz
+41
+Fizz
+43
+44
+FizzBuzz
+46
+47
+Fizz
+49
+Buzz
+Fizz
+52
+53
+Fizz
+Buzz
+56
+Fizz
+58
+59
+FizzBuzz
+61
+62
+Fizz
+64
+Buzz
+Fizz
+67
+68
+Fizz
+Buzz
+71
+Fizz
+73
+74
+FizzBuzz
+76
+77
+Fizz
+79
+Buzz
+Fizz
+82
+83
+Fizz
+Buzz
+86
+Fizz
+88
+89
+FizzBuzz
+91
+92
+Fizz
+94
+Buzz
+Fizz
+97
+98
+Fizz
+Buzz
+```
+",triton-vllm-awq
+195,8.799220740998862,Implement a function to reverse a singly linked list.,"Implement a function to reverse a singly linked list.
+
+
+class Node(object):
+    def __init__(self, value, next=None):
+        self.value = value
+        self.next = next
+
+
+def reverse(head):
+    if head is None or head.next is None:
+        return head
+    else:
+        next = head.next
+        head.next = None
+        rest = reverse(next)
+        next.next = head
+        return rest
+
+
+def test_reverse():
+    n1 = Node(1)
+    n2 = Node(2)
+    n3 = Node(3)
+    n4 = Node(4)
+    n1.next = n2
+    n2.next = n3
+    n3.next = n4
+    assert reverse(n1).value == 4
+",triton-vllm-awq
+531,25.02923203499813,"Given an unsorted array of integers, find the length of the longest increasing subsequence.","Given an unsorted array of integers, find the length of the longest increasing subsequence.
+
+For example,
+Given [10, 9, 2, 5, 3, 7, 101, 18],
+The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.
+
+Your algorithm should run in O(n2) complexity.
+
+Follow up: Could you improve it to O(n log n) time complexity?
+
+Credits:
+Special thanks to @pbrother for adding this problem and creating all test cases.
+
+# https://leetcode.com/discuss/48952/o-n-2-c-solution-with-explanation
+# https://leetcode.com/discuss/49025/o-n-2-python-solution
+# https://leetcode.com/discuss/48961/o-n-2-solution-in-java
+
+# https://leetcode.com/discuss/48952/o-n-2-c-solution-with-explanation
+# https://leetcode.com/discuss/49025/o-n-2-python-solution
+# https://leetcode.com/discuss/48961/o-n-2-solution-in-java
+
+# https://leetcode.com/discuss/48952/o-n-2-c-solution-with-explanation
+# https://leetcode.com/discuss/49025/o-n-2-python-solution
+# https://leetcode.com/discuss/48961/o-n-2-solution-in-java
+
+# https://leetcode.com/discuss/48952/o-n-2-c-solution-with-explanation
+# https://leetcode.com/discuss/49025/o-n-2-python-solution
+# https://leetcode.com/discuss/48",triton-vllm-awq
+529,25.035809242996038,"Given a sequence of matrices, find the most efficient way to multiply these matrices.","Given a sequence of matrices, find the most efficient way to multiply these matrices. The efficient way is defined as the one with the least number of scalar multiplications.
+
+Example 1:
+
+Input: [[1,2],[3,4]]
+Output: 2
+Explanation: The optimal way to multiply these matrices is : (1*3)+(2*4) => 7 
+Example 2:
+
+Input: [[1,2,3],[4,5,6],[7,8,9]]
+Output: 13
+Note:
+
+The length of the given array will be in the range [1, 10].
+Each element of the given array will be a matrix of size 10 x 10.
+""""""
+
+# 2018-9-2
+# https://leetcode.com/problems/matrix-chain-multiplication/discuss/32721/Bottom-up-O(n2)-solution-in-6-lines-with-explanation
+# https://www.cnblogs.com/grandyang/p/4175592.html
+# dp[i][j]表示矩阵Ai到Aj的最少乘法次数，状态转移方程为：
+# dp[i][j] = min(dp[i][j], dp[i][k] + dp[k + 1][j] + cost[i][k] * cost[k + 1][j])
+# cost[i][j]表示矩阵Ai和Aj的相乘的代价，即矩阵Ai和Aj的大小的乘积。
+class Solution:
+    def matrixChainOrder(self, p):
+        """"""
+        :type p: List[int]
+        :rtype: int
+        """"""
+        lens = len(p)
+        dp = [[0 for _ in range(lens)] for _ in range(lens)]
+        cost = [[0 for _ in range(lens)] for _ in range(lens)]
+
+        for i in range(lens):
+            cost[i][i] = 0
+            dp[i][i",triton-vllm-awq
+235,10.523377043005894,"Given a binary search tree, write a function to find the Kth smallest element.","Given a binary search tree, write a function to find the Kth smallest element.
+
+Example :
+
+Input : 
+  2
+ / \
+1   3
+
+and K = 2
+
+Return : 2
+
+As 2 is the second smallest element in the tree.
+ NOTE : You may assume 1 <= K <= Total number of nodes in BST
+
+Solved by recursion.
+
+class Solution:
+    # @param A : root node of tree
+    # @param B : integer
+    # @return an integer
+    def kthsmallest(self, A, B):
+        self.k = B
+        self.ans = -1
+        self.helper(A)
+        return self.ans
+
+    def helper(self, root):
+        if root == None:
+            return
+        self.helper(root.left)
+        self.k -= 1
+        if self.k == 0:
+            self.ans = root.data
+            return
+        self.helper(root.right)
+",triton-vllm-awq
+497,23.114085384993814,"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.","Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+const int MAXN = 100001;
+
+struct node
+{
+	int to, cost;
+};
+
+vector<node> graph[MAXN];
+int dist[MAXN];
+bool visited[MAXN];
+
+void dijkstra(int start)
+{
+	priority_queue<pair<int, int> > pq;
+	pq.push(make_pair(0, start));
+	dist[start] = 0;
+	while (!pq.empty())
+	{
+		int u = pq.top().second;
+		pq.pop();
+		if (visited[u]) continue;
+		visited[u] = true;
+		for (int i = 0; i < graph[u].size(); i++)
+		{
+			int v = graph[u][i].to;
+			int cost = graph[u][i].cost;
+			if (dist[v] > dist[u] + cost)
+			{
+				dist[v] = dist[u] + cost;
+				pq.push(make_pair(-dist[v], v));
+			}
+		}
+	}
+}
+
+int main()
+{
+	int n, m, s, t;
+	scanf(""%d %d %d %d"", &n, &m, &s, &t);
+	for (int i = 0; i < m; i++)
+	{
+		int u, v, w;
+		scanf(""%d %d %d"", &u, &v, &w);
+		graph[u].push_back(node{v, w});
+		graph[v].push_back(node{u, w});
+	}
+	dijkstra(s);
+	printf(""%d\n"", dist[t]);
+	return 0;
+}
+",triton-vllm-awq
