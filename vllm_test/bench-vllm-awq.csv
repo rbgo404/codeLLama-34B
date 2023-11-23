@@ -1,5 +1,5 @@
 question,note,tok_count,time,answer
-def factorial(int n):,vLLM,304,8.01357047300553,"
+def factorial(int n):,vLLM,304,8.010064756002976,"
     if (n <= 1):
         return 1
     else:
@@ -37,279 +37,220 @@ def main():
     syslog.closelog()
 
 "
-"Write a Python program that prints ""Hello, World!"" to the console.",vLLM,14,0.3724665750050917,"
-""""""
+def factorial(int n):,vLLM,205,5.390323183994042,"
+    '''
+    Computes the factorial of a given positive integer.
 
-print(""Hello, World!"")
+    :param n: Integer to find factorial of
+    :type n: int
+    :return: Factorial of n
+    :rtype: int
+    :except TypeError: n is not an integer
+    '''
+
+    if isinstance(n, int):
+        if n < 0:
+            raise ValueError(f'abs({n}) != n')
+
+        return n if n == 0 else n * factorial(n - 1)
+
+    elif isinstance(n, float):
+        raise TypeError(f'{n} is not an integer')
+
+    else:
+        raise TypeError(f'{n} is not a number')
+
+
+data = [factorial(x) for x in range(101) if x > 1 and x % 20 == 0]
 "
-Write a function that takes two parameters and returns their sum.,vLLM,327,8.639335190993734," Call the function with two numbers that have a total over 100. Put the call to the function in an if statement and display an alert message that says ""The sum of these two numbers is over 100!""
-Write a function that takes one parameter and returns its square. Call the function with a number such that the result of the function is over 500. Chain the function call with a call to Math.round to round the result to the nearest whole number. Put the call to the function into an if statement and display an alert message that says ""The result of the function, when rounded to the nearest whole number, is over 500!""
-The GetAPIKey function should check if the API key exists in local storage and return the found object.
-The CheckAPIKey function should take an object with an API key and store it in local storage. Then, this value should be assigned to the this.APIKey property of the APIKeyManager object. Return true if this value is set.
-The APIClass object contains an APIKeyManager object and a value that indicates if authorization is available via the specified API key.
-The SetValueOfMessage function should assign the value of the authorizeAPI property of the APIManager object to true. Return an object with the authorizeAPI property set to true.
-The other two functions should call the APIKeyManager's GetAPIKey and CheckAPIKey functions and assign their results to the this.key and this.token properties of the APIClass object.
-Return a string value to display."
-Write a function to calculate the factorial of a given number.,vLLM,282,7.454690454003867," 
-The factorial of a number is the product of all the 
-integers smaller than or equal to the number.
-For example 5! = 1*2*3*4*5 = 120.So the factorial of number 5 is 120.
-Input format
-The first line of input contains an integer t.
-This is the number of test cases.
-For each test case the input will be an integer n. (n ≤ 100)
-Please don't use ',' in your code. Read the input and print output
-separately.
-Output format
-The first line output will contain the factorial of given input.
-Constraints
-1 <= n <= 100
-Sample input
-3
-25
-20
-5
-Sample output
-15511210043330985984000000
-2432902008176640000
-120
-'''
+"Write a Python program that prints ""Hello, World!"" to the console.",vLLM,512,13.60268231201917,"
+Chef has prepared an integer array A of size N. When he sums up all the elements of the array, he finds it exceedingly heavy. Chef finds a way to reduce the number of digits in the number by removing 0s from the number. Help chef in finding minimum number of 0s that need to be removed from the number so that the number of digits are reduced.Chef is afraid that this activity may turn into another boring task, so he is in hurry to get the result as soon as possible. Your task is to help chef by completing the activity in less time. Your task is to help chef by completing the activity in less time.
+Write a Python program to find number of 0s at the end of a given integer.
+Individually printing the elements of a Union of two sets.
+Write a Python program to check if a given list contains a majority element(More than half ).
+Write a python program to count the occurences of each word in a given string.
+Given an array A consisting of N integers , write a python program to construct another array B whose elements are the products of the adjacent elements in A. That means, B[i] = A[i+1] X A [i] (with a caveat, i+1 < N) and B[N-1] = A[0] X A[N-1]. Print all this elements in an array.
+Write a python program to find the day of the week.
+Write a Python program to check if multiple list values and print it.
+Write a python program to check if an element appears more than n times in a list.
+Write a python program to count duplicate values in a list.
+Write a program to print common elements of three lists in Python, but the elements should not be repeated.
+Write a python program to find the max and product of the maximum and minimum of A/B.
+Write a python program to find the sum of first and last element of a list.
+Write a Python function to check if a given number has exact three divisors.
+Write a Python program to replace all copies of a number in a string with its corresponding position number.
+Q - What is the result of the below program ?
+Q.1 What is the result of the below program ?
+Q. 2 Write a python program to replace all multiple space with single space in a given string.
+Q."
+Write a function that takes two parameters and returns their sum.,vLLM,32,0.8455881520058028," Submit the function you wrote. Note, the design must have two parameters.
+MyComment: Ignores the second argument and always returns the first."
+Write a function to calculate the factorial of a given number.,vLLM,81,2.1360130780085456," Then start calculating factorial of every natural number from 1 till n.
+Input: n is an integer.
+Output: Factorial of every natural number from 1 till n.
+Previous:Java program to Calculate Pythagorean Triple using Euclid Form.
+Next:How to write a method that prints the sum of the digits of its argument."
+Write a function to determine if a given string is a palindrome.,vLLM,112,2.95590098501998,"
 
-t=int(input())
-for t in range(t):
-    n=int(input())
-    f=1
-    for i in range(1,n+1):
-        f*=i
-    print (f)"
-Write a function to determine if a given string is a palindrome.,vLLM,28,0.7431394489831291, It’s case sensitive and note trailing white space. i.e. “ab_ab” is not a palindrome.
-"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""",vLLM,176,4.734750037983758," (These are easier to find by searching for FizzBuzz on the Internet than by attempting to program them.)
+I've actually used this post for an interview question before. The interviewer was in fact the developer of the site HackerRank, so I'll give it to them.
 
-class FizBuzz():
-    def run(cls):
-        for n in range(1, 101):
-            print cls.solve(n)
+src=""https://gist.github.com/tandogula/f9ec509e8c62b4d748f9f357e55a9e1f.js""></scriptBut in any case, the implementation in Python is below. Complicated or not?"
+"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""",vLLM,1,0.10361103698960505,
+Implement a function to reverse a singly linked list.,vLLM,92,2.431324743985897,"
 
-    def solve(cls, n):
-        base = n
-        if (n % 3 == 0):
-            n = 'Fizz'
-        if (n % 5 == 0):
-            if type(n) is int:
-                n = 'Buzz'
-            else:
-                n += 'Buzz'
-        if (type(n) is not int):
-            return n
-        else:
-            return base
+Head could be null - empty list.
 
-FizBuzz.run()
+NOTE: C++: `ListNode` is defined as singly-linked list.
+e.g.
+
+
+ 1->2->3->4->5->NULL
+
+should become
+
+ 5->4->3->2->1->NULL.
+
+
+Your runtime beats 95.09 % of python submissions.
 "
-Implement a function to reverse a singly linked list.,vLLM,385,10.232364925992442,"
-
-Click to show more hints.
-
-Here are some hints:
-
-A linked list can be reversed one node at a time. Think about the logic in the
-#448 Given a singly linked list, group all odd nodes together followed by
-the even nodes.
-
-Input: 1->2->3->4->5->NULL
-
-Output: 1->3->5->2->4->NULL
-
-
-Then:
-1->2->3->4->NULL
-
-1: remove: 2->3->4->NULL, append to end of reversed list, reassign head:
-
-2->3->4->NULL, NULL
-
-2: remove: 3->4->NULL, append to end of reversed list, reassign head:
-
-NULL, 3->2->4->NULL
-
-3: remove: 4->NULL, append to end of reversed list, reassign head:
-
-4->NULL, 2->3->4->NULL
-
-4: remove: NULL, append to end of reversed list, reassign head:
-
-NULL, 4->2->3->NULL
-
-'''
-
-
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-
-class Solution:
-    def reverse(self, x: ListNode) -> ListNode:
-        if x is None:
-            return None
-
-        prev = None
-        cur = x
-        nx = x.next
-        while nx is not None:
-            cur.next = prev
-            prev = cur
-            cur = nx
-            nx = nx.next
-        cur.next = prev
-        return cur"
-"Given an unsorted array of integers, find the length of the longest increasing subsequence.",vLLM,512,13.680504041985841,"
+"Given an unsorted array of integers, find the length of the longest increasing subsequence.",vLLM,398,10.600059612013865,"
 
 Example:
 
 Input: [10,9,2,5,3,7,101,18]
 Output: 4 
-Explanation: The longest increasing subsequence is [2,3,7,101] , therefore the length is 4. 
+Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. 
 
 Note:
 There may be more than one LIS combination, it is only necessary for you to return the length.
 Your algorithm should run in O(n2) complexity.
-Follow up: Could you improve it to O(n log n) time complexity?
 
-
-Solution:
-1. DP
-这题一看就很像 DP，因为这里我们求的就是从 i 结尾的最长递增子序列的长度。直接定义一个DP数组 dp[i] 表示以 i 结尾的最长递增子序列的长度，那么如果我们求出了 dp[i] 都等于多少，那么我们只需要求相应的最大值就可以了。
-
-状态转移方程就是
-dp[i] = max(dp[i], dp[m] + 1), m < i and nums[m] < nums[i]
-这里 m 的取值就是 nums[m] < nums[i] 中的最大值
-
-状态转移方程也可以改成
-dp[i] = max(dp[i], dp[j] + 1), 0 < j < i and nums[j] < nums[i]
-
-
-2. Binary Search
-
-
-下面解法中, 初始化 dp[i] = idx[nums[i]] + 1，其中 idx[nums[i]] 代表 nums[i] 所在的数组中的下标，idx 的定义为 idx[nums[i]] = i，idx[nums[i-1]] = i，只要当前 nums[i] 的值比之前的 nums[i-1] 的值大，则 idx 数组就会再"
-"Given a sequence of matrices, find the most efficient way to multiply these matrices.",vLLM,346,9.223125938005978,"
-The problem is not actually to perform the multiplications, but merely to decide in which order to perform the multiplications.
-https://leetcode.com/problems/optimal-division/
-
-Solusion:
-[1] Divide and Conquer
-	- similar to mergesort D&C
-	- min 1 division and max of 2 multiplication
-	- keep finding min division until there is less than 2 matrices left
-[2] DP O(N^3)
-	- enumerate each place for the division and check the number of division when there is i matrices left
+Follow up: Could you improve it to O(n log n) time complexity? 
 """"""
 
+# 维护了一个dp数组, 代表以当前数字为结尾的时候的最长序列
+# 循环再给nums中的所有数字计算一遍 
+# 当以i为结尾的序列+1能够组成更长的序列的时候，更新dp的值
+# 空间复杂度 O(n)， 时间复杂度 O(n^2), 总计入大O(n^2)
+
 class Solution(object):
-	def isValid(self, S):
-		cnt = 0
-		for c in S:
-			if c == '(':
-				cnt += 1
-			if c == ')':
-				cnt -= 1
-				if cnt < 0:
-					return False
-		
-		return cnt == 0
-	
-	def minAddToMakeValid(self, s):
-		ans = 0
-		stack = []
-		for c in s:
-			if c == '(':
-				stack += c,
-			if c == ')':
-				if not stack:
-					ans -= 1
-				else:
-					stack.pop()
-		return ans + len(stack)
-"
-"Given a binary search tree, write a function to find the Kth smallest element.",vLLM,267,7.1175806270039175,"
+    def lengthOfLIS(self, nums):
+        """"""
+        :type nums: List[int]
+        :rtype: int
+        """"""
+        n = len(nums)
+        dp = [1 for i in range(n)]
+        for i in range(n):
+            for j in range(i):
+                if nums[j] <= nums[i]:
+                    dp[i] = max(dp[i], dp[j] + 1)
 
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+        return max(dp)"
+"Given a sequence of matrices, find the most efficient way to multiply these matrices.",vLLM,512,13.691879736987175," [...]
 
-class Solution:
-    # @param {TreeNode} root
-    # @param {integer} k
-    # @return {integer}
-    def kthSmallest(self, root, k):
-        if not root:
-            return -1 
-        
-        stack = []
-        stack.append(root)
-        curr = root
-        
-        while curr:
-            stack.append(curr)
-            curr = curr.left 
-        
-        count = 0
-        result = -1 
-        if k > len(stack):
-            k = len(stack)
-        while stack:
-            node = stack.pop()
-            result = node.val
-            count += 1 
-            if count == k:
-                return result
-            if node.right:
-                curr = node.right 
-                while curr:
-                    stack.append(curr)
-                    curr = curr.left 
-        return result "
-"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.",vLLM,512,13.745715881988872,"
+Assume:
+\begin{itemize}
+\item All matrices are square.
+\item Matrices are of type AxB means Bx1 matrix can be multiplied with AxB matrix (think of height*width of the pixels in a video resolution of 960*720).
+\end{itemize}
 
-This time, though, I'd like to somehow be able to keep track of how many nodes the program has visited before finding the shortest path.
+In other words, to find the most efficient way to multiply a chain of matrices, we order the matrices and then multiply them one by one.
 
-I have implemented dijkstra's algorithm, the resulting shortest path is in order from the edges with the smallest weight, but now I'd like to maintain an order.  So if vertex A is connected to C with a weight of 0.5, B connects to C with a weight of 10, A connects to B with a weight of 4, A connect to E with a weight or 1, and E connects to B with a weight of 2, the path would be A, E, B, C (a weight of 3.5).  Now I'd like to keep track of how many vertices it visited before getting to that path.  In terms of the alphabet, it would have to visit 4 vertices before finding the shortest path unlike BFS, A*, etc. where we can somehow keep track of how many vertices it has visited.
+For example:
 
-Thus to conclude, I'm trying to find how many vertices we've visited \strong{before getting the shortest path.}
+chain: BxA CxB DxC ExD -> most efficient arrangement is (BxA)^{0} (CxB)^{1} (DxC)^{2} (ExD)^{3}
+chain: BxA CxB DxC AxD -> most efficient arrangement is (BxA)^{1} (CxB)^{2} (DxC)^{3} (AxD)^{0}
 
-\begin{code}
+The most efficient way to multiply a chain of matrices might not be one of permutations of the chain. So that's why I'm asking this question. It's from [Stanford Open class](https://class.stanford.edu/MainCards.aspx?AspxAutoDetectCookieSupport=1). Below you'll see the hints, but please try it for yourself first.
+
+The following three problems are from [Stanford Prob-Log class](http://pl-edx.stanford.edu). If you use the answers, then you can use them only in this homework. The aim of this assignment is to try out some smarter way of finding the point 'r' than simply comparing 1000 of random points. You can of course write a script that would do it for you, but remember that it should take much less time than 1 second.
+
+Two discovers have found traces of intelligent life on a distant planet. [Problem 1](http://pl-edx.stanford.edu/img/hw1/problem1.pdf) - A and B represent their hypotheses about where the life might be. At the top right matrix you can see their common background of knowledge. Idea of this problem is to find least error valid hypothesis. In other words, you should find a point, where optimal given probabilities of surviving combinations. In other words, the point"
+"Given a binary search tree, write a function to find the Kth smallest element.",vLLM,223,5.960499521985184,"
+
+Specifically, the function accepts the root of the BST and a value K as inputs, and returns the Kth smallest value.
+
+It is guaranteed that the tree has at least K nodes.
+
+You may assume that all elements in the BST are distinct.
+
+ 
+
+Example 1:
+
+Input: root = [3,1,4,null,2], K = 1
+   3
+  / \
+ 1   4
+  \
+   2
+Output: 1
+
+Example 2:
+
+Input: root = [5,3,6,2,4,null,null,1], K = 3
+       5
+      / \
+     3   6
+    / \
+   2   4
+  /   
+ 1
+Output: 3
+
+Follow up:
+What if the BST is modified (insert / delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?"
+"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.",vLLM,512,13.795186462986749,"
+Facebook Hacker Cup
+Complete in 3 hours
+
+http://www.hackerrank.com/contests/hacker-cup/challenges/shortest-path-tricky
+
+Review of graph theory inхов, in затем
+http://web.cecs.pdx.edu/~lorado/Courses/IntroToGraphs.pdf
+""""""
+
+import os
 import heapq
-from collections import defaultdict
+import io_functions as io
 
-class Graph:
-    def __init__(self):
-        self.graph = defaultdict(lambda: defaultdict(lambda: float(""inf""))) # creates nested defaultdict
 
-    def returnEdges(self, vertex):
-        return self.graph[vertex]
+directions = 4
+S, N, W, E = range(directions)
+inf = float(""inf"")
 
-    def edgeCondensed(self):
-        condensed = []
-        for i in self.graph:
-            for child in self.graph[i].items():
-                if (child[0], i, child[1]) not in condensed and child[1] != float(""inf""):
-                    condensed.append((i, child[0], child[1]))
-        return condensed
 
-    def dijkstra(self, start):
-        graph = self.graph
-        D = {}
-        P = {}
-        Q = []
-        nodes = set(self.graph.keys())
+def shortest_path_lengths(start, graph):
+    """"""
+    Calculate shortest path lengths from start
 
-        for v in nodes:
-            D.setdefault(v, float(""inf""))
-            P.setdefault(v, None)
-            Q.append((D[v], v))
-"
+    Args:
+        start: the node to start from
+        graph:
+
+    Returns:
+        Array of distances from start to each node
+
+    Theory:
+        Create a priority queue ordered by distances and choose the lowest.
+        For each item in the priority queue:
+            Calculate edges from the current node, DECREASING BY SETTING MAXIMUMS.
+            This will cut off paths that can't possibly beat the existing distance.
+            For example, if you've already found a distance of 4 for one node, don't
+            bother considering paths that will start or end at that node with a larger
+            weight.
+            For each edge:
+                Calculate path length for this edge
+                The path is start to end and new nodes are ones that are present in this edge
+                (we've undirected the edge).
+                Initialize the path length for the new node by adding the calculated edge path length.
+                Based on the previously undirected edge, set the maximum weight for the existing
+                node. The max weight needs to be lower to represent the highest better path.
+                For example, if this edge was 3 (1->2) but the path of 3 through nodes 3 to
+                this point is 6 (1->2->3->4), this new path is better and the maximum value for
+                node 4 needs to be lower to represent that better path.
+            After calculating all edge weights, add the path weights to the priority queue.
+
+    Examples:
+    >>> shortest_path_lengths(0, {0:[(1"
