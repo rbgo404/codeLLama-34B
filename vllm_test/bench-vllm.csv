@@ -1,0 +1,264 @@
+question,note,tok_count,time,answer
+def factorial(int n):,vLLM,129,5.9924027520173695,"
+    if (n <= 1):
+        return 1
+    else:
+        return n*factorial(n-1)
+
+def isPalindrome(str word):
+    return word == word[::-1]
+
+
+int n
+n = 100
+gauss int sum
+sum = 0
+while n < 1000 :
+    if isPalindrome(n) and isPalindrome(factorial(n).toString()) :
+        sum = sum + n
+    n = n + 1
+print(sum)"
+"Write a Python program that prints ""Hello, World!"" to the console.",vLLM,512,23.91316588499467," For extra credit, write it in a way so that we’re sure it will work a hundred years from now.
+Write a Python program that prints the next 20 leap years (enter year or if not, get current year as default).
+Write a Python program to print the even numbers from a given numbers list in the same order and stop the printing if any numbers is not an even number.
+Write a Python program to shuffle and print a specified list.
+Write a Python program to sum of all numerical values (positive integers) embedded in a sentence.
+Write a Python script to get all unique values in a dictionary.
+Write a Python script to display formatted text (width, alignment, background colors) in the shell.
+Write a Python script to get the degree difference between to coordinates.
+Write a Python script to converter for the Metric System.
+Write a Python script to find sequences of one upper case letter followed by lower case letters.
+Write a Python program to print the second largest number from a list.
+Write a Python program to check your age. If you aren't sure, ask someone.
+Write a Python program to display some information about the OS you are using.
+Write a program to print first n prime numbers.
+Write a program to compute the radius of a circle when you provide the area.
+Write a program to compute the circumference when you provide the area of a circumscribed circle.
+Write a program to perform all different types of mathematical operations.
+Write a Python program to perform an action if a condition is true.
+Write a Python program which will accept the radius of a circle from the user and compute the area.
+Write a Python program which will accept the radius of a sphere from the user and compute the volume.
+Write a Python Program which will accept the user's age in years, months, days from the user and tells him how many days, months, years he has left to live.
+Write a Python Program to add two numbers provided by the user.
+Write a Python program to add two numbers using the text based input method.
+Write a program to add to numbers.
+Write a Python program to create an area calculator that calculates the three types of area.
+Write a Python program to compute the weight on the moon. (Given a planet, a gravity, and a mass).
+Write a Python program to convert age to days.
+Write a Python program to convert an"
+Write a function that takes two parameters and returns their sum.,vLLM,512,23.9107421960216,"
+Assign the function to a variable called add.
+Call add with 1 and 2 as arguments.
+Use multiple assignment to assign sisterNames.
+Write a function named total that takes an array as a parameter.
+Inside total, use array.reduce() to find the total of all the numbers in the array.
+Use .filter() to filter out all the odd numbers.
+Assign the function result to a variable with the name oddNumbersSum.
+Write a function named oddProduct that takes an array as a parameter and returns the product of all the odd numbers in the array.
+Assign the function result to a variable with the name oddProductResult.
+Note
+You could write this in a single line: oddProductResult = oddNumbers.reduce((a, b) => a * b);.
+Write a function named evenOdd that takes an array as a parameter and returns the sum of all even numbers and the product of all odd numbers.
+Array.prototype.reduce()
+JavaScript's built-in regular expression engine mixed with Arrow Functions make simple String transformations a lot of fun.
+Given an integer, return a string containing the word THAT and every digit of the integer, except the digit at position 3.
+These substitutes don't need to be in uppercase characters, but you should keep the THAT all uppercase.
+Examples
+that(45678) ➞ ""THAT 4568""
+
+that(555555) ➞ ""THAT 55555""
+thats(23) ➞ ""THATS 2""
+Notes
+For replacing multiple characters, use RegExp and template literals in the callback of replace.
+We're open to seeing design patterns other than .replace() too.
+
+*/
+
+function that(num) {
+  return ""THAT "" + num.toString().replace(/(\d)(?!\?)\d*/g, ""$1"");
+}
+
+/*
+Write a function that returns an array of the lowest elements in a matrix. 
+Lowest elements are numbers that are smaller than any number in the row below it.
+An easy way of thinking about the matrix is that numbers can only be ""dropped"", not ""moved"".
+
+You can imagine the coefficient matrix of"
+Write a function to calculate the factorial of a given number.,vLLM,63,2.921663790999446,"
+***
+def fact(n):
+	if n == 1:
+		return 1
+	return n*fact(n-1)
+
+print(fact(0))
+print(fact(1))
+print(fact(5))
+print(fact(7))"
+Write a function to determine if a given string is a palindrome.,vLLM,240,11.159370526002022," A palindrome is a string that reads the same forward as backward.
+
+1. Determine if the: string is one of the 4 interactions allowed with strings - ""strin"", ""TrStR"" with ""deed"", ""main/stain"", ""Madam I’m Adam"" are good.
+
+2. If it is, call the reverse_str function developed in questions 12-13 of last time to fix the string and send it into Q1, matching palindromes.
+
+3. Double check if palindromes is in word_list.txt, if it is, add them to a list called with_palindromes.
+
+4. Remember to call your current lists of answers - withour_palindromes, with_palindromes, answers and global palindromes_set, then update the other two in the reverse.
+
+Output:
+Check if given strings are palindromes and if a palindrome is also a word; print [palindrome] or [not a palindrome] for each input.
+"
+"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""",vLLM,114,5.307367784989765," (These are the numbers the players have to count when they play ""FizzBuzz."")
+
+```py
+
+for i in range(1, 101):
+  if i % 3==0 and i % 5==0:
+    print(""FizzBuzz"")
+  elif i % 3==0:
+    print(""Fizz"")
+  elif i % 5==0:
+    print(""Buzz"")
+  else:
+    print(i)
+  
+```
+"
+Implement a function to reverse a singly linked list.,vLLM,82,3.8045691440056544,"
+
+For example:
+```
+When the list is [1,2,3,4] this function returns [4,3,2,1]
+```
+
+*Thanks toHackerRank `challenges` for the problems `Reverse a singly linked list` for `data-structures/linked-lists` topic for `beginner`.*
+"
+"Given an unsorted array of integers, find the length of the longest increasing subsequence.",vLLM,185,8.600959520001197,"
+
+#Note:
+Either of the following solutions are balckboxy free.
+
+##A Dynamic Programming based solution
+```algorithm
+dp[j] = max{1, dp[i]+1}; where 0 <= i < j and nums[i] < nums[j]
+```
+
+##A Greedy based solution
+
+```algorithm
+1. Let's assume the LIS ends at index n with the previous element x.
+2. Find the next best element (x+i) with maximum value as possible. where 0 <= i < n and nums[i] > x.
+3. Let x = nums[i] and n = i and go to step 1.
+```
+
+#Credits
+Special thanks to @pbrother for adding this problem and creating all test cases.
+"
+"Given a sequence of matrices, find the most efficient way to multiply these matrices.",vLLM,512,23.944177527999273," In other words, determine where to position parentheses so that the cost of multiplying the matrices is minimized.
+Note: You can assume that the input is well formed.
+For example, if you are given the following sequence of matrices:
+A0 × A1 × A2 × A3
+
+You can write the above product as
+( (A0 × A1) × (A2 × A3) )
+
+Or you can write it as
+( (A0 × A1) × (A2 × A3) )
+
+Or you can write it as
+( A0 × (A1 × (A2 × A3) ) )
+
+Each of these parentheses placements can be evaluated to provide a cost as follows:
+
+((A0 × A1) × (A2 × A3)) = (2 x 3) x (3 x 4) = 24
+((A0 × A1) × (A2 × A3)) = ((2 x 3) × 3) × 4 = 28
+(A0 × (A1 × (A2 × A3))) = (2 × (3 × (3 × 4))) = 48
+You should return 28, as it is the smallest of the three costs.
+
+C++
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int MatrixChainOrder(vector<int> &dims, int i, int j)
+{
+int n = j - i + 1;
+if(n == 1)
+	return 0;
+
+int min_val = INT_MAX;
+
+for(int k = i + 1; k <= j; k++)
+{
+int val = MatrixChainOrder(dims, i, k);
+val += MatrixChainOrder(dims, k + 1,j);
+val += dims[i] * dims[k] * dims[j + 1];
+
+min_val = min(min_val, val);
+}
+return min_val;
+}
+
+int main(int argc, char** argv) {
+
+vector<int> dims; //(2, 3) Matrices of dimensions 2x3, 3x6, 6x4, 4x5"
+"Given a binary search tree, write a function to find the Kth smallest element.",vLLM,283,13.188542687974405,"
+Define k as smallest.
+not sure why root.left is everything smaller than the root. How is the root the largest element? I'm not a CS student, but from my understanding of BSTs, the root is the median and each child is either everything smaller than root or everything larger than root.
+If you are iterating through the inorder traversal of the subtree with root Node (also a BST), how can left (or right) contain any elements greater or lesser than root?
+It must always be the left of tree which is smaller since it is a BST i.e. left <= root <= right.
+so root.left will always be smaller than root? even when the left is a subtree of elements greater than the root?
+so it's literally finding the kth largest element then in every branch of the tree, unless i'm missing something else? I'm trying to grasp this.
+There is no question about left.left / left.right here, because every node you visit is a root of a subtree.
+""How is this still counting towards K?""
+That's the recursive call. Each time you enter the second line (i.e. the first line of count function), the root on that level becomes the max_ with k decremented by 1."
+"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.",vLLM,512,23.969532226008596,"
+Input Specification :
+Line 1 : Two numbers (i.e. the first and last vertices)
+Line 2 : The maximum number of vertices present in the graph (i.e. Vmax)
+Line 3 : The first vertex from the first path
+Line 4: The second vertex from the first path, first weight.
+Line 5: The second vertex from the first path, second weight.
+Line 6: The second vertex from the first path, third weight.
+....
+N lines : The second vertex from the Mth path, Mth weight.
+Output Specification :
+Print the distance of the shortest path in the first line.
+Print the vertices of the path in the second line.
+The vertices should be printed with an space in between them and should be arranged according to order of them in the path (like in the output given below).
+Example 1 :
+Enter your code here. Read input from STDIN. Print output to STDOUT
+Input :
+0 2
+2
+0 1 4
+0 4 2
+2 1 3
+1 3 2
+3 4 1
+Output :
+3
+0 2 3 4
+
+#input v1 to v2
+#vertices upto 4
+v1,v2= map(int,input().split())
+N= int(input())
+graph = [[0 for _ in range(N)]for _ in range(N)]
+for i in range(N):
+    kk=list(map(int,input().split()))
+    for j in range(len(kk)-1):
+        jj=j+1
+        graph[i][kk[0]]=kk[jj]
+dist = [float('inf')]*(N)
+dist[v1] = 0
+que = []
+heapq.heappush(que,(0, v1))
+while que != []:
+    g= heapq.heappop(que)
+    if dist[g[1]] != g[0]:
+        continue
+    for i in range(1, N):
+        if dist[i] > graph[g[1]][i]+g[0]:
+            dist[i] = graph[g[1]][i] + g[0]
+"
