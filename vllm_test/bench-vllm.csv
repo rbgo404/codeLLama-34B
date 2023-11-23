@@ -1,0 +1,315 @@
+question,note,tok_count,time,answer
+def factorial(int n):,vLLM,304,8.01357047300553,"
+    if (n <= 1):
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+def gcd(int n, int m):
+    if (m == 0):
+        return n
+    else:
+        return gcd(m, n%m)
+
+def main():
+    syslog.openlog(""fact.py"", logoption.LOG_PID, logoption.LOG_LOCAL7)
+    
+    a = 3
+    b = 2
+    c = 4
+
+    sum = 0
+
+    for n in range(a + 1):
+        for m in range(n + 1):
+            sum += n * m
+
+    for m in range(a + 1):
+        for n in range(m + 1):
+            sum -= n * m
+
+    syslog.syslog(logmessage.format(""{0} - {1} = {2}"".format(a, b, a - b)))
+
+    syslog.syslog('SUM: %d' % sum)
+
+    b = 4
+    syslog.syslog(logmessage.format(""{0} / {1} = {2}"".format(a, b, a / b)))
+    syslog.closelog()
+
+"
+"Write a Python program that prints ""Hello, World!"" to the console.",vLLM,14,0.3724665750050917,"
+""""""
+
+print(""Hello, World!"")
+"
+Write a function that takes two parameters and returns their sum.,vLLM,327,8.639335190993734," Call the function with two numbers that have a total over 100. Put the call to the function in an if statement and display an alert message that says ""The sum of these two numbers is over 100!""
+Write a function that takes one parameter and returns its square. Call the function with a number such that the result of the function is over 500. Chain the function call with a call to Math.round to round the result to the nearest whole number. Put the call to the function into an if statement and display an alert message that says ""The result of the function, when rounded to the nearest whole number, is over 500!""
+The GetAPIKey function should check if the API key exists in local storage and return the found object.
+The CheckAPIKey function should take an object with an API key and store it in local storage. Then, this value should be assigned to the this.APIKey property of the APIKeyManager object. Return true if this value is set.
+The APIClass object contains an APIKeyManager object and a value that indicates if authorization is available via the specified API key.
+The SetValueOfMessage function should assign the value of the authorizeAPI property of the APIManager object to true. Return an object with the authorizeAPI property set to true.
+The other two functions should call the APIKeyManager's GetAPIKey and CheckAPIKey functions and assign their results to the this.key and this.token properties of the APIClass object.
+Return a string value to display."
+Write a function to calculate the factorial of a given number.,vLLM,282,7.454690454003867," 
+The factorial of a number is the product of all the 
+integers smaller than or equal to the number.
+For example 5! = 1*2*3*4*5 = 120.So the factorial of number 5 is 120.
+Input format
+The first line of input contains an integer t.
+This is the number of test cases.
+For each test case the input will be an integer n. (n ≤ 100)
+Please don't use ',' in your code. Read the input and print output
+separately.
+Output format
+The first line output will contain the factorial of given input.
+Constraints
+1 <= n <= 100
+Sample input
+3
+25
+20
+5
+Sample output
+15511210043330985984000000
+2432902008176640000
+120
+'''
+
+t=int(input())
+for t in range(t):
+    n=int(input())
+    f=1
+    for i in range(1,n+1):
+        f*=i
+    print (f)"
+Write a function to determine if a given string is a palindrome.,vLLM,28,0.7431394489831291, It’s case sensitive and note trailing white space. i.e. “ab_ab” is not a palindrome.
+"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""",vLLM,176,4.734750037983758," (These are easier to find by searching for FizzBuzz on the Internet than by attempting to program them.)
+
+class FizBuzz():
+    def run(cls):
+        for n in range(1, 101):
+            print cls.solve(n)
+
+    def solve(cls, n):
+        base = n
+        if (n % 3 == 0):
+            n = 'Fizz'
+        if (n % 5 == 0):
+            if type(n) is int:
+                n = 'Buzz'
+            else:
+                n += 'Buzz'
+        if (type(n) is not int):
+            return n
+        else:
+            return base
+
+FizBuzz.run()
+"
+Implement a function to reverse a singly linked list.,vLLM,385,10.232364925992442,"
+
+Click to show more hints.
+
+Here are some hints:
+
+A linked list can be reversed one node at a time. Think about the logic in the
+#448 Given a singly linked list, group all odd nodes together followed by
+the even nodes.
+
+Input: 1->2->3->4->5->NULL
+
+Output: 1->3->5->2->4->NULL
+
+
+Then:
+1->2->3->4->NULL
+
+1: remove: 2->3->4->NULL, append to end of reversed list, reassign head:
+
+2->3->4->NULL, NULL
+
+2: remove: 3->4->NULL, append to end of reversed list, reassign head:
+
+NULL, 3->2->4->NULL
+
+3: remove: 4->NULL, append to end of reversed list, reassign head:
+
+4->NULL, 2->3->4->NULL
+
+4: remove: NULL, append to end of reversed list, reassign head:
+
+NULL, 4->2->3->NULL
+
+'''
+
+
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
+class Solution:
+    def reverse(self, x: ListNode) -> ListNode:
+        if x is None:
+            return None
+
+        prev = None
+        cur = x
+        nx = x.next
+        while nx is not None:
+            cur.next = prev
+            prev = cur
+            cur = nx
+            nx = nx.next
+        cur.next = prev
+        return cur"
+"Given an unsorted array of integers, find the length of the longest increasing subsequence.",vLLM,512,13.680504041985841,"
+
+Example:
+
+Input: [10,9,2,5,3,7,101,18]
+Output: 4 
+Explanation: The longest increasing subsequence is [2,3,7,101] , therefore the length is 4. 
+
+Note:
+There may be more than one LIS combination, it is only necessary for you to return the length.
+Your algorithm should run in O(n2) complexity.
+Follow up: Could you improve it to O(n log n) time complexity?
+
+
+Solution:
+1. DP
+这题一看就很像 DP，因为这里我们求的就是从 i 结尾的最长递增子序列的长度。直接定义一个DP数组 dp[i] 表示以 i 结尾的最长递增子序列的长度，那么如果我们求出了 dp[i] 都等于多少，那么我们只需要求相应的最大值就可以了。
+
+状态转移方程就是
+dp[i] = max(dp[i], dp[m] + 1), m < i and nums[m] < nums[i]
+这里 m 的取值就是 nums[m] < nums[i] 中的最大值
+
+状态转移方程也可以改成
+dp[i] = max(dp[i], dp[j] + 1), 0 < j < i and nums[j] < nums[i]
+
+
+2. Binary Search
+
+
+下面解法中, 初始化 dp[i] = idx[nums[i]] + 1，其中 idx[nums[i]] 代表 nums[i] 所在的数组中的下标，idx 的定义为 idx[nums[i]] = i，idx[nums[i-1]] = i，只要当前 nums[i] 的值比之前的 nums[i-1] 的值大，则 idx 数组就会再"
+"Given a sequence of matrices, find the most efficient way to multiply these matrices.",vLLM,346,9.223125938005978,"
+The problem is not actually to perform the multiplications, but merely to decide in which order to perform the multiplications.
+https://leetcode.com/problems/optimal-division/
+
+Solusion:
+[1] Divide and Conquer
+	- similar to mergesort D&C
+	- min 1 division and max of 2 multiplication
+	- keep finding min division until there is less than 2 matrices left
+[2] DP O(N^3)
+	- enumerate each place for the division and check the number of division when there is i matrices left
+""""""
+
+class Solution(object):
+	def isValid(self, S):
+		cnt = 0
+		for c in S:
+			if c == '(':
+				cnt += 1
+			if c == ')':
+				cnt -= 1
+				if cnt < 0:
+					return False
+		
+		return cnt == 0
+	
+	def minAddToMakeValid(self, s):
+		ans = 0
+		stack = []
+		for c in s:
+			if c == '(':
+				stack += c,
+			if c == ')':
+				if not stack:
+					ans -= 1
+				else:
+					stack.pop()
+		return ans + len(stack)
+"
+"Given a binary search tree, write a function to find the Kth smallest element.",vLLM,267,7.1175806270039175,"
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    # @param {TreeNode} root
+    # @param {integer} k
+    # @return {integer}
+    def kthSmallest(self, root, k):
+        if not root:
+            return -1 
+        
+        stack = []
+        stack.append(root)
+        curr = root
+        
+        while curr:
+            stack.append(curr)
+            curr = curr.left 
+        
+        count = 0
+        result = -1 
+        if k > len(stack):
+            k = len(stack)
+        while stack:
+            node = stack.pop()
+            result = node.val
+            count += 1 
+            if count == k:
+                return result
+            if node.right:
+                curr = node.right 
+                while curr:
+                    stack.append(curr)
+                    curr = curr.left 
+        return result "
+"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.",vLLM,512,13.745715881988872,"
+
+This time, though, I'd like to somehow be able to keep track of how many nodes the program has visited before finding the shortest path.
+
+I have implemented dijkstra's algorithm, the resulting shortest path is in order from the edges with the smallest weight, but now I'd like to maintain an order.  So if vertex A is connected to C with a weight of 0.5, B connects to C with a weight of 10, A connects to B with a weight of 4, A connect to E with a weight or 1, and E connects to B with a weight of 2, the path would be A, E, B, C (a weight of 3.5).  Now I'd like to keep track of how many vertices it visited before getting to that path.  In terms of the alphabet, it would have to visit 4 vertices before finding the shortest path unlike BFS, A*, etc. where we can somehow keep track of how many vertices it has visited.
+
+Thus to conclude, I'm trying to find how many vertices we've visited \strong{before getting the shortest path.}
+
+\begin{code}
+import heapq
+from collections import defaultdict
+
+class Graph:
+    def __init__(self):
+        self.graph = defaultdict(lambda: defaultdict(lambda: float(""inf""))) # creates nested defaultdict
+
+    def returnEdges(self, vertex):
+        return self.graph[vertex]
+
+    def edgeCondensed(self):
+        condensed = []
+        for i in self.graph:
+            for child in self.graph[i].items():
+                if (child[0], i, child[1]) not in condensed and child[1] != float(""inf""):
+                    condensed.append((i, child[0], child[1]))
+        return condensed
+
+    def dijkstra(self, start):
+        graph = self.graph
+        D = {}
+        P = {}
+        Q = []
+        nodes = set(self.graph.keys())
+
+        for v in nodes:
+            D.setdefault(v, float(""inf""))
+            P.setdefault(v, None)
+            Q.append((D[v], v))
+"
