@@ -1,0 +1,226 @@
+question,note,tok_count,time,answer
+def factorial(int n):,vLLM,204,3.36431547900429,"
+    if (n <= 1):
+        return 1
+    else:
+        return n*factorial(n-1)
+
+def isPalindrome(str word):
+    return word == word[::-1]
+
+cdef double TrapezoidalRule(double a, double b, double n, object f):
+    cdef int i
+    cdef double h = (b-a) / n
+    cdef double S = 0.5 * (f(a) + f(b))
+    for i in (a+ h*i) range(1, n):
+        S = S + f(a+h*i)
+    return h*S
+
+cpdef Irule(int N, int L):
+    cpython.list_longiterator L
+
+cdef Irule2(int N, int L):
+    cpython.list_longiterator L
+"
+"Write a Python program that prints ""Hello, World!"" to the console.",vLLM,22,0.4151304030092433,"
+
+
+### Python code:
+```
+print (""Hello, World!"")
+```
+"
+Write a function that takes two parameters and returns their sum.,vLLM,512,8.521367447974626," Das einzige was mich nervte so:"" mySprite.
+Die Taste Taste Numeral key Caps Lock Caps Lock Tastatur. Viruses were present on grocery spending data prior bur forecasting accuracy.
+The movie was followed by a mild teaser reel that Dark Knights has reached its peak, culmination, climax or pinnacle. HotChip"" keygen"" elastic"" biler"" betty"" kufri"" time""boat"" patience"" clock"" speed"" scary""шленный"" meaning"" your"" spirit"" doubt"" encontrar"" shops"" beach"" agenda"" aunt"" status"" sight""јана"" barrow"" guinea"" love"" profit"" Honesty"" огромный"" church"" actress"" kite"" secret"" link"" earth"" flaw"" taste"" album"" time"" hair"" medal"" danger"" cool"" semester"" sharks. The intense frame of mind that they brought out on "" Taut I Need U (feat. Ihar Havrylieu - I Want U 2 Hard feat.
+Jul 24, · View customer comments on Essentials by United. The comparison table includes platform, product description, product details and pricing comparison.spielen ihn dein ltes Brock this video.
+The key ingredient in this Krieg der Welten (Battle for the Galaxy in the US) campaign is a board featuring galactic. Cantante Originario: Dee Leilani; Descrizione: Featuring the hit:.
+Nata po' a 18 anni nel status di lavoro non abile, ai tempi della prima guerra mondiale era troppo giovane per lavorare pienamente nelle industrie britanniche connesse al prolungamento della guerra a terra. 6 in Fine Tuning Stringed Instrument Knock on Wood knock out of jeans rocking chair rat pack lumber sale toledo real sand wedges yupoong katolass rs 96 kolaba bur. Faraon is a morbidly obese human monster creatively aged to appear a 35 year old high caste Egyptian Nobles' servant.
+The City Vagabond (Civilization IV) i need U (edit) Created by DJ Khalil. True selling fact: more of the drop that lands"
+Write a function to calculate the factorial of a given number.,vLLM,184,3.056071389000863,"
+5! = 5 * 4 * 3 * 2 * 1! 5! = 120
+
+Recurssion
+
+N * factorial(N – 1)
+N < 1 then return 1
+1! is 1
+Example:
+5! = 5 * 4!
+4! = 4 * 3!
+3! = 3 * 2!
+2! = 2 * 1!
+1! = 1
+5! = 120
+
+'''
+
+def factorial(N):
+    if (N < 1): return 1
+    return N * factorial(N - 1)
+
+for x in range(20):
+    print(f""{x}! = {factorial(x)}"")  
+"
+Write a function to determine if a given string is a palindrome.,vLLM,512,8.53040902101202," 
+A palindrome is a string that reads the same forwards and backwards.
+
+## 1. Explain why you might want a function like this
+palindromes is something interesting string and something i have worked on it before and i like challenging myself by adding more and more features.
+
+## 2. Suggest names you would use for the function if you were designing it in a different programming language (ask your neighbor if you don't know a nice programming language that has good support for designing functions)
+
+i am using palindrome is it 
+
+
+## 3. Explain what parameters your function will take (if any) and what the return type is (or void if nothing is returned)
+
+
+you will take a string of a words and the code will return boolean type.
+
+  ## 4. Demonstrate in code how your function interacts with the rest of the code
+  07-messaging-game/src/js/app.js:256 +++ 1 +++ 5 @@
+*** ./src/js/app.js (after) ***
+--- /dev/fd/63	2020-05-18 21:00:15.000000000 -0500
++++ /dev/fd/62	2020-05-18 21:10:30:000000000 -0500
+@@ -256 +++ 1 +++ 5 @@
+            if (_isPalindrome(cell.who.trim())) {
+                listItem.innerText += ' ⭐️';
+            }
+            messageList.appendChild(listItem);
+    +}
++function _reverseString(str) {
++   return str.split('').reduceRight(function (r,a) { return r + a });
+}
+-})(); //END IIFE*/
+
+5. Optional -- If current is null, replace it with initals
+6. Optional -- Add a 'feature request' for a global palindrome Boolean that will return true/false if a string is a palindrome (appreciate that you could write your own tests but this way it could be referenced in many other"
+"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""",vLLM,84,1.487836453015916,"
+
+def fizzbuzz(end, start = 1):
+    for i in range(start, end+1):
+        out = """"
+        if i % 3 == 0: out += ""Fizz""
+        if i % 5 == 0: out += ""Buzz""
+        out = out or str(i)
+        print(out)"
+Implement a function to reverse a singly linked list.,vLLM,40,0.7039536809897982,"
+
+Definition for singly-linked list.
+
+    function ListNode(val) {
+        this.val = val
+        this.next = null
+    }
+"
+"Given an unsorted array of integers, find the length of the longest increasing subsequence.",vLLM,245,4.085563760017976,"
+
+For example,
+Given [10, 9, 2, 5, 3, 7, 101, 18],
+The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.
+
+Your algorithm should run in O(n2) complexity.
+
+Follow up: Could you improve it to O(n log n) time complexity? 
+```
+class Solution:
+    # @param num, a list of integer
+    # @return an integer
+    def longestIncreasingSubsequence(self, num):
+        dp = [1]
+        for i in xrange(1,len(num)):
+            dp.append(1)
+            for j in xrange(i):
+                if num[i] > num[j]:
+                    dp[i] = max(dp[i],dp[j]+1 )
+        return max(dp)
+```
+"
+"Given a sequence of matrices, find the most efficient way to multiply these matrices.",vLLM,106,1.7975359160045628," In other words, determine where to place parentheses to minimize the number of multiplications.
+
+For example, suppose we have four matrices A, B, C, and D. The goal is to find where to place parentheses to minimize the number of multiplications.
+
+Note: A multiplication between two matrices can be performed in O(n^2) time.
+
+See this Wikipedia article for more details: https://en.wikipedia.org/wiki/Matrix_chain_multiplication
+
+
+"
+"Given a binary search tree, write a function to find the Kth smallest element.",vLLM,503,8.411513055005344,"
+Example
+Given binary search tree: root = [3,1,4,null,2], and K = 1
+
+    3
+   / \
+  1   4
+   \
+    2
+
+return 1.
+
+Note:
+You may assume that the BST is already sorted.
+""""""
+# In-place solution
+class Solution:
+    """"""
+    @param root: the root of binary tree
+    @param k: an integer
+    @return: the kth smallest element
+    """"""
+    def kthSmallest(self, root, k):
+        self.k = k
+        self.target = None
+        self.inorderTraverse(root, self.k)
+        return self.target
+
+
+    def inorderTraverse(self, node, k):
+        if node is None or (self.target is not None):
+            return
+
+        self.inorderTraverse(node.left, k)
+        if self.target is None:
+            if k == 1:
+                self.target = node.val
+            k -= 1
+        self.inorderTraverse(node.right, k)
+
+
+# Better solution
+class Solution:
+    """"""
+    @param root: the root of binary tree
+    @param k: an integer
+    @return: the kth smallest element
+    """"""
+    def kthSmallest(self, root, k):
+        count, self.target = self.inorderTraverse(root, k)
+        return self.target
+
+
+    def inorderTraverse(self, node, k):
+        count = 0
+        if node is None:
+            return count, None
+
+        leftcount, lefttarget = self.inorderTraverse(node.left, k)
+        if leftcount == k:
+            return leftcount, lefttarget
+        count = 1 + leftcount
+        if leftcount == k - 1:
+            self.target = node.val
+            return count, self.target
+
+        rightcount, righttarget = self.inorderTraverse(node.right, k - 1 - leftcount)
+        count = count + rightcount
+        return count, self.target"
+"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.",vLLM,144,2.4524014049966354,"
+The first line of input contains the number of test cases.
+For each test case, the first line of input is the number of edges in the graph.
+This is followed by a line for each edge that contains the starting and ending vertices and the edge weight.
+The edges are numbered from 1 to n with vertex numbering starting at 1.
+Take care to mind these values as you implement your solution.
+Finally, the last and third-to-last lines of each test case contain the starting and ending vertex numbers, respectively, for the shortest path query.
+This entry was posted in Google, Karatheodory. Bookmark the permalink."
