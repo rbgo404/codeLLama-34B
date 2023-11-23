@@ -1,0 +1,256 @@
+question,note,tok_count,time,answer
+def factorial(int n):,vLLM,304,8.042673559015384,"
+    if (n <= 1):
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+def gcd(int n, int m):
+    if (m == 0):
+        return n
+    else:
+        return gcd(m, n%m)
+
+def main():
+    syslog.openlog(""fact.py"", logoption.LOG_PID, logoption.LOG_LOCAL7)
+    
+    a = 3
+    b = 2
+    c = 4
+
+    sum = 0
+
+    for n in range(a + 1):
+        for m in range(n + 1):
+            sum += n * m
+
+    for m in range(a + 1):
+        for n in range(m + 1):
+            sum -= n * m
+
+    syslog.syslog(logmessage.format(""{0} - {1} = {2}"".format(a, b, a - b)))
+
+    syslog.syslog('SUM: %d' % sum)
+
+    b = 4
+    syslog.syslog(logmessage.format(""{0} / {1} = {2}"".format(a, b, a / b)))
+    syslog.closelog()
+
+"
+def factorial(int n):,vLLM,205,5.4062051530054305,"
+    '''
+    Computes the factorial of a given positive integer.
+
+    :param n: Integer to find factorial of
+    :type n: int
+    :return: Factorial of n
+    :rtype: int
+    :except TypeError: n is not an integer
+    '''
+
+    if isinstance(n, int):
+        if n < 0:
+            raise ValueError(f'abs({n}) != n')
+
+        return n if n == 0 else n * factorial(n - 1)
+
+    elif isinstance(n, float):
+        raise TypeError(f'{n} is not an integer')
+
+    else:
+        raise TypeError(f'{n} is not a number')
+
+
+data = [factorial(x) for x in range(101) if x > 1 and x % 20 == 0]
+"
+"Write a Python program that prints ""Hello, World!"" to the console.",vLLM,512,13.6413139590004,"
+Chef has prepared an integer array A of size N. When he sums up all the elements of the array, he finds it exceedingly heavy. Chef finds a way to reduce the number of digits in the number by removing 0s from the number. Help chef in finding minimum number of 0s that need to be removed from the number so that the number of digits are reduced.Chef is afraid that this activity may turn into another boring task, so he is in hurry to get the result as soon as possible. Your task is to help chef by completing the activity in less time. Your task is to help chef by completing the activity in less time.
+Write a Python program to find number of 0s at the end of a given integer.
+Individually printing the elements of a Union of two sets.
+Write a Python program to check if a given list contains a majority element(More than half ).
+Write a python program to count the occurences of each word in a given string.
+Given an array A consisting of N integers , write a python program to construct another array B whose elements are the products of the adjacent elements in A. That means, B[i] = A[i+1] X A [i] (with a caveat, i+1 < N) and B[N-1] = A[0] X A[N-1]. Print all this elements in an array.
+Write a python program to find the day of the week.
+Write a Python program to check if multiple list values and print it.
+Write a python program to check if an element appears more than n times in a list.
+Write a python program to count duplicate values in a list.
+Write a program to print common elements of three lists in Python, but the elements should not be repeated.
+Write a python program to find the max and product of the maximum and minimum of A/B.
+Write a python program to find the sum of first and last element of a list.
+Write a Python function to check if a given number has exact three divisors.
+Write a Python program to replace all copies of a number in a string with its corresponding position number.
+Q - What is the result of the below program ?
+Q.1 What is the result of the below program ?
+Q. 2 Write a python program to replace all multiple space with single space in a given string.
+Q."
+Write a function that takes two parameters and returns their sum.,vLLM,32,0.847175294009503," Submit the function you wrote. Note, the design must have two parameters.
+MyComment: Ignores the second argument and always returns the first."
+Write a function to calculate the factorial of a given number.,vLLM,81,2.139470768015599," Then start calculating factorial of every natural number from 1 till n.
+Input: n is an integer.
+Output: Factorial of every natural number from 1 till n.
+Previous:Java program to Calculate Pythagorean Triple using Euclid Form.
+Next:How to write a method that prints the sum of the digits of its argument."
+Write a function to determine if a given string is a palindrome.,vLLM,112,2.9620478019933216,"
+
+I've actually used this post for an interview question before. The interviewer was in fact the developer of the site HackerRank, so I'll give it to them.
+
+src=""https://gist.github.com/tandogula/f9ec509e8c62b4d748f9f357e55a9e1f.js""></scriptBut in any case, the implementation in Python is below. Complicated or not?"
+"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""",vLLM,1,0.1042370920185931,
+Implement a function to reverse a singly linked list.,vLLM,92,2.4369906799984165,"
+
+Head could be null - empty list.
+
+NOTE: C++: `ListNode` is defined as singly-linked list.
+e.g.
+
+
+ 1->2->3->4->5->NULL
+
+should become
+
+ 5->4->3->2->1->NULL.
+
+
+Your runtime beats 95.09 % of python submissions.
+"
+"Given an unsorted array of integers, find the length of the longest increasing subsequence.",vLLM,398,10.623042316990905,"
+
+Example:
+
+Input: [10,9,2,5,3,7,101,18]
+Output: 4 
+Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. 
+
+Note:
+There may be more than one LIS combination, it is only necessary for you to return the length.
+Your algorithm should run in O(n2) complexity.
+
+Follow up: Could you improve it to O(n log n) time complexity? 
+""""""
+
+# 维护了一个dp数组, 代表以当前数字为结尾的时候的最长序列
+# 循环再给nums中的所有数字计算一遍 
+# 当以i为结尾的序列+1能够组成更长的序列的时候，更新dp的值
+# 空间复杂度 O(n)， 时间复杂度 O(n^2), 总计入大O(n^2)
+
+class Solution(object):
+    def lengthOfLIS(self, nums):
+        """"""
+        :type nums: List[int]
+        :rtype: int
+        """"""
+        n = len(nums)
+        dp = [1 for i in range(n)]
+        for i in range(n):
+            for j in range(i):
+                if nums[j] <= nums[i]:
+                    dp[i] = max(dp[i], dp[j] + 1)
+
+        return max(dp)"
+"Given a sequence of matrices, find the most efficient way to multiply these matrices.",vLLM,512,13.705516941001406," [...]
+
+Assume:
+\begin{itemize}
+\item All matrices are square.
+\item Matrices are of type AxB means Bx1 matrix can be multiplied with AxB matrix (think of height*width of the pixels in a video resolution of 960*720).
+\end{itemize}
+
+In other words, to find the most efficient way to multiply a chain of matrices, we order the matrices and then multiply them one by one.
+
+For example:
+
+chain: BxA CxB DxC ExD -> most efficient arrangement is (BxA)^{0} (CxB)^{1} (DxC)^{2} (ExD)^{3}
+chain: BxA CxB DxC AxD -> most efficient arrangement is (BxA)^{1} (CxB)^{2} (DxC)^{3} (AxD)^{0}
+
+The most efficient way to multiply a chain of matrices might not be one of permutations of the chain. So that's why I'm asking this question. It's from [Stanford Open class](https://class.stanford.edu/MainCards.aspx?AspxAutoDetectCookieSupport=1). Below you'll see the hints, but please try it for yourself first.
+
+The following three problems are from [Stanford Prob-Log class](http://pl-edx.stanford.edu). If you use the answers, then you can use them only in this homework. The aim of this assignment is to try out some smarter way of finding the point 'r' than simply comparing 1000 of random points. You can of course write a script that would do it for you, but remember that it should take much less time than 1 second.
+
+Two discovers have found traces of intelligent life on a distant planet. [Problem 1](http://pl-edx.stanford.edu/img/hw1/problem1.pdf) - A and B represent their hypotheses about where the life might be. At the top right matrix you can see their common background of knowledge. Idea of this problem is to find least error valid hypothesis. In other words, you should find a point, where optimal given probabilities of surviving combinations. In other words, the point"
+"Given a binary search tree, write a function to find the Kth smallest element.",vLLM,223,5.935022137971828,"
+
+Specifically, the function accepts the root of the BST and a value K as inputs, and returns the Kth smallest value.
+
+It is guaranteed that the tree has at least K nodes.
+
+You may assume that all elements in the BST are distinct.
+
+ 
+
+Example 1:
+
+Input: root = [3,1,4,null,2], K = 1
+   3
+  / \
+ 1   4
+  \
+   2
+Output: 1
+
+Example 2:
+
+Input: root = [5,3,6,2,4,null,null,1], K = 3
+       5
+      / \
+     3   6
+    / \
+   2   4
+  /   
+ 1
+Output: 3
+
+Follow up:
+What if the BST is modified (insert / delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?"
+"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.",vLLM,512,13.746138041024096,"
+Facebook Hacker Cup
+Complete in 3 hours
+
+http://www.hackerrank.com/contests/hacker-cup/challenges/shortest-path-tricky
+
+Review of graph theory inхов, in затем
+http://web.cecs.pdx.edu/~lorado/Courses/IntroToGraphs.pdf
+""""""
+
+import os
+import heapq
+import io_functions as io
+
+
+directions = 4
+S, N, W, E = range(directions)
+inf = float(""inf"")
+
+
+def shortest_path_lengths(start, graph):
+    """"""
+    Calculate shortest path lengths from start
+
+    Args:
+        start: the node to start from
+        graph:
+
+    Returns:
+        Array of distances from start to each node
+
+    Theory:
+        Create a priority queue ordered by distances and choose the lowest.
+        For each item in the priority queue:
+            Calculate edges from the current node, DECREASING BY SETTING MAXIMUMS.
+            This will cut off paths that can't possibly beat the existing distance.
+            For example, if you've already found a distance of 4 for one node, don't
+            bother considering paths that will start or end at that node with a larger
+            weight.
+            For each edge:
+                Calculate path length for this edge
+                The path is start to end and new nodes are ones that are present in this edge
+                (we've undirected the edge).
+                Initialize the path length for the new node by adding the calculated edge path length.
+                Based on the previously undirected edge, set the maximum weight for the existing
+                node. The max weight needs to be lower to represent the highest better path.
+                For example, if this edge was 3 (1->2) but the path of 3 through nodes 3 to
+                this point is 6 (1->2->3->4), this new path is better and the maximum value for
+                node 4 needs to be lower to represent that better path.
+            After calculating all edge weights, add the path weights to the priority queue.
+
+    Examples:
+    >>> shortest_path_lengths(0, {0:[(1"

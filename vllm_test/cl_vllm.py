@@ -50,13 +50,13 @@ if __name__ == '__main__':
     llm = LLM(
         model=args.model,
         #tokenizer=args.tokenizer,
-        #quantization=args.quantization,
+        quantization=args.quantization,
         #tensor_parallel_size=args.tensor_parallel_size,
         #max_num_seqs=args.batch_size,
         #max_num_batched_tokens=args.batch_size * args.input_len,
         #max_model_len=256,
         #trust_remote_code=args.trust_remote_code,
-        #dtype='float16',
+        dtype='float16',
         )
     responses = []
 
@@ -65,4 +65,4 @@ if __name__ == '__main__':
         responses.append(response)
     
     df = pd.DataFrame(responses)
-    df.to_csv('bench-vllm.csv', index=False)
+    df.to_csv('bench-vllm_awq.csv', index=False)
