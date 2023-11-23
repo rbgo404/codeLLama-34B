@@ -65,4 +65,4 @@ if __name__ == '__main__':
         responses.append(response)
     
     df = pd.DataFrame(responses)
-    df.to_csv('bench-vllm_awq.csv', index=False)
+    df.to_csv('bench-vllm-gptq.csv', index=False)
