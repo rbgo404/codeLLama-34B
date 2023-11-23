@@ -1,5 +1,23 @@
 tok_count,time,question,answer,note
-192,7.870027658063918,Write a function that takes two parameters and returns their sum.,"Write a function that takes two parameters and returns their sum.
+76,2.7583121310162824,def factorial(int n):,"def factorial(int n):
+    cdef int i, fact = 1
+    for i in range(1, n+1):
+        fact = fact * i
+    return fact
+
+def main():
+    print(factorial(10))
+
+if __name__ == '__main__':
+    main()
+",gptq
+30,0.5274314720008988,"Write a Python program that prints ""Hello, World!"" to the console.","Write a Python program that prints ""Hello, World!"" to the console.
+
+'''
+
+print(""Hello, World!"")
+",gptq
+117,3.7522314009838738,Write a function that takes two parameters and returns their sum.,"Write a function that takes two parameters and returns their sum.
 
 Examples
 add(1, 2) ➞ 3
@@ -9,17 +27,9 @@ add(5, 10) ➞ 15
 add(9, 12) ➞ 21
 Notes
 Don't forget to return the result.
-If you get stuck on a challenge, get help from others or do it later.
-If you're having a hard time, walk through the example code with the debugger until you're comfortable with how it works.
-'''
-
-def add(a, b):
-    return a + b
-
-#add(1, 2) #➞ 3
-#add(5, 10) #➞ 15
-#add(9, 12) #➞ 21",gptq
-110,3.7376136439852417,Write a function to calculate the factorial of a given number.,"Write a function to calculate the factorial of a given number.
+If you get stuck on a challenge, get help from others or do it together with them.
+When you've finished, check your solution by pressing the ""Check"" button.",gptq
+110,3.4695784259820357,Write a function to calculate the factorial of a given number.,"Write a function to calculate the factorial of a given number.
 
 #include <stdio.h>
 int main()
@@ -33,7 +43,7 @@ int main()
     return 0;
 }
 ",gptq
-512,19.218004937050864,Write a function to determine if a given string is a palindrome.,"Write a function to determine if a given string is a palindrome.
+176,5.7686869479948655,Write a function to determine if a given string is a palindrome.,"Write a function to determine if a given string is a palindrome.
 
 A palindrome is a word or phrase that is the same forwards and backwards.
 
@@ -50,45 +60,12 @@ def is_palindrome(string):
     return string == string[::-1]
 
 
-def is_palindrome(string):
-    # Check if the string is a palindrome
-    return string[::-1].lower() == string.lower()
-
-
-def is_palindrome(string):
-    # Check if the string is a palindrome
-    return string[::-1].lower() == string.lower() and string.isalnum()
-
-
-def is_palindrome(string):
-    # Check if the string is a palindrome
-    return string[::-1].lower() == string.lower() and string.isalpha()
-
-
-def is_palindrome(string):
-    # Check if the string is a palindrome
-    return string[::-1].lower() == string.lower() and string.isalpha() and len(string) > 1
-
-
-def is_palindrome(string):
-    # Check if the string is a palindrome
-    return string[::-1].lower() == string.lower() and string.isalpha() and len(string) > 1 and string.isalpha()
-
-
-def is_palindrome(string):
-    # Check if the string is a palindrome
-    return string[::-1].lower() == string.lower() and string.isalpha() and len(string) > 1 and string.isalnum()
-
-
-def is_palindrome(string):
-    # Check if the string is a palindrome
-    return string[::-1].lower() == string.lower() and len(string) > 1 and string.isalnum()
-
-
-def is_palindrome(string):
-    # Check if the string is a palindrome
-    return",gptq
-512,17.416624715086073,"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""","Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""
+print(is_palindrome(""tacocat""))
+print(is_palindrome(""taco cat""))
+print(is_palindrome(""racecar""))
+print(is_palindrome(""race car""))
+",gptq
+578,18.32154414401157,"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""","Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""
 
 # 1
 # 2
@@ -187,8 +164,21 @@ def is_palindrome(string):
 # 94
 # Buzz
 # Fizz
-#",gptq
-349,13.027952794916928,Implement a function to reverse a singly linked list.,"Implement a function to reverse a singly linked list.
+# 97
+# 98
+# Fizz
+# Buzz
+# Fizz
+# 101
+# 102
+# Fizz
+# 104
+# Buzz
+# Fizz
+# 107
+# 108
+# Fizz",gptq
+349,11.981018274993403,Implement a function to reverse a singly linked list.,"Implement a function to reverse a singly linked list.
 
 
 class Node:
@@ -242,7 +232,7 @@ if __name__ == ""__main__"":
     linkedList.reverseList()
     linkedList.printList()
 ",gptq
-512,19.10644683917053,"Given an unsorted array of integers, find the length of the longest increasing subsequence.","Given an unsorted array of integers, find the length of the longest increasing subsequence.
+531,18.30939167298493,"Given an unsorted array of integers, find the length of the longest increasing subsequence.","Given an unsorted array of integers, find the length of the longest increasing subsequence.
 
 For example,
 Given [10, 9, 2, 5, 3, 7, 101, 18],
@@ -255,18 +245,19 @@ Follow up: Could you improve it to O(n log n) time complexity?
 Credits:
 Special thanks to @pbrother for adding this problem and creating all test cases.
 
-# https://leetcode.com/discuss/26793/o-n-log-n-time-with-o-1-space-solution-based-on-longest-increasing-subsequence
-# https://leetcode.com/discuss/27395/o-n-log-n-time-c-solution-based-on-longest-increasing-subsequence
+# https://leetcode.com/discuss/26797/o-n-2-solution-easy-to-understand
+# https://leetcode.com/discuss/27395/o-n-log-n-solution-in-java
+# https://leetcode.com/discuss/37881/o-n-log-n-time-with-o-1-space-python-solution-using-binary-search
+# https://leetcode.com/discuss/37918/o-n-log-n-time-c-solution-using-binary-search
 
-# https://leetcode.com/discuss/27395/o-n-log-n-time-c-solution-based-on-longest-increasing-subsequence
-# https://leetcode.com/discuss/27395/o-n-log-n-time-c-solution-based-on-longest-increasing-subsequence
+# https://leetcode.com/discuss/37918/o-n-log-n-time-c-solution-using-binary-search
+# https://leetcode.com/discuss/37881/o-n-log-n-time-with-o-1-space-python-solution-using-binary-search
 
-# https://leetcode.com/discuss/27395/o-n-log-n-time-c-solution-based-on-longest-increasing-subsequence
-# https://leetcode.com/discuss/27395/o-n-log-n-time-c-solution-based-on-longest-increasing-subsequence
+# https://leetcode.com/discuss/37918/o-n-log-n-time-c-solution-using-binary-search
+# https://leetcode.com/discuss/37881/o-n-log-n-time-with-o-1-space-python-solution-using-binary-search
 
-# https://leetcode.com/discuss/27395/o-n-log-n-time-c-solution-based-on-longest-increasing-subsequence
-# https://leetcode.com/",gptq
-512,19.147305777063593,"Given a sequence of matrices, find the most efficient way to multiply these matrices.","Given a sequence of matrices, find the most efficient way to multiply these matrices.
+# https://leetcode.com/discuss/37918/o-n-log-n-time-c-solution-using-binary-",gptq
+529,18.310924240999157,"Given a sequence of matrices, find the most efficient way to multiply these matrices.","Given a sequence of matrices, find the most efficient way to multiply these matrices.
 
 For example, given the following sequence of matrices:
 
@@ -357,8 +348,25 @@ Because:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ",gptq
-298,10.835003040032461,"Given a binary search tree, write a function to find the Kth smallest element.","Given a binary search tree, write a function to find the Kth smallest element.
+298,10.021903471002588,"Given a binary search tree, write a function to find the Kth smallest element.","Given a binary search tree, write a function to find the Kth smallest element.
 
 Example :
 
@@ -405,7 +413,7 @@ class Solution:
 
         return stack[-1].val
 ",gptq
-275,9.706997419940308,"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.","Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.
+238,7.674301382008707,"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.","Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.
 
 ### Input
 
@@ -428,19 +436,17 @@ Input:
 ```
 4 5
 1 4
-1 2 1
-2 3 2
-3 4 3
-4 2 4
+1 2
+2 3
+3 4
+1 3
 ```
 
 Output:
 ```
-7
 1 2 3 4
+1 2
+2 3
+3 4
 ```
-
-### Explanation
-
-The shortest path between vertices 1 and 4 is 7. The path is 1 -> 2 -> 3 -> 4.
 ",gptq
