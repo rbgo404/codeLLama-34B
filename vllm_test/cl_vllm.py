@@ -12,6 +12,7 @@ args = parser.parse_args()
 
 questions = [
     'def factorial(int n):',
+    'def factorial(int n):',
     'Write a Python program that prints "Hello, World!" to the console.',
     'Write a function that takes two parameters and returns their sum.',
     'Write a function to calculate the factorial of a given number.',
