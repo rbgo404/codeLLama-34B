@@ -1,0 +1,139 @@
+tok_count,cold_start_time,question,answer,note
+514,30.80482606298756,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to multiplies all the items in a list.
+4. Write a Python program to get the largest number from a list.
+5. Write a Python function to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.
+6. Write a Python function that takes a list of numbers and returns the maximum absolute difference between any two elements.
+7. Write a Python function to removed everything other than (a-z and A-Z and 0-9 ) and return the result.
+8. Write a Python function that takes a positive integer and returns the next smallest and next largest number that have the same number of 1s in their binary representation.
+9. Write a Python function to return a specified list part of a specified length.
+10. Write a Python program to concatenate elements of a list.
+11. Write a Python function to create an Enum object and display a member name and value.
+12. Write a Python function to loop over an enum class and display individual member and their value.
+13. Write a Python program to display a class constructor.
+14. Write a Python program to display the class docstring.
+15. Write a Python program to display all the individual members of a class.
+16. Write a Python program to remove the parent (ancestor) class attributes from sub-class.
+17. Write a Python method to retrieve the value of the property from an object, and returns the value call from the method.
+18. Write a Python program to compute the difference between two given a value and they are passed as parameters to a function.
+19. Write a Python program to convert a list of characters to a string.
+20. Write a Python program to sort 3 integers without using built-in function.
+21. Write a Python program to sort the list according to the second element in the sublist.
+22. Write a Python program to insert an element before the nth index in a given list.
+23. Write a Python function to count the number of even and odd numbers from a series of numbers.
+24. Write a Python program to print a long text with lots of blank spaces, tall text (e.g. this",triton-vllm
+514,30.307088987028692,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to multiplies all the items in a list.
+4. Write a Python program to get the largest number from a list.
+5. Write a Python function to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.
+6. Write a Python function that takes a list of numbers and returns the maximum absolute difference between any two elements.
+7. Write a Python function to removed everything other than (a-z and A-Z and 0-9 ) and return the result.
+8. Write a Python function that takes a positive integer and return the sum of the cube of all the positive integers smaller than the specified number.
+9. Write a Python function to count the occurrences of each word in a given sentence.
+10. Write a Python program to list the special variables used within the language.
+11. Write a Python program to get an absolute file path.
+12. Write a Python program to get the Fibonacci series between 0 to 50.
+13. Write a Python program to estimate the similarity between two snippets of texts.
+14. Write a Python program to generate all permutations with given repetition number of a given string.
+15. Write a Python program to print all permutations with given repetition number of a given string.
+16. Write a Python program to remove duplicates from a list.
+17. Write a python program to clone or copy a list.
+18. Write a Python program to create a list reflecting the run-length encoding from a given list of integers or a given list of characters.
+19. Write a Python program to find the list in a list of lists whose sum of elements is the highest.
+20. Write a Python program to fing the list in a list of lists whose sum of elements is the biggest.
+21. Write a Python program to select all the items which are present in a list including the duplicates and ignore the other items.
+22. Write a Python program to count the number of items between two given items in a list.
+23. Write a Python program to get the depth of a dictionary.
+24. Write a Python program to create an array contains six integers. Also print the keys",triton-vllm
+514,30.552780208992772,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to multiplies all the items in a list.
+4. Write a Python program to get the largest number from a list.
+5. Write a Python function to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.
+6. Write a Python function that takes a list of numbers and returns the maximum absolute difference between any two elements.
+7. Write a Python function to removed everything other than (a-z and A-Z and 0-9 ) and return the result.
+8. Write a Python function that takes a positive integer and return the sum of the cube of all the positive integers smaller than the specified number.
+9. Write a Python function to count the occurrences of each word in a given sentence.
+10. Write a Python program to list the special variables used within the language.
+11. Write a Python program to get an absolute file path.
+12. Write a Python program to get the Fibonacci series between 0 to 50.
+13. Write a Python program to estimate the similarity between two snippets of texts.
+14. Write a Python program to generate all permutations with given repetition number of a given string.
+15. Write a Python program to print all permutations with given repetition number of a given list of elements.
+16. Write a Python program to get the depth of a dictionary.
+18. Write a Python program to sort a list of nested dictionaries
+19. Write a Python program to get the nlargest or nsmallest items of a list.
+20. Write a Python program to find the seconnd largest number in a list.
+21. Write a Python program to get the list of nested dictionary from another list of dictionaries.
+22. Write a Python program to decrement a string by 1
+23. Write a Python program to check whether every TLD name in a given URL is generic or not.
+24. Write a Python program to check whether it follows the specified format or not.
+25. Write a Python program to test whether two words are trochemes.
+26. Write a Python program to count the number of elements in a list within a specified range.
+",triton-vllm
+418,28.891420803964138,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to multiplies all the items in a list.
+4. Write a Python program to get the largest number from a list.
+5. Write a Python function to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.
+6. Write a Python function that takes a list of numbers and returns the maximum absolute difference between any two elements.
+7. Write a Python function to removed everything other than (a-z and A-Z and 0-9 ) and return the result.
+8. Write a Python function that takes a positive integer and returns the next smallest and next largest number that have the same number of 1s in their binary representation.
+9. Write a Python function to return a specified list part of a specified length.
+10. Write a Python program to concatenate elements of a list.
+11. Write a Python function to create an Enum object and display a member name and value.
+12. Write a Python function to loop over an enum class and display individual member and their value.
+13. Write a Python program to display a class constructor.
+14. Write a Python program to display the class docstring.
+15. Write a Python program to display all the individual class members.
+16. Write a Python program to return the name of the caller method.
+17. Write a Python function that takes a positive integer and returns the next smallest and next largest number that have the same number of 1s in their binary representation.
+18. Write a Python function to return the class name as a string.
+19. Write a Python function that takes a positive integer (N) as a argument and returns the sum of all numbers upto N.
+20. Write a Python function to return the name of the object type.",triton-vllm
+418,28.797630137996748,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to multiplies all the items in a list.
+4. Write a Python program to get the largest number from a list.
+5. Write a Python function to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.
+6. Write a Python function that takes a list of numbers and returns the maximum absolute difference between any two elements.
+7. Write a Python function to removed everything other than (a-z and A-Z and 0-9 ) and return the result.
+8. Write a Python function that takes a positive integer and returns the next smallest and next largest number that have the same number of 1s in their binary representation.
+9. Write a Python function to return a specified list part of a specified length.
+10. Write a Python program to concatenate elements of a list.
+11. Write a Python function to create an Enum object and display a member name and value.
+12. Write a Python function to loop over an enum class and display individual member and their value.
+13. Write a Python program to display a class constructor.
+14. Write a Python program to display the class docstring.
+15. Write a Python program to display all the individual class members.
+16. Write a Python program to return the name of the caller method.
+17. Write a Python function that takes a positive integer and returns the next smallest and next largest number that have the same number of 1s in their binary representation.
+18. Write a Python function to return the class name as a string.
+19. Write a Python function that takes a positive integer (N) as a argument and returns the sum of all numbers upto N.
+20. Write a Python function to return the name of the object type.",triton-vllm
+514,30.480734921991825,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to multiplies all the items in a list.
+4. Write a Python program to get the largest number from a list.
+5. Write a Python function to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.
+6. Write a Python function that takes a list of numbers and returns the maximum absolute difference between any two elements.
+7. Write a Python function to removed everything other than (a-z and A-Z and 0-9 ) and return the result.
+8. Write a Python function that takes a positive integer and return the sum of the cube of all the positive integers smaller than the specified number.
+9. Write a Python function to count the occurrences of each word in a given sentence.
+10. Write a Python program to list the special variables used within the language.
+11. Write a Python program to get an absolute file path.
+12. Write a Python program to get the Fibonacci series between 0 to 50.
+13. Write a Python program to estimate the similarity between two snippets of texts.
+14. Write a Python program to generate all permutations with given repetition number of a given string.
+15. Write a Python program to print all permutations with given repetition number of a given string.
+16. Write a Python program to remove duplicates from a list.
+17. Write a python program to clone or copy a list.
+18. Write a Python program to create a list reflecting the run-length encoding from a given list of integers or a given list of characters.
+19. Write a Python program to find the list in a list of lists whose sum of elements is the highest.
+20. Write a Python program to fing the list in a list of lists whose sum of digits of each number is the highest.
+2. The following formula can be handy in remembering the number of days in a particular month.
+3. What does the following expression give?
+100/(2/2) = 25.0 or 4.0 ?
+That is a valid comparison. A comparison operator always gives a boolean value and boolean values are either true or false. So here, the answer should",triton-vllm
