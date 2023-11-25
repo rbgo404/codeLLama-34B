@@ -1,0 +1,259 @@
+tok_count,time,question,answer,note
+99,10.452491113974247,def factorial(int n):,"def factorial(int n):
+  if n < 0: raise ValueError(f'n:{repr(n)} must be >= 0')
+  if n <= 1:
+    return 1
+  return n * factorial(n - 1)
+
+if __name__ == '__main__':
+  for res in (factorial(n) for n in range(20)):
+    print(res)
+",triton-vllm-gptq
+254,4.209278900001664,"Write a Python program that prints ""Hello, World!"" to the console.","Write a Python program that prints ""Hello, World!"" to the console.
+
+https://developers.google.com/edu/python/introduction
+ 
+1. Prompt for the user's name.
+2. Print a nice greeting using ""Hi, <username>""
+3. Add two integer numbers using the + operator.
+4. Print the double of the resulting sum.
+
+Union and Intersection of Set
+
+Please take a minute to read the grading rubric (https://goo.gl/CBEauz) and
+the assignment specification (https://goo.gl/MWh5Sd). This is basically identical
+to your previous assignment (with a few tweaks that make it more open-ended
+and challenging).
+
+Grading
+You will be graded on the quality of your submission. We will use the rubric in
+the previous step to evaluate your code. We have no tolerance for submissions
+that attempt to ""game"" the system, e.g. by defining the datatype ""set"" in a
+way to cause the grading script to pass trivially. The assignment is not an
+easy A.
+
+",triton-vllm-gptq
+497,16.155016053991858,Write a function that takes two parameters and returns their sum.,"Write a function that takes two parameters and returns their sum. Only one of the parameters should have the defaut 2.'''
+
+def sumFunction( n2 = 2, n1 ): # 2 is set as default value for n2 and it has to come first , where n2 is a non default parameter ,for value of n2 to take in the parameter supplied for n1
+	'''Returns the sum of two function parameters. Defualt value for a parameter can be set.'''
+	return n1 + n2
+
+sumFunction(10, 5) # Actual values for parameter
+# Expected output : 15
+
+sumFunction(11) #Used defualt value for n2
+# Expected output : 13
+
+'''
+Practice Exercise:
+Create a function called quotient that takes two parameters. Divide the first parameter by the second and return the result. 
+'''
+# Solution
+def quotient( n1, n2 ):
+		return ( n1 / n2 )
+
+quotient(20,2) # expected output is 10 ; 20/2
+
+'''
+Practice Exercise:
+Create a function that accepts a list of programming languages. Loop through it and print out each language with an entire sentence saying how much you love each one.
+'''
+def programLanguage( a ):
+	lang = []
+	for language in lang:
+		print(f""You love {language}"")
+
+programLanguage( [ ""python"",""java"",""javascript"",""c"",""sql""] )
+
+'''
+Practice Exercise:
+Create a function that takes a number as a parameter. If the number is 100 or less print ""I am toned"" if the number is more than 100, print ""I need to lose some weight"". 
+'''
+
+def myWeight( weight ):
+	if weight <= 100:
+		print( f'You are toned to level of : {weight}')
+	else:
+		print(f'You need to lose some weight at a level of : {weight}')
+
+myweight(100)
+myweight(105)
+",triton-vllm-gptq
+239,4.725426478020381,Write a function to calculate the factorial of a given number.,"Write a function to calculate the factorial of a given number. A factorial of a number measures the number of ways to arrange distinct objects in order (value of $n!) $=$ $n x (n - 1) x (n - 2)$ ... 1.
+
+Example:
+factorial(0) => 1
+factorial(1) => 1
+factorial(3) => 6
+
+Recursive Procedure:
+
+The idea for the procedure can be separated into two cases:
+
+The base case, which sends back the value 1;
+The recursive case, which makes the function call itself, but with a smaller argument.
+
+```python
+def factorial(n):
+   if n==0:
+       return 1
+   else:
+       return n*factorial(n-1)
+
+factorial(5)   # 120
+```
+
+Avoid loops. No looping constructs may appear in your program anywhere, not even hidden inside other procedures you’ve written, because that would prevent you from solving this problem using recursion.
+",triton-vllm-gptq
+159,4.825924366014078,Write a function to determine if a given string is a palindrome.,"Write a function to determine if a given string is a palindrome. A palindrome is a word or phrase that is the same forwards and backwards. Some examples are ""radar"" and ""Was I saw you
+Did I see snow Wolves Id])) No one owes us N nothing owes us now through ant) Only roe from heave Situation To towing Wa Dan & to a way that as a can one) Looks it had is at it is no they Miss I pooh ithad at this I saw this bed) Agree (W o ana mighty seem that tom was moot retry AT Hall Gall him has not his nonced If in imriumto ever Plenty their my Pinyin sty if qua?",triton-vllm-gptq
+178,3.8349501849734224,"Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""","Write a program that prints the numbers from 1 to 100. But for multiples of three, print ""Fizz"" instead of the number, and for the multiples of five, print ""Buzz."" For numbers that are multiples of both three and five, print ""FizzBuzz.""
+
+
+def main():
+	for i in range(1,101):
+		if i%3==0 and i%5==0:
+			print ""FizzBuzz""
+		elif i%3==0:
+			print ""Fizz""
+		elif i%5==0:
+			print ""Buzz""
+		else:
+			print i
+
+
+if __name__ == '__main__':
+	main()",triton-vllm-gptq
+29,1.569904065981973,Implement a function to reverse a singly linked list.,"Implement a function to reverse a singly linked list.
+
+ToDo: Reverse print of a Linked List.
+
+
+",triton-vllm-gptq
+294,7.691093701985665,"Given an unsorted array of integers, find the length of the longest increasing subsequence.","Given an unsorted array of integers, find the length of the longest increasing subsequence.
+
+For example,
+Given [10, 9, 2, 5, 3, 7, 101, 18],
+The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.
+
+Your algorithm should run in O(n2) complexity.
+
+Follow up: Could you improve it to O(n log n) time complexity?
+
+Related Topics
+Array Dynamic Programming
+""""""
+
+
+class Solution:
+    # @param {integer[]} nums
+    # @return {integer}
+    def lengthOfLIS(self, nums):
+        if not nums or len(nums) == 0:
+            return 0
+        dp = [1] * len(nums)
+        for i in range(len(nums)):
+            for j in range(i):
+                if nums[i] > nums[j]:
+                    dp[i] = max(dp[i], dp[j] + 1)
+        return max(dp)
+",triton-vllm-gptq
+529,10.262360295979306,"Given a sequence of matrices, find the most efficient way to multiply these matrices.","Given a sequence of matrices, find the most efficient way to multiply these matrices. This problem as an interview question can be asked in club events or in top tech companies in campus placements.
+
+Mathematically, multiplying two matrices Matrix A of size m x n and Matrix B of size p x q, results into a Matrix of size m x q if n = p or an error of invalid operation otherwise.
+
+Let’s say we have three matrices of dimensions 100×200, 200×300, 300×400. But it will not be a practical way to multiply them in the same order. Instead, first, we will multiply the first and second matrices to give a result(Matrix) of size 100×300. Now, we multiply this result with the third matrix.
+
+Example:
+Input: matrices =[[5,10],
+                 [2,3],
+                 [2,3]]
+Output: 18000
+
+Explanation: Initially, we multiply matrix of size 5×10 with matrix of size 10×20. The resultant matrix will be of size 5×20 and requires 500 multiplications.
+Next we will multiply the resultant matrix with the third matrix of size 20×30. The resultant matrix will be of size 5×30 and requires 1500 multiplications. 
+So the total number of multiplications are 1500+500=2000.
+
+Notes:
+There are O(N^3) solutions.
+
+for more solutions https://www.educative.io/
+
+'''
+import copy
+class MinValuesOfMatrix:
+    def recur(self, matrices):
+        # input matrices size n x n
+        n = len(matrices)
+        min_value = 0
+        combinations = (-1, -1)
+        # for each matrix pair
+        for i in range(n-1):
+            for j in range(i+1, n):
+                # copy of the input matrices
+                matrices_cp = copy.deepcopy(matrices)
+                # compute mat1_rows, mat2_cols, and their ops
+                mat1_rows = matrices_cp[i]
+                mat2_cols = matrices_cp[",triton-vllm-gptq
+272,7.473436773056164,"Given a binary search tree, write a function to find the Kth smallest element.","Given a binary search tree, write a function to find the Kth smallest element.
+Assum
+e you have a class:
+
+'''
+
+
+class TreeNode:
+    def __init__(self, value, left=None, right=None):
+        self.value = value
+        self.left = left
+        self.right = right
+
+
+class Solution:
+    def findKthLargest(self, tree: TreeNode, k):
+        stack = [[tree, False]]
+        count = 0
+        while stack:
+            node, visited = stack[-1]
+            if visited:
+                count += 1
+                stack.pop()
+                if node.right: stack.append([node.right, False])
+            else:
+                if node.right: stack.append([node.right, False])
+                stack[-1][1] = True
+                if node.left: stack.append([node.left, False])
+        return count
+
+
+tree = TreeNode(3, TreeNode(1), TreeNode(4, TreeNode(2), TreeNode(5)))
+solver = Solution()
+print(solver.findKthLargest(tree, 1))",triton-vllm-gptq
+535,17.1896396150114,"Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm.","Given a weighted graph and two vertices, find the shortest path between them using Dijkstra's algorithm. The path is of the form P = (v, w_0(v,w), w_1(v,w), ..., w_n,k(v,w)). The time complexity of this algorithm is O(|E|*lg|V|) where |E| and |V| denote the number of edges and vertices in the graph, respectively. A weighted graph may have negative edge weights. Negative cycle detection is known to be a lot harder than the standard problem so we will consider all instances violating the negative cycle assumption as ""not different"" from instances of Dijkstra's algorithm 
+! Input
+The graph G has a number of vertices, V ≥ 1, and a number of edges, E ≥ 0. All nodes are labeled with integers, 0 ≤ w_v, w_w ≤ 1000 here 0 ≤ w_v, w_w ≤ K where K is a parameter of the problem. All edge indicators are also integers, 0 ≤ w_v, w_w ≤ K. Now there are two edges with ten indicators, v and w. On these edges, there is no negative cycle in G.
+Output
+The first line must contain the minimum path length to the output L. Each of the next L lines must describe one edge of the path P.
+Constraints
+ 2 ≤ K ≤ 1000
+Time Limit
+1.000 sec(s) for each input file
+Memory Limit
+65536 kB
+Submissions
+32536
+Used Language
+All
+Elite Solution
+wa524
+wa524
+Tojeiro
+solved for Python3
+
+% リスト
+<https://atcoder.jp/contests/arc106/submissions/20390835>
+Vertex: 配列で作成する
+Dist: G と通っている総コスト
+ShorterCost: G に通っていない(通っていないのは負の値を与えた方が計算が早い. -1でも0でもいい(コミュニケーション))
+P: ",triton-vllm-gptq
