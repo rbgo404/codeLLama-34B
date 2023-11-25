@@ -1,0 +1,79 @@
+tok_count,cold_start_time,load_time,inference_time,question,answer,note
+522,44.449660992017016,19.849242602998856,24.60041801800253,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server a toolkit for serving neural networks in production. It is an available performant option for running inference after model training is complete. The model input and output can be automated through code, creating a 'deep learning pipeline' of sorts. Triton Inference Server is open-source and is popular for server-side deep learning. We’ve seen it employed in companies like Uber and Dell.
+The Competitive Landscape of the market is Especially Replete with Open-Source Tools.
+However, the inference tools are open-source (like Triton) and has a machine-based deployment, a backend server for scalability, and allows high volume usage. For a custom-made solution, the costs are potentially high, therefore many companies opt to use out-of-the-box tools like Triton Inference Server.
+Triton Inference Sever is among one of the open-source options.
+Liguo Wang et al. Triton: A Concurrent Deep-Learning Inference Server for Efficiently Serving Entire Deep Convolutional Networks in Memory. ACM SIGARCH Computer Architecture News. 2020, 49, February.
+How High is the Garbage Collection Frequency, and how does that compare to your hardware power?
+(2) What is the formula for calculating CPU time and Memory in Deep Learning?
+We are over 12 patient communities, 13+$ billion annual funding and 10,000+ publications.
+Zboias I, Dellitti R, Degano GT, Zeuge I, Robini MC, Bondanza L, Peppato GS, Pallerini KL, Mattioni B, Balderas SM, Mi T, Frater M. Honesty in research in antibiotic discovery: a Systems Biology approach. Antibiotics. 2020 Feb;9(2):267.
+a year-long self-guided learning experience with 50 TB, comprising biodata and raw sequence files that are accessed using data lake technologies such as MapReduce.
+In our simulations we performed this exercise four times: in one of them the raw files were encrypted and in the other three we created copies with corrupted fields for the FASTQ sequences.
+Here, thanks to this",triton-backend
+522,44.60338675096864,20.00352278200444,24.599863677984104,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server a toolkit for serving neural networks in production. It is an available performant option for running inference after model training is complete. The model input and output can be automated through code, creating a 'deep learning pipeline' of sorts. Triton Inference Server is open-source and is popular for server-side deep learning. We’ve seen it employed in companies like Uber and Dell.
+The Competitive Landscape of the market is Especially Replete with Open-Source Tools.
+However, the inference tools are open-source (like Triton) and has a machine-based deployment, a backend server for scalability, and allows high volume usage. For a custom-made solution, the costs are potentially high, therefore many companies opt to use out-of-the-box tools like Triton Inference Server.
+Triton Inference Sever is among one of the open-source options.
+Liguo Wang et al. Triton: A Concurrent Deep-Learning Inference Server for Efficiently Serving Entire Deep Convolutional Networks in Memory. ACM SIGARCH Computer Architecture News. 2020, 49, February.
+How High is the Garbage Collection Frequency, and how does that compare to your hardware power?
+(2) What is the formula for calculating CPU time and Memory in Deep Learning?
+We are over 12 patient communities, 13+$ billion annual funding and 10,000+ publications.
+Zboias I, Dellitti R, Degano GT, Zeuge I, Robini MC, Bondanza L, Peppato GS, Pallerini KL, Mattioni B, Balderas SM, Mi T, Frater M. Honesty in research in antibiotic discovery: a Systems Biology approach. Antibiotics. 2020 Feb;9(2):267.
+a year-long self-guided learning experience with 50 TB, comprising biodata and raw sequence files that are accessed using data lake technologies such as MapReduce.
+In our simulations we performed this exercise four times: in one of them the raw files were encrypted and in the other three we created copies with corrupted fields for the FASTQ sequences.
+Here, thanks to this",triton-backend
+522,44.42060394800501,19.843062611995265,24.577540955040604,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server a toolkit for serving neural networks in production. It is an available performant option for running inference after model training is complete. The model input and output can be automated through code, creating a 'deep learning pipeline' of sorts. Triton Inference Server is open-source and is popular for server-side deep learning. We’ve seen it employed in companies like Uber and Dell.
+The Competitive Landscape of the market is Especially Replete with Open-Source Tools.
+However, the inference tools are open-source (like Triton) and has a machine-based deployment, a backend server for scalability, and allows high volume usage. For a custom-made solution, the costs are potentially high, therefore many companies opt to use out-of-the-box tools like Triton Inference Server.
+Triton Inference Sever is among one of the open-source options.
+Liguo Wang et al. Triton: A Concurrent Deep-Learning Inference Server for Efficiently Serving Entire Deep Convolutional Networks in Memory. ACM SIGARCH Computer Architecture News. 2020, 49, February.
+How High is the Garbage Collection Frequency, and how does that compare to your hardware power?
+(2) What is the formula for calculating CPU time and Memory in Deep Learning?
+We are over 12 patient communities, 13+$ billion annual funding and 10,000+ publications.
+Zboias I, Dellitti R, Degano GT, Zeuge I, Robini MC, Bondanza L, Peppato GS, Pallerini KL, Mattioni B, Balderas SM, Mi T, Frater M. Honesty in research in antibiotic discovery: a Systems Biology approach. Antibiotics. 2020 Feb;9(2):267.
+a year-long self-guided learning experience with 50 TB, comprising biodata and raw sequence files that are accessed using data lake technologies such as MapReduce.
+In our simulations we performed this exercise four times: in one of them the raw files were encrypted and in the other three we created copies with corrupted fields for the FASTQ sequences.
+Here, thanks to this",triton-backend
+522,44.44784154795343,19.816356883966364,24.631484363984782,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server a toolkit for serving neural networks in production. It is an available performant option for running inference after model training is complete. The model input and output can be automated through code, creating a 'deep learning pipeline' of sorts. Triton Inference Server is open-source and is popular for server-side deep learning. We’ve seen it employed in companies like Uber and Dell.
+The Competitive Landscape of the market is Especially Replete with Open-Source Tools.
+However, the inference tools are open-source (like Triton) and has a machine-based deployment, a backend server for scalability, and allows high volume usage. For a custom-made solution, the costs are potentially high, therefore many companies opt to use out-of-the-box tools like Triton Inference Server.
+Triton Inference Sever is among one of the open-source options.
+Liguo Wang et al. Triton: A Concurrent Deep-Learning Inference Server for Efficiently Serving Entire Deep Convolutional Networks in Memory. ACM SIGARCH Computer Architecture News. 2020, 49, February.
+How High is the Garbage Collection Frequency, and how does that compare to your hardware power?
+(2) What is the formula for calculating CPU time and Memory in Deep Learning?
+We are over 12 patient communities, 13+$ billion annual funding and 10,000+ publications.
+Zboias I, Dellitti R, Degano GT, Zeuge I, Robini MC, Bondanza L, Peppato GS, Pallerini KL, Mattioni B, Balderas SM, Mi T, Frater M. Honesty in research in antibiotic discovery: a Systems Biology approach. Antibiotics. 2020 Feb;9(2):267.
+a year-long self-guided learning experience with 50 TB, comprising biodata and raw sequence files that are accessed using data lake technologies such as MapReduce.
+In our simulations we performed this exercise four times: in one of them the raw files were encrypted and in the other three we created copies with corrupted fields for the FASTQ sequences.
+Here, thanks to this",triton-backend
+522,44.44318188098259,19.83451397297904,24.608667578024324,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server a toolkit for serving neural networks in production. It is an available performant option for running inference after model training is complete. The model input and output can be automated through code, creating a 'deep learning pipeline' of sorts. Triton Inference Server is open-source and is popular for server-side deep learning. We’ve seen it employed in companies like Uber and Dell.
+The Competitive Landscape of the market is Especially Replete with Open-Source Tools.
+However, the inference tools are open-source (like Triton) and has a machine-based deployment, a backend server for scalability, and allows high volume usage. For a custom-made solution, the costs are potentially high, therefore many companies opt to use out-of-the-box tools like Triton Inference Server.
+Triton Inference Sever is among one of the open-source options.
+Liguo Wang et al. Triton: A Concurrent Deep-Learning Inference Server for Efficiently Serving Entire Deep Convolutional Networks in Memory. ACM SIGARCH Computer Architecture News. 2020, 49, February.
+How High is the Garbage Collection Frequency, and how does that compare to your hardware power?
+(2) What is the formula for calculating CPU time and Memory in Deep Learning?
+We are over 12 patient communities, 13+$ billion annual funding and 10,000+ publications.
+Zboias I, Dellitti R, Degano GT, Zeuge I, Robini MC, Bondanza L, Peppato GS, Pallerini KL, Mattioni B, Balderas SM, Mi T, Frater M. Honesty in research in antibiotic discovery: a Systems Biology approach. Antibiotics. 2020 Feb;9(2):267.
+a year-long self-guided learning experience with 50 TB, comprising biodata and raw sequence files that are accessed using data lake technologies such as MapReduce.
+In our simulations we performed this exercise four times: in one of them the raw files were encrypted and in the other three we created copies with corrupted fields for the FASTQ sequences.
+Here, thanks to this",triton-backend
+522,44.47097143199062,19.856593302974943,24.614377849036828,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server a toolkit for serving neural networks in production. It is an available performant option for running inference after model training is complete. The model input and output can be automated through code, creating a 'deep learning pipeline' of sorts. Triton Inference Server is open-source and is popular for server-side deep learning. We’ve seen it employed in companies like Uber and Dell.
+The Competitive Landscape of the market is Especially Replete with Open-Source Tools.
+However, the inference tools are open-source (like Triton) and has a machine-based deployment, a backend server for scalability, and allows high volume usage. For a custom-made solution, the costs are potentially high, therefore many companies opt to use out-of-the-box tools like Triton Inference Server.
+Triton Inference Sever is among one of the open-source options.
+Liguo Wang et al. Triton: A Concurrent Deep-Learning Inference Server for Efficiently Serving Entire Deep Convolutional Networks in Memory. ACM SIGARCH Computer Architecture News. 2020, 49, February.
+How High is the Garbage Collection Frequency, and how does that compare to your hardware power?
+(2) What is the formula for calculating CPU time and Memory in Deep Learning?
+We are over 12 patient communities, 13+$ billion annual funding and 10,000+ publications.
+Zboias I, Dellitti R, Degano GT, Zeuge I, Robini MC, Bondanza L, Peppato GS, Pallerini KL, Mattioni B, Balderas SM, Mi T, Frater M. Honesty in research in antibiotic discovery: a Systems Biology approach. Antibiotics. 2020 Feb;9(2):267.
+a year-long self-guided learning experience with 50 TB, comprising biodata and raw sequence files that are accessed using data lake technologies such as MapReduce.
+In our simulations we performed this exercise four times: in one of them the raw files were encrypted and in the other three we created copies with corrupted fields for the FASTQ sequences.
+Here, thanks to this",triton-backend

@@ -1,0 +1,109 @@
+tok_count,cold_start_time,load_time,inference_time,question,answer,note
+520,51.28120444098022,36.54324848001124,14.737955479999073,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server is an open-source model deployment system capable of serving models trained with popular machine learning and deep learning frameworks.
+While this is similar to Triton server what is different?
+vLab is built to be completely standalone, with no external dependencies and able to offer routing capabilities with encryption.
+The vLab deep learning server is also based on Nvidia’s Triton and comes with a user interfave and a service of the cloud service Esse(we call esse).
+Separate your model into inference and train phase, using different models and/or GPUs. Host machine can be used to upload data and/or to train model.
+Inference phase uses a different model/method of the training phase.
+Computing is used to host model for inference and to make this computation fast, without being a drain on the host machine you are training on. ML infrastructure is provisioned as a cloud service on the same physical machine that you need to use for training.
+For every deployment vLab creates a modeling service (class) that the API communicates with.
+Simply invoke the API with a payload of iteration number of corresponding data, and the machine’s answer will be served back.
+You don’t have to worry on how, where and when to deploy while your hardware power is pumping to find best solution to your problem.
+It is as easy as opening VSCode, writing code, hitting F5, selecting your method, clicking on the POST method and running it in any browser.
+Ensure your hardware is propertly set up for accessing the ports and accesing locally from the your Linux computer physically connected to your GPU.
+You can view the generated programs console from VSCode by hitting CTRL+ARROW_KEYS (by default VSCode will open the current active gcc version).
+First make sure that you have the secret file of your deep learning server generated called _sercret_config.json file in /src/services/.
+You can then use HTTPyac or HTTPeye to look at the Headers.
+The return will be your vLab Service’s name.
+An example of using HTTPys (generated) can be found here: https://github.com/vladushak/vlab-v1/blob/master/src/apps/webcmps/spielsliste_service.py.",triton-backend-awq
+520,51.17960858903825,36.368649996002205,14.810958183021285,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server is an open-source model deployment system capable of serving models trained with popular machine learning and deep learning frameworks.
+While this is similar to Triton server what is different?
+vLab is built to be completely standalone, with no external dependencies and able to offer routing capabilities with encryption.
+The vLab deep learning server is also based on Nvidia’s Triton and comes with a user interfave and a service of the cloud service Esse(we call esse).
+Separate your model into inference and train phase, using different models and/or GPUs. Host machine can be used to upload data and/or to train model.
+Inference phase uses a different model/method of the training phase.
+Computing is used to host model for inference and to make this computation fast, without being a drain on the host machine you are training on. ML infrastructure is provisioned as a cloud service on the same physical machine that you need to use for training.
+For every deployment vLab creates a modeling service (class) that the API communicates with.
+Simply invoke the API with a payload of iteration number of corresponding data, and the machine’s answer will be served back.
+You don’t have to worry on how, where and when to deploy while your hardware power is pumping to find best solution to your problem.
+It is as easy as opening VSCode, writing code, hitting F5, selecting your method, clicking on the POST method and running it in any browser.
+Ensure your hardware is propertly set up for accessing the ports and accesing locally from the your Linux computer physically connected to your GPU.
+You can view the generated programs console from VSCode by hitting CTRL+ARROW_KEYS (by default VSCode will open the current active gcc version).
+First make sure that you have the secret file of your deep learning server generated called _sercret_config.json file in /src/services/.
+You can then use HTTPyac or HTTPeye to look at the Headers.
+The return will be your vLab Service’s name.
+An example of using HTTPys (generated) can be found here: https://github.com/vladushak/vlab-v1/blob/master/src/apps/webcmps/spielsliste_service.py.",triton-backend-awq
+520,51.34878571901936,36.50011418299982,14.84867120499257,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server is an open-source model deployment system capable of serving models trained with popular machine learning and deep learning frameworks.
+While this is similar to Triton server what is different?
+vLab is built to be completely standalone, with no external dependencies and able to offer routing capabilities with encryption.
+The vLab deep learning server is also based on Nvidia’s Triton and comes with a user interfave and a service of the cloud service Esse(we call esse).
+Separate your model into inference and train phase, using different models and/or GPUs. Host machine can be used to upload data and/or to train model.
+Inference phase uses a different model/method of the training phase.
+Computing is used to host model for inference and to make this computation fast, without being a drain on the host machine you are training on. ML infrastructure is provisioned as a cloud service on the same physical machine that you need to use for training.
+For every deployment vLab creates a modeling service (class) that the API communicates with.
+Simply invoke the API with a payload of iteration number of corresponding data, and the machine’s answer will be served back.
+You don’t have to worry on how, where and when to deploy while your hardware power is pumping to find best solution to your problem.
+It is as easy as opening VSCode, writing code, hitting F5, selecting your method, clicking on the POST method and running it in any browser.
+Ensure your hardware is propertly set up for accessing the ports and accesing locally from the your Linux computer physically connected to your GPU.
+You can view the generated programs console from VSCode by hitting CTRL+ARROW_KEYS (by default VSCode will open the current active gcc version).
+First make sure that you have the secret file of your deep learning server generated called _sercret_config.json file in /src/services/.
+You can then use HTTPyac or HTTPeye to look at the Headers.
+The return will be your vLab Service’s name.
+An example of using HTTPys (generated) can be found here: https://github.com/vladushak/vlab-v1/blob/master/src/apps/webcmps/spielsliste_service.py.",triton-backend-awq
+520,51.69303248805227,36.822106579027604,14.870925598021131,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server is an open-source model deployment system capable of serving models trained with popular machine learning and deep learning frameworks.
+While this is similar to Triton server what is different?
+vLab is built to be completely standalone, with no external dependencies and able to offer routing capabilities with encryption.
+The vLab deep learning server is also based on Nvidia’s Triton and comes with a user interfave and a service of the cloud service Esse(we call esse).
+Separate your model into inference and train phase, using different models and/or GPUs. Host machine can be used to upload data and/or to train model.
+Inference phase uses a different model/method of the training phase.
+Computing is used to host model for inference and to make this computation fast, without being a drain on the host machine you are training on. ML infrastructure is provisioned as a cloud service on the same physical machine that you need to use for training.
+For every deployment vLab creates a modeling service (class) that the API communicates with.
+Simply invoke the API with a payload of iteration number of corresponding data, and the machine’s answer will be served back.
+You don’t have to worry on how, where and when to deploy while your hardware power is pumping to find best solution to your problem.
+It is as easy as opening VSCode, writing code, hitting F5, selecting your method, clicking on the POST method and running it in any browser.
+Ensure your hardware is propertly set up for accessing the ports and accesing locally from the your Linux computer physically connected to your GPU.
+You can view the generated programs console from VSCode by hitting CTRL+ARROW_KEYS (by default VSCode will open the current active gcc version).
+First make sure that you have the secret file of your deep learning server generated called _sercret_config.json file in /src/services/.
+You can then use HTTPyac or HTTPeye to look at the Headers.
+The return will be your vLab Service’s name.
+An example of using HTTPys (generated) can be found here: https://github.com/vladushak/vlab-v1/blob/master/src/apps/webcmps/spielsliste_service.py.",triton-backend-awq
+520,51.524389148980845,36.600610311026685,14.923778407974169,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server is an open-source model deployment system capable of serving models trained with popular machine learning and deep learning frameworks.
+While this is similar to Triton server what is different?
+vLab is built to be completely standalone, with no external dependencies and able to offer routing capabilities with encryption.
+The vLab deep learning server is also based on Nvidia’s Triton and comes with a user interfave and a service of the cloud service Esse(we call esse).
+Separate your model into inference and train phase, using different models and/or GPUs. Host machine can be used to upload data and/or to train model.
+Inference phase uses a different model/method of the training phase.
+Computing is used to host model for inference and to make this computation fast, without being a drain on the host machine you are training on. ML infrastructure is provisioned as a cloud service on the same physical machine that you need to use for training.
+For every deployment vLab creates a modeling service (class) that the API communicates with.
+Simply invoke the API with a payload of iteration number of corresponding data, and the machine’s answer will be served back.
+You don’t have to worry on how, where and when to deploy while your hardware power is pumping to find best solution to your problem.
+It is as easy as opening VSCode, writing code, hitting F5, selecting your method, clicking on the POST method and running it in any browser.
+Ensure your hardware is propertly set up for accessing the ports and accesing locally from the your Linux computer physically connected to your GPU.
+You can view the generated programs console from VSCode by hitting CTRL+ARROW_KEYS (by default VSCode will open the current active gcc version).
+First make sure that you have the secret file of your deep learning server generated called _sercret_config.json file in /src/services/.
+You can then use HTTPyac or HTTPeye to look at the Headers.
+The return will be your vLab Service’s name.
+An example of using HTTPys (generated) can be found here: https://github.com/vladushak/vlab-v1/blob/master/src/apps/webcmps/spielsliste_service.py.",triton-backend-awq
+520,51.43717241700506,36.49038046103669,14.946791624999605,Write a Python function to print 'Hello world'.,"What is Triton Inference Server?
+Triton Inference Server is an open-source model deployment system capable of serving models trained with popular machine learning and deep learning frameworks.
+While this is similar to Triton server what is different?
+vLab is built to be completely standalone, with no external dependencies and able to offer routing capabilities with encryption.
+The vLab deep learning server is also based on Nvidia’s Triton and comes with a user interfave and a service of the cloud service Esse(we call esse).
+Separate your model into inference and train phase, using different models and/or GPUs. Host machine can be used to upload data and/or to train model.
+Inference phase uses a different model/method of the training phase.
+Computing is used to host model for inference and to make this computation fast, without being a drain on the host machine you are training on. ML infrastructure is provisioned as a cloud service on the same physical machine that you need to use for training.
+For every deployment vLab creates a modeling service (class) that the API communicates with.
+Simply invoke the API with a payload of iteration number of corresponding data, and the machine’s answer will be served back.
+You don’t have to worry on how, where and when to deploy while your hardware power is pumping to find best solution to your problem.
+It is as easy as opening VSCode, writing code, hitting F5, selecting your method, clicking on the POST method and running it in any browser.
+Ensure your hardware is propertly set up for accessing the ports and accesing locally from the your Linux computer physically connected to your GPU.
+You can view the generated programs console from VSCode by hitting CTRL+ARROW_KEYS (by default VSCode will open the current active gcc version).
+First make sure that you have the secret file of your deep learning server generated called _sercret_config.json file in /src/services/.
+You can then use HTTPyac or HTTPeye to look at the Headers.
+The return will be your vLab Service’s name.
+An example of using HTTPys (generated) can be found here: https://github.com/vladushak/vlab-v1/blob/master/src/apps/webcmps/spielsliste_service.py.",triton-backend-awq

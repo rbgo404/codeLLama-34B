@@ -1,0 +1,163 @@
+tok_count,cold_start_time,load_time,inference_time,question,answer,note
+514,47.828003876958974,23.83695234794868,23.99105104804039,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python function to multiplying the values in a dictionary.
+4. Write a Python function to reverse a string.
+5. Write a Python function to find the first appearance of the substring 'not' and 'poor' from a given string, if 'not' following the 'poor', rewrite the string to be 'good'. Return the new string.
+Note: It is guaranteed that the first string argument given to this problem will be a copy of the third quote string. It looks like so: ""abcde"" -> ""cdea"".
+6. Write a Python function to sort a list of nested dictionaries.
+7. Write a Python function to remove key value pairs from a dictionary whose keys are numbers.
+8. Write a Python function to count spaces at the beginning of a string.
+9. Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+10. Write a Python function that takes a list of words and returns the length of the longest one.
+Example : [""cursor"", ""Google"", ""github"", ""fabric""]
+11. Write a Python function to check whether a number is in a given range.
+>> True, since the number 10 is in the range from 2 to 15.
+12. Write a Python function to find the list in a list of lists whose sum of elements is the highest.
+>> maxList = [2, 3, 4, 5]
+13. Write a Python function to print the number of prime numbers which are less than or equal to a given integer.
+Code Sample:
+
+14. Write a Python function to check whether every even index contains an even number and every odd index contains odd number of a list.
+>> True
+15. Write a Python function of SetStringCharacter(str, index, character) that takes in a string, a character, and an index of where the character should be inserted.
+If the index is out of range, the string return the original string without that character.
+>> Example :
+set_string('python', 4, '$') -> 'pyt$hon'
+set_string('python', 11, '$') -> 'python'
+16. Write a python function of tallest_person(lst) that",triton-vllm
+514,45.250856284983456,21.251594289962668,23.999261524004396,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python function to multiplying the values in a dictionary.
+4. Write a Python function to reverse a string.
+5. Write a Python function to find the first appearance of the substring 'not' and 'poor' from a given string, if 'not' following the 'poor', rewrite the string to be 'good'. Return the new string.
+Note: It is guaranteed that the first string argument given to this problem will be a copy of the third quote string. It looks like so: ""abcde"" -> ""cdea"".
+6. Write a Python function to sort a list of nested dictionaries.
+7. Write a Python function to remove key value pairs from a dictionary whose keys are numbers.
+8. Write a Python function to count spaces at the beginning of a string.
+9. Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+10. Write a Python function that takes a list of words and returns the length of the longest one.
+Example : [""cursor"", ""Google"", ""github"", ""fabric""]
+11. Write a Python function to check whether a number is in a given range.
+>> True, since the number 10 is in the range from 2 to 15.
+12. Write a Python function to find the list in a list of lists whose sum of elements is the highest.
+>> maxList = [2, 3, 4, 5]
+13. Write a Python function to print the number of prime numbers which are less than or equal to a given integer.
+Code Sample:
+
+14. Write a Python function to check whether every even index contains an even number and every odd index contains odd number of a list.
+>> True
+15. Write a Python function of SetStringCharacter(str, index, character) that takes in a string, a character, and an index of where the character should be inserted.
+If the index is out of range, the string return the original string without that character.
+>> Example :
+set_string('python', 4, '$') -> 'pyt$hon'
+set_string('python', 11, '$') -> 'python'
+16. Write a python function of tallest_person(lst) that",triton-vllm
+514,44.390336408047006,20.409157201007474,23.98117872700095,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python function to multiplying the values in a dictionary.
+4. Write a Python function to reverse a string.
+5. Write a Python function to find the first appearance of the substring 'not' and 'poor' from a given string, if 'not' following the 'poor', rewrite the string to be 'good'. Return the new string.
+Note: It is guaranteed that the first string argument given to this problem will be a copy of the third quote string. It looks like so: ""abcde"" -> ""cdea"".
+6. Write a Python function to sort a list of nested dictionaries.
+7. Write a Python function to remove key value pairs from a dictionary whose keys are numbers.
+8. Write a Python function to count spaces at the beginning of a string.
+9. Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+10. Write a Python function that takes a list of words and returns the length of the longest one.
+Example : [""cursor"", ""Google"", ""github"", ""fabric""]
+11. Write a Python function to check whether a number is in a given range.
+>> True, since the number 10 is in the range from 2 to 15.
+12. Write a Python function to find the list in a list of lists whose sum of elements is the highest.
+>> maxList = [2, 3, 4, 5]
+13. Write a Python function to print the number of prime numbers which are less than or equal to a given integer.
+Code Sample:
+
+14. Write a Python function to check whether every even index contains an even number and every odd index contains odd number of a list.
+>> True
+15. Write a Python function of SetStringCharacter(str, index, character) that takes in a string, a character, and an index of where the character should be inserted.
+If the index is out of range, the string return the original string without that character.
+>> Example :
+set_string('python', 4, '$') -> 'pyt$hon'
+set_string('python', 11, '$') -> 'python'
+16. Write a python function of tallest_person(lst) that",triton-vllm
+514,44.36826189601561,20.374817737028934,23.99344376794761,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python function to multiplying the values in a dictionary.
+4. Write a Python function to reverse a string.
+5. Write a Python function to find the first appearance of the substring 'not' and 'poor' from a given string, if 'not' following the 'poor', rewrite the string to be 'good'. Return the new string.
+Note: It is guaranteed that the first string argument given to this problem will be a copy of the third quote string. It looks like so: ""abcde"" -> ""cdea"".
+6. Write a Python function to sort a list of nested dictionaries.
+7. Write a Python function to remove key value pairs from a dictionary whose keys are numbers.
+8. Write a Python function to count spaces at the beginning of a string.
+9. Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+10. Write a Python function that takes a list of words and returns the length of the longest one.
+Example : [""cursor"", ""Google"", ""github"", ""fabric""]
+11. Write a Python function to check whether a number is in a given range.
+>> True, since the number 10 is in the range from 2 to 15.
+12. Write a Python function to find the list in a list of lists whose sum of elements is the highest.
+>> maxList = [2, 3, 4, 5]
+13. Write a Python function to print the number of prime numbers which are less than or equal to a given integer.
+Code Sample:
+
+14. Write a Python function to check whether every even index contains an even number and every odd index contains odd number of a list.
+>> True
+15. Write a Python function of SetStringCharacter(str, index, character) that takes in a string, a character, and an index of where the character should be inserted.
+If the index is out of range, the string return the original string without that character.
+>> Example :
+set_string('python', 4, '$') -> 'pyt$hon'
+set_string('python', 11, '$') -> 'python'
+16. Write a python function of tallest_person(lst) that",triton-vllm
+514,44.47489116596989,20.47450791898882,24.00038283597678,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python function to multiplying the values in a dictionary.
+4. Write a Python function to reverse a string.
+5. Write a Python function to find the first appearance of the substring 'not' and 'poor' from a given string, if 'not' following the 'poor', rewrite the string to be 'good'. Return the new string.
+Note: It is guaranteed that the first string argument given to this problem will be a copy of the third quote string. It looks like so: ""abcde"" -> ""cdea"".
+6. Write a Python function to sort a list of nested dictionaries.
+7. Write a Python function to remove key value pairs from a dictionary whose keys are numbers.
+8. Write a Python function to count spaces at the beginning of a string.
+9. Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+10. Write a Python function that takes a list of words and returns the length of the longest one.
+Example : [""cursor"", ""Google"", ""github"", ""fabric""]
+11. Write a Python function to check whether a number is in a given range.
+>> True, since the number 10 is in the range from 2 to 15.
+12. Write a Python function to find the list in a list of lists whose sum of elements is the highest.
+>> maxList = [2, 3, 4, 5]
+13. Write a Python function to print the number of prime numbers which are less than or equal to a given integer.
+Code Sample:
+
+14. Write a Python function to check whether every even index contains an even number and every odd index contains odd number of a list.
+>> True
+15. Write a Python function of SetStringCharacter(str, index, character) that takes in a string, a character, and an index of where the character should be inserted.
+If the index is out of range, the string return the original string without that character.
+>> Example :
+set_string('python', 4, '$') -> 'pyt$hon'
+set_string('python', 11, '$') -> 'python'
+16. Write a python function of tallest_person(lst) that",triton-vllm
+514,44.53198816103395,20.524984602001496,24.00700316799339,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python function to multiplying the values in a dictionary.
+4. Write a Python function to reverse a string.
+5. Write a Python function to find the first appearance of the substring 'not' and 'poor' from a given string, if 'not' following the 'poor', rewrite the string to be 'good'. Return the new string.
+Note: It is guaranteed that the first string argument given to this problem will be a copy of the third quote string. It looks like so: ""abcde"" -> ""cdea"".
+6. Write a Python function to sort a list of nested dictionaries.
+7. Write a Python function to remove key value pairs from a dictionary whose keys are numbers.
+8. Write a Python function to count spaces at the beginning of a string.
+9. Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+10. Write a Python function that takes a list of words and returns the length of the longest one.
+Example : [""cursor"", ""Google"", ""github"", ""fabric""]
+11. Write a Python function to check whether a number is in a given range.
+>> True, since the number 10 is in the range from 2 to 15.
+12. Write a Python function to find the list in a list of lists whose sum of elements is the highest.
+>> maxList = [2, 3, 4, 5]
+13. Write a Python function to print the number of prime numbers which are less than or equal to a given integer.
+Code Sample:
+
+14. Write a Python function to check whether every even index contains an even number and every odd index contains odd number of a list.
+>> True
+15. Write a Python function of SetStringCharacter(str, index, character) that takes in a string, a character, and an index of where the character should be inserted.
+If the index is out of range, the string return the original string without that character.
+>> Example :
+set_string('python', 4, '$') -> 'pyt$hon'
+set_string('python', 11, '$') -> 'python'
+16. Write a python function of tallest_person(lst) that",triton-vllm

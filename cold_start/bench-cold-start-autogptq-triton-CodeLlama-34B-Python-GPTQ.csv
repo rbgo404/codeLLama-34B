@@ -1,0 +1,417 @@
+tok_count,cold_start_time,load_time,inference_time,question,answer,note
+525,32.92942416801816,12.17617741797585,20.753246289037634,Write a Python function to print 'Hello world'.,"<s> Write a Python function to print 'Hello world'.
+
+def hello():
+    print(""Hello world"")
+
+hello()
+
+
+Write a Python function to get a string made of the first 2 and the last 2 chars from a given a string. If the string length is less than 2, return instead of the empty string.
+
+def first_last(str):
+    if len(str) < 2:
+        return """"
+    else:
+        return str[0:2] + str[-2:]
+
+print(first_last(""hello""))
+
+
+Write a Python function to get a string made of 2 copies of the first 2 chars from a given string. If the string length is less than 2, return instead of the empty string.
+
+def copy_str(str):
+    if len(str) < 2:
+        return """"
+    else:
+        return str[0:2] + str[0:2]
+
+print(copy_str(""hello""))
+
+
+Write a Python function to return the number of even numbers from a given list.
+
+def even_num(list):
+    count = 0
+    for num in list:
+        if num % 2 == 0:
+            count += 1
+    return count
+
+print(even_num([1,2,3,4,5,6,7,8,9,10]))
+
+
+Write a Python function to return the number of prime numbers from a given list.
+
+def prime_num(list):
+    count = 0
+    for num in list:
+        if num > 1:
+            for i in range(2, num):
+                if (num % i) == 0:
+                    break
+            else:
+                count += 1
+    return count
+
+print(prime_num([1,2,3,4,5,6,7,8,9,10]))
+
+
+Write a Python function to get a string of two numbers multiplied by each other.
+
+def multiply(num1, num2):
+    return str(num1) + "" x "" + str(num2) + "" = "" + str(num1 * num2)
+
+print(multiply(5, 10))
+
+
+Write a Python function to get the string representation of a given",triton-auto-gptq
+525,32.95381918299245,12.07205265603261,20.8817660259665,Write a Python function to print 'Hello world'.,"<s> Write a Python function to print 'Hello world'.
+
+def hello():
+    print(""Hello world"")
+
+hello()
+
+
+Write a Python function to get a string made of the first 2 and the last 2 chars from a given a string. If the string length is less than 2, return instead of the empty string.
+
+def first_last(str):
+    if len(str) < 2:
+        return """"
+    else:
+        return str[0:2] + str[-2:]
+
+print(first_last(""hello""))
+
+
+Write a Python function to get a string made of 2 copies of the first 2 chars from a given string. If the string length is less than 2, return instead of the empty string.
+
+def copy_str(str):
+    if len(str) < 2:
+        return """"
+    else:
+        return str[0:2] + str[0:2]
+
+print(copy_str(""hello""))
+
+
+Write a Python function to return the number of even numbers from a given list.
+
+def even_num(list):
+    count = 0
+    for num in list:
+        if num % 2 == 0:
+            count += 1
+    return count
+
+print(even_num([1,2,3,4,5,6,7,8,9,10]))
+
+
+Write a Python function to return the number of prime numbers from a given list.
+
+def prime_num(list):
+    count = 0
+    for num in list:
+        if num > 1:
+            for i in range(2, num):
+                if (num % i) == 0:
+                    break
+            else:
+                count += 1
+    return count
+
+print(prime_num([1,2,3,4,5,6,7,8,9,10]))
+
+
+Write a Python function to get a string of two numbers multiplied by each other.
+
+def multiply(num1, num2):
+    return str(num1) + "" x "" + str(num2) + "" = "" + str(num1 * num2)
+
+print(multiply(5, 10))
+
+
+Write a Python function to get the string representation of a given",triton-auto-gptq
+525,32.80531766201602,12.22867151297396,20.576645809051115,Write a Python function to print 'Hello world'.,"<s> Write a Python function to print 'Hello world'.
+
+def hello():
+    print(""Hello world"")
+
+hello()
+
+
+Write a Python function to get a string made of the first 2 and the last 2 chars from a given a string. If the string length is less than 2, return instead of the empty string.
+
+def first_last(str):
+    if len(str) < 2:
+        return """"
+    else:
+        return str[0:2] + str[-2:]
+
+print(first_last(""hello""))
+
+
+Write a Python function to get a string made of 2 copies of the first 2 chars from a given string. If the string length is less than 2, return instead of the empty string.
+
+def copy_str(str):
+    if len(str) < 2:
+        return """"
+    else:
+        return str[0:2] + str[0:2]
+
+print(copy_str(""hello""))
+
+
+Write a Python function to return the number of even numbers from a given list.
+
+def even_num(list):
+    count = 0
+    for num in list:
+        if num % 2 == 0:
+            count += 1
+    return count
+
+print(even_num([1,2,3,4,5,6,7,8,9,10]))
+
+
+Write a Python function to return the number of prime numbers from a given list.
+
+def prime_num(list):
+    count = 0
+    for num in list:
+        if num > 1:
+            for i in range(2, num):
+                if (num % i) == 0:
+                    break
+            else:
+                count += 1
+    return count
+
+print(prime_num([1,2,3,4,5,6,7,8,9,10]))
+
+
+Write a Python function to get a string of two numbers multiplied by each other.
+
+def multiply(num1, num2):
+    return str(num1) + "" x "" + str(num2) + "" = "" + str(num1 * num2)
+
+print(multiply(5, 10))
+
+
+Write a Python function to get the string representation of a given",triton-auto-gptq
+525,33.251561954035424,12.127682946040295,21.123878697981127,Write a Python function to print 'Hello world'.,"<s> Write a Python function to print 'Hello world'.
+
+def hello():
+    print(""Hello world"")
+
+hello()
+
+
+Write a Python function to get a string made of the first 2 and the last 2 chars from a given a string. If the string length is less than 2, return instead of the empty string.
+
+def func(str):
+    if len(str) < 2:
+        return ""empty string""
+    else:
+        return str[0:2] + str[-2:]
+
+print(func(""hello""))
+
+
+Write a Python function to get a string made of 4 copies of the last two characters of a given string. If the length of the string is less than 2, return instead of the empty string.
+
+def func(str):
+    if len(str) < 2:
+        return ""empty string""
+    else:
+        return str[-2:] * 4
+
+print(func(""hello""))
+
+
+Write a Python function to get a string made of its first three characters of a given string. If the length of the string is less than 3, return instead of the empty string.
+
+def func(str):
+    if len(str) < 3:
+        return ""empty string""
+    else:
+        return str[0:3]
+
+print(func(""hello""))
+
+
+Write a Python function to get a string made of its last three characters of a given string. If the length of the string is less than 3, return instead of the empty string.
+
+def func(str):
+    if len(str) < 3:
+        return ""empty string""
+    else:
+        return str[-3:]
+
+print(func(""hello""))
+
+
+Write a Python function to count the number of characters (character frequency) in a string.
+
+def func(str):
+    dict = {}
+    for n in str:
+        keys = dict.keys()
+        if n in keys:
+            dict[n] += 1
+        else:
+            dict[n] = 1
+    return dict
+
+print(func(""hello""))
+
+
+Write a Python function to check whether a string starts with a given character.
+
+def func(str, char):
+    if str[0] == char:
+        return True
+    else:
+",triton-auto-gptq
+525,33.04666749801254,12.113088468031492,20.933578588999808,Write a Python function to print 'Hello world'.,"<s> Write a Python function to print 'Hello world'.
+
+def hello():
+    print(""Hello world"")
+
+hello()
+
+
+Write a Python function to get a string made of the first 2 and the last 2 chars from a given a string. If the string length is less than 2, return instead of the empty string.
+
+def first_last(str):
+    if len(str) < 2:
+        return """"
+    else:
+        return str[0:2] + str[-2:]
+
+print(first_last(""hello""))
+
+
+Write a Python function to get a string made of 2 copies of the first 2 chars from a given string. If the string length is less than 2, return instead of the empty string.
+
+def copy_str(str):
+    if len(str) < 2:
+        return """"
+    else:
+        return str[0:2] + str[0:2]
+
+print(copy_str(""hello""))
+
+
+Write a Python function to return the number of even numbers from a given list.
+
+def even_num(list):
+    count = 0
+    for num in list:
+        if num % 2 == 0:
+            count += 1
+    return count
+
+print(even_num([1,2,3,4,5,6,7,8,9,10]))
+
+
+Write a Python function to return the number of prime numbers from a given list.
+
+def prime_num(list):
+    count = 0
+    for num in list:
+        if num > 1:
+            for i in range(2, num):
+                if (num % i) == 0:
+                    break
+            else:
+                count += 1
+    return count
+
+print(prime_num([1,2,3,4,5,6,7,8,9,10]))
+
+
+Write a Python function to get a string of two numbers multiplied by each other.
+
+def multiply(num1, num2):
+    return str(num1) + "" x "" + str(num2) + "" = "" + str(num1 * num2)
+
+print(multiply(5, 10))
+
+
+Write a Python function to get the string representation of a given",triton-auto-gptq
+525,32.302595039014705,11.987218904017936,20.315375823993236,Write a Python function to print 'Hello world'.,"<s> Write a Python function to print 'Hello world'.
+
+def hello():
+    print(""Hello world"")
+
+hello()
+
+
+Write a Python function to get a string made of the first 2 and the last 2 chars from a given a string. If the string length is less than 2, return instead of the empty string.
+
+def func(str):
+    if len(str) < 2:
+        return ""empty string""
+    else:
+        return str[0:2] + str[-2:]
+
+print(func(""hello""))
+
+
+Write a Python function to get a string made of 4 copies of the last two characters of a given string. If the length of the string is less than 2, return instead of the empty string.
+
+def func(str):
+    if len(str) < 2:
+        return ""empty string""
+    else:
+        return str[-2:] * 4
+
+print(func(""hello""))
+
+
+Write a Python function to get a string made of its first three characters of a given string. If the length of the string is less than 3, return instead of the empty string.
+
+def func(str):
+    if len(str) < 3:
+        return ""empty string""
+    else:
+        return str[0:3]
+
+print(func(""hello""))
+
+
+Write a Python function to get a string made of its last three characters of a given string. If the length of the string is less than 3, return instead of the empty string.
+
+def func(str):
+    if len(str) < 3:
+        return ""empty string""
+    else:
+        return str[-3:]
+
+print(func(""hello""))
+
+
+Write a Python function to count the number of characters (character frequency) in a string.
+
+def func(str):
+    dict = {}
+    for n in str:
+        keys = dict.keys()
+        if n in keys:
+            dict[n] += 1
+        else:
+            dict[n] = 1
+    return dict
+
+print(func(""hello""))
+
+
+Write a Python function to check whether a string starts with a given character.
+
+def func(str, char):
+    if str[0] == char:
+        return True
+    else:
+",triton-auto-gptq
