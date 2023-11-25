@@ -1,0 +1,49 @@
+tok_count,cold_start_time,load_time,inference_time,question,answer,note
+125,37.102412150008604,33.806753549026325,3.295658221002668,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to find the maximum and minimum numbers from a sequence of numbers
+4. Write a Python function to sort (ascending) a dictionary by value
+5. Write a Python function to remove empty strings from a list of strings
+6. Write a Python function to convert a given string to all lowercase if it contains at least 2 uppercase characters in the first 4 characters.
+7. Write a Python function to sort a List of Dictionaries by values of a certain key
+",triton-vllm
+125,36.61900901905028,33.31803420605138,3.300974301993847,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to find the maximum and minimum numbers from a sequence of numbers
+4. Write a Python function to sort (ascending) a dictionary by value
+5. Write a Python function to remove empty strings from a list of strings
+6. Write a Python function to convert a given string to all lowercase if it contains at least 2 uppercase characters in the first 4 characters.
+7. Write a Python function to sort a List of Dictionaries by values of a certain key
+",triton-vllm
+125,36.75204626302002,33.435721034009475,3.3163248390192166,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to find the maximum and minimum numbers from a sequence of numbers
+4. Write a Python function to sort (ascending) a dictionary by value
+5. Write a Python function to remove empty strings from a list of strings
+6. Write a Python function to convert a given string to all lowercase if it contains at least 2 uppercase characters in the first 4 characters.
+7. Write a Python function to sort a List of Dictionaries by values of a certain key
+",triton-vllm
+125,36.882443429960404,33.57123562297784,3.311207395978272,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to find the maximum and minimum numbers from a sequence of numbers
+4. Write a Python function to sort (ascending) a dictionary by value
+5. Write a Python function to remove empty strings from a list of strings
+6. Write a Python function to convert a given string to all lowercase if it contains at least 2 uppercase characters in the first 4 characters.
+7. Write a Python function to sort a List of Dictionaries by values of a certain key
+",triton-vllm
+125,37.02570411702618,33.70411938504549,3.321584360965062,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to find the maximum and minimum numbers from a sequence of numbers
+4. Write a Python function to sort (ascending) a dictionary by value
+5. Write a Python function to remove empty strings from a list of strings
+6. Write a Python function to convert a given string to all lowercase if it contains at least 2 uppercase characters in the first 4 characters.
+7. Write a Python function to sort a List of Dictionaries by values of a certain key
+",triton-vllm
+125,36.71145245002117,33.39572790701641,3.315724051964935,Write a Python function to print 'Hello world'.,"
+2. Write a Python function to sum all the items in a list.
+3. Write a Python program to find the maximum and minimum numbers from a sequence of numbers
+4. Write a Python function to sort (ascending) a dictionary by value
+5. Write a Python function to remove empty strings from a list of strings
+6. Write a Python function to convert a given string to all lowercase if it contains at least 2 uppercase characters in the first 4 characters.
+7. Write a Python function to sort a List of Dictionaries by values of a certain key
+",triton-vllm
