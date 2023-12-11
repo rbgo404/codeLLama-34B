@@ -1,0 +1,128 @@
+tok_count,time,question,answer,note
+207,5.219485973007977,Write a story.,"<s> Write a story.
+
+The sun was setting over the horizon, casting a warm glow over the city. It was a beautiful sight, and one that was becoming increasingly rare. The city was growing, expanding, and the sun was slowly being pushed out by the towering buildings. But for now, at least, there was still a sliver of sky visible, and the sight was breathtaking.
+
+In the midst of this urban jungle, there was a small park. It was a haven for those who sought a moment of peace and tranquility amidst the chaos of the city. The park was a patchwork of green, with trees and grass and flowers, all carefully tended by the park's caretaker. The caretaker was an old man, with a long white beard and a gentle smile. He loved the park, and he loved the people who came to visit it.
+
+As the sun began to set, the caretaker sat on a bench",triton-auto
+211,5.173017519991845,Difference between cook and a chef?,"<s> Difference between cook and a chef?
+
+A cook is someone who prepares food, while a chef is a professional cook who usually works in a restaurant setting. Chefs are trained in culinary arts and have a deep understanding of food preparation, presentation, and flavors. They are responsible for creating menus, managing kitchen staff, and ensuring that the food they prepare meets the highest standards of quality and taste.
+
+Here are some key differences between a cook and a chef:
+
+1. Training and Education: A chef typically has formal training in culinary arts, either through a culinary school or an apprenticeship program. A cook may or may not have formal training, and may have learned to cook through experience, self-study, or informal training.
+
+2. Skill Level: Chefs have a higher level of skill and expertise in cooking techniques, food preparation, and presentation. They are skilled in a variety of cooking methods, such as sautéing, gr",triton-auto
+212,5.042941316962242,What is Attenion in deep learning?,"<s> What is Attenion in deep learning?
+
+In deep learning, attention is a mechanism that allows a model to focus on specific parts of an input while processing it. It is inspired by the human ability to selectively focus on certain aspects of a scene while ignoring others.
+
+Attention mechanisms have been widely used in various deep learning applications, such as natural language processing (NLP), computer vision, and speech recognition. They have shown significant improvements in tasks like machine translation, sentiment analysis, image captioning, and object detection.
+
+In the context of deep learning, attention can be thought of as a way to weigh the importance of different parts of an input. For example, in a machine translation task, an attention mechanism can help a model focus on specific words or phrases in the source language that are crucial for understanding the meaning and generating an accurate translation.
+
+There are different types of attention mechanisms, such as:
+
+1. Softmax Attention: It is a popular attention mechanism that uses a soft",triton-auto
+212,4.998506167030428,Who is the best painter in the world?,"<s> Who is the best painter in the world?
+
+The 5 Most Influential Painters of All Time
+
+1. Leonardo da Vinci (1452–1519) Renaissance painter and scientist Leonardo da Vinci is best known for The Last Supper and Mona Lisa.
+2. Michelangelo (1475–1564) …
+3. Pablo Picasso (1881–1973) …
+4. Vincent van Gogh (1853–1890) …
+5. Jackson Pollock (1912–1956) …
+
+Who is the most famous painter in the world?
+
+The most famous painters in the world are Leonardo da Vinci, Michelangelo, Vincent van Gogh, Pablo Picasso, and Jackson Pollock.
+
+Who is the most famous painter in the world 2020?
+
+",triton-auto
+207,4.978905758005567,Write a Indian song,"<s> Write a Indian song lyrics about the importance of education for all.
+
+(Verse 1)
+In a land of dreams and opportunities,
+Where knowledge is the key to success,
+We must educate every child, every youth,
+To make a better future, a better life.
+
+(Chorus)
+Education for all, education for all,
+A chance to learn, a chance to grow,
+Education for all, education for all,
+A brighter future, a brighter tomorrow.
+
+(Verse 2)
+From the villages to the cities,
+From the mountains to the sea,
+We must spread the light of knowledge,
+For a nation to be free.
+
+(Chorus)
+Education for all, education for all,
+A chance to learn, a chance to grow,
+Education for all, education for all,
+A brighter future, a brighter tomorrow.
+
+",triton-auto
+210,5.078409840003587,Where can I find tiger?,"<s> Where can I find tiger?
+
+Tigers are found in Asia, from the Russian Far East and North Korea down to parts of India, Bangladesh, and Southeast Asia. They live in a variety of habitats, including tropical rainforests, temperate forests, grasslands, and even some mountainous regions.
+
+Where do tigers live in India?
+
+Tigers are found in 18 states of India. They are found in 49 tiger reserves spread across 1.16 lakh square kilometers of India's geographical area. The tiger reserves are spread across 17 out of 29 Indian states.
+
+Where do tigers live in the world?
+
+Tigers are found in the wild in Bangladesh, Bhutan, Cambodia, China, India, Indonesia, Laos, Malaysia, Myanmar, Nepal, North Korea, Russia, Singapore, South Korea, Thailand, and",triton-auto
+211,5.009979877038859,Do you know Area 51?,"<s> Do you know Area 51? It is a top-secret military base in Nevada, United States, and it is said to be the place where the US government stores and studies extraterrestrial life and technology. It is also known as Homey Airport, Groom Lake Facility, and Dreamland.
+
+The base is surrounded by a high fence and is heavily guarded by the United States Air Force. It is said that the base is used for reverse engineering of extraterrestrial recovered technology, and it is also said that the US government has been keeping the existence of extraterrestrial life a secret from the public.
+
+The existence of Area 51 has been confirmed by the US government, but the purpose of the base is still classified. The base has been the subject of numerous conspiracy theories and has been featured in popular culture, including movies, television shows, and books.
+
+The base is also known for its involvement in the development of advanced aircraft, such as the Lockheed",triton-auto
+212,4.972697049030103,DO you know about India landing on Moon?,"<s> DO you know about India landing on Moon?
+
+The Indian Space Research Organisation (ISRO) has successfully launched its lunar orbiter Chandrayaan-2, which will orbit the Moon and study its topography, mineralogy and exosphere.
+
+The Chandrayaan-2 mission is a comprehensive orbiter craft designed to study the Moon’s surface and its environment.
+
+The spacecraft was launched on a Geosynchronous Satellite Launch Vehicle (GSLV Mk III-M1) rocket from the Satish Dhawan Space Centre in Sriharikota, India.
+
+The Chandrayaan-2 mission is a comprehensive orbiter craft designed to study the Moon’s surface and its environment.
+
+The spacecraft was launched on a Geosynchronous Satellite Launch Vehicle (GSLV Mk III-M1) rocket from the Satish Dhawan Space Centre in Sriharikota",triton-auto
+209,4.991734353010543,Your views about Indian politics.,"<s> Your views about Indian politics.
+
+Indian politics is a complex and diverse field, with a multitude of parties, ideologies, and issues at play. Here are some general views on Indian politics:
+
+1. Dynastic politics: Indian politics is often criticized for its dynastic nature, with families like the Gandhis, the Nehru-Gandhis, and the Ambanis holding significant power and influence. Critics argue that this perpetuates a system of nepotism and prevents new talent from emerging.
+
+2. Corruption: Corruption is a major issue in Indian politics, with allegations of bribery, nepotism, and misuse of power often surfacing. This has led to a loss of faith in the political system among the public.
+
+3. Populism: Indian politics is often criticized for its populist nature, with politicians promising freebies and handouts to win votes. Critics argue that this short-term",triton-auto
+215,5.0104584119981155,Who won the Novel prize this year and last year?,"<s> Who won the Novel prize this year and last year?
+
+The Nobel Prize in Literature 2021 was awarded to Abdulrazak Gurnah “for the undying, impassioned and eloquent exploration of the contemporary history of Africa as mirrored in the tragedies of individuals.”
+
+The Nobel Prize in Literature 2020 was awarded to Louise Glück “for her unmistakable poetic voice that with austere beauty makes individual existence appear as the essential and elusive aspect of reality.”
+
+The Nobel Prize in Literature 2019 was awarded to Peter Handke “for an influential renewal of the novel as a genre, for its indispensable warmth, acuity and courage to imagine.”
+
+The Nobel Prize in Literature 2018 was awarded to Olga Tokarczuk “for a narrative imagination that with encyclopedic passion represents the crossing of boundaries as a form of life.”",triton-auto
+207,5.038004342990462,Why winter happens?,"<s> Why winter happens?
+
+Winter happens because the Earth's tilt and orbit around the sun cause different parts of the Earth to receive varying amounts of sunlight throughout the year. During winter, the Earth's tilt away from the sun causes the sun's rays to strike the Earth at a more oblique angle, reducing the amount of solar energy received by the Earth's surface. This leads to colder temperatures and the formation of ice and snow.
+
+Why is it colder in the winter?
+
+It is colder in the winter because the Earth's tilt causes the sun's rays to strike the Earth at a more oblique angle, reducing the amount of solar energy received by the Earth's surface. This leads to a decrease in temperature, causing the air to become colder. Additionally, the Earth's atmosphere is thinner during winter, allowing for more heat to escape into space, which also contributes to the colder temperatures.
+
+Why does",triton-auto
