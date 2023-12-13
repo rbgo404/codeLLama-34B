@@ -1,5 +1,4 @@
-from transformers import AutoTokenizer
-from auto_gptq import AutoGPTQForCausalLM
+from vllm import LLM, SamplingParams
 import time
 import pandas as pd
 
@@ -30,36 +29,24 @@ questions = [
     ]
 
 
+
 class InferlessPythonModel:
     def initialize(self):
-        model_name_or_path = "TheBloke/meditron-7B-GPTQ"
 
-        # To use a different branch, change revision
-        # For example: revision="gptq-4bit-32g-actorder_True"
-        self.model = AutoGPTQForCausalLM.from_quantized(model_name_or_path,
-                model_basename="model",
-                use_safetensors=True,
-                trust_remote_code=False,
-                device="cuda:0",
-                use_triton=False,
-                disable_exllama=True,
-                disable_exllamav2=True,
-                quantize_config=None)
-
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, use_fast=True, trust_remote_code=False)
+        self.sampling_params = SamplingParams(temperature=0.8, top_p=0.95)
+        self.llm = LLM(model="TheBloke/meditron-70B-AWQ", quantization="awq", dtype="float16")
 
     def infer(self, inputs):
         prompts = inputs["prompt"]
         start_time = time.perf_counter()
-        input_ids = self.tokenizer(prompts, return_tensors='pt').input_ids.cuda()
-        output = self.model.generate(inputs=input_ids, temperature=0.7, do_sample=True, top_p=0.95, top_k=40, max_new_tokens=512)
-        text = self.tokenizer.decode(output[0])
+        result = self.llm.generate(prompts, self.sampling_params)
         request_time = time.perf_counter() - start_time
+        result_output = [output.outputs[0].text for output in result]
 
-        return {'tok_count': output.shape[1],
+        return {'tok_count': len([output.outputs[0].token_ids for output in result][0]),
             'time': request_time,
             'question': prompts,
-            'answer': text,
+            'answer': result_output[0],
             'note': 'mixtral-autogptq'}
 
 
@@ -77,4 +64,4 @@ if __name__ == '__main__':
 )
 
     df = pd.DataFrame(responses)
-    df.to_csv('bench-meditron-autogptq.csv', index=False)
+    df.to_csv('bench-meditron-vllm.csv', index=False)

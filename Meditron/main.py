@@ -33,7 +33,10 @@ questions = [
 class InferlessPythonModel:
     def initialize(self):
 
-        self.sampling_params = SamplingParams(temperature=0.8, top_p=0.95)
+        self.sampling_params = SamplingParams(
+                                                temperature=1.0,
+                                                top_p=1,
+                                                max_tokens=512)
         self.llm = LLM(model="TheBloke/meditron-70B-AWQ", quantization="awq", dtype="float16")
 
     def infer(self, inputs):
