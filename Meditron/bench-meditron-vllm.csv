@@ -1,0 +1,43 @@
+tok_count,time,question,answer,note
+16,0.8508566389791667,Implement a Python function to compute the Fibonacci numbers.,"
+Problem
+This problem is a part of the series ""Programming Basics",mixtral-autogptq
+16,0.8311804080149159,Write a Rust function that performs binary exponentiation.,"
+
+#[test]
+fn test_sqrt() {
+    assert",mixtral-autogptq
+16,0.8294743250589818,How do I allocate memory in C?,"
+To allocate dynamic memory, use the malloc() function.
+If you want",mixtral-autogptq
+16,0.8334160590311512,What is the fable involving a fox and grapes?,"
+As well as the grapes are sour and out of attain",mixtral-autogptq
+16,0.9072905699722469,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.","
+The Doctor is a Time Lord: a 900 year old al",mixtral-autogptq
+16,0.8310873850714415,Who does Harry turn into a balloon?,"
+Harry turned into a balloon when he was trying to impress the",mixtral-autogptq
+16,0.8339006790192798,What were the major contributing factors to the fall of the Roman Empire?," The fall of the Roman Empire was caused by multiple factors, but the most important",mixtral-autogptq
+16,0.8335462299874052,How did the invention of the printing press revolutionize European society?,"
+The printing press revolutionized European society by making it easier to produce copies of",mixtral-autogptq
+16,0.830671567004174,What are the effects of quantitative easing?,"
+The Federal Reserve and other central banks are engaged in extraordinary programs to support their",mixtral-autogptq
+16,0.8680336879333481,"Describe the city of the future, considering advances in technology, environmental changes, and societal shifts.","
+Create a poster that uses a visual metaphor to convey your idea.",mixtral-autogptq
+16,0.8661488089710474,"In a dystopian future where water is the most valuable commodity, how would society function?","
+Water is used to survive, for recreation, and is an",mixtral-autogptq
+16,0.831933623063378,What is the product of 9 and 8?,"
+The product of 9 and 8 is 72
+What is",mixtral-autogptq
+16,0.8663064840948209,"If a train travels 120 kilometers in 2 hours, what is its average speed?","
+Did you guess 60 kilometers per hour? The correct answer is",mixtral-autogptq
+16,0.9573868670267984,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","
+Write a rule for the nth term of the sequence, assuming the pattern",mixtral-autogptq
+16,0.8358361211139709,What are 'zombie stars' in the context of astronomy?,"
+Zombie stars are dead stars that are reanimated by companion stars",mixtral-autogptq
+16,0.8720912049757317,Who were the 'Dog-Headed Saint' and the 'Lion-Faced Saint' in medieval Christian traditions?,"
+
+ 
+
+## Who were the dog-headed saint and the",mixtral-autogptq
+16,0.8677312539657578,"What is the story of the 'Globsters', unidentified organic masses washed up on the shores?","
+For hundreds of years, beachgoers have reported finding large, unident",mixtral-autogptq
