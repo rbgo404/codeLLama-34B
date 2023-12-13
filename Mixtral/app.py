@@ -14,7 +14,7 @@ def predict(prompt:str):
     start_time = time.perf_counter()
     
     inputs = tokenizer(prompt, return_tensors="pt")
-    generated_ids = model.generate(**inputs, max_new_tokens=20)
+    generated_ids = model.generate(**inputs, max_new_tokens=200)
     output = tokenizer.decode(generated_ids[0], skip_special_tokens=True)
     
     request_time = time.perf_counter() - start_time
