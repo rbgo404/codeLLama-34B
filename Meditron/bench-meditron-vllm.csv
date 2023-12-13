@@ -1,43 +1,251 @@
 tok_count,time,question,answer,note
-16,0.8508566389791667,Implement a Python function to compute the Fibonacci numbers.,"
-Problem
-This problem is a part of the series ""Programming Basics",mixtral-autogptq
-16,0.8311804080149159,Write a Rust function that performs binary exponentiation.,"
+512,26.564176960033365,Implement a Python function to compute the Fibonacci numbers.,"
+2 Given two Stock prices, a and b, implement a function to plot a line which connects them in a line chart: main.55,31.11
 
-#[test]
-fn test_sqrt() {
-    assert",mixtral-autogptq
-16,0.8294743250589818,How do I allocate memory in C?,"
-To allocate dynamic memory, use the malloc() function.
-If you want",mixtral-autogptq
-16,0.8334160590311512,What is the fable involving a fox and grapes?,"
-As well as the grapes are sour and out of attain",mixtral-autogptq
-16,0.9072905699722469,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.","
-The Doctor is a Time Lord: a 900 year old al",mixtral-autogptq
-16,0.8310873850714415,Who does Harry turn into a balloon?,"
-Harry turned into a balloon when he was trying to impress the",mixtral-autogptq
-16,0.8339006790192798,What were the major contributing factors to the fall of the Roman Empire?," The fall of the Roman Empire was caused by multiple factors, but the most important",mixtral-autogptq
-16,0.8335462299874052,How did the invention of the printing press revolutionize European society?,"
-The printing press revolutionized European society by making it easier to produce copies of",mixtral-autogptq
-16,0.830671567004174,What are the effects of quantitative easing?,"
-The Federal Reserve and other central banks are engaged in extraordinary programs to support their",mixtral-autogptq
-16,0.8680336879333481,"Describe the city of the future, considering advances in technology, environmental changes, and societal shifts.","
-Create a poster that uses a visual metaphor to convey your idea.",mixtral-autogptq
-16,0.8661488089710474,"In a dystopian future where water is the most valuable commodity, how would society function?","
-Water is used to survive, for recreation, and is an",mixtral-autogptq
-16,0.831933623063378,What is the product of 9 and 8?,"
-The product of 9 and 8 is 72
-What is",mixtral-autogptq
-16,0.8663064840948209,"If a train travels 120 kilometers in 2 hours, what is its average speed?","
-Did you guess 60 kilometers per hour? The correct answer is",mixtral-autogptq
-16,0.9573868670267984,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","
-Write a rule for the nth term of the sequence, assuming the pattern",mixtral-autogptq
-16,0.8358361211139709,What are 'zombie stars' in the context of astronomy?,"
-Zombie stars are dead stars that are reanimated by companion stars",mixtral-autogptq
-16,0.8720912049757317,Who were the 'Dog-Headed Saint' and the 'Lion-Faced Saint' in medieval Christian traditions?,"
+# Analysis
+Fibonacci numbers 'F(n)' follows a basic recursive property such as F(n) = F(n−1) + F(n−2), where F(0)=0 and F(1)=1. The interviewer expected me to write the program in Es6(we were not allowed to use a timer module), so I wrote a basic recursive function using (ES6) and it takes approximately 7ms to generate a list of Fibonacci numbers of length 10. But I was asked the reason of using recursion? I said, therefore recursion performance will be low due to multiple function calls and repeated values storage in the memory stack, I started using a dynamic approach memoization. But the problem with recursion is the number list is generated but we couldn't need to iterate over each to get length. So I transformed an array into an array iterator using a generator function.
+In order to my implementation, I used the XOR trick (Exclusive OR) to separate curve geometry from render, so the pipeline was pure and clean.
+The integrator is not on my forecast, I didn't expect that question, so I did get a retake and passing mainly because the first two were clean.
 
- 
+## Interview process
+Recruiter screening - Google+$ google algorithms, went well
+-I solved 3 problems on 1 hr timeboat -Wrong tree property , spam, and tail issue
+-Went well they passed me to second round
+Second round was phone interview -I spoke 75% they spoke 25% -1. he said (by the way) not a lot of people did good job on first stage than asked me what the secret
+-I replied 
+-I was surprised how he emphasized that by the way (they were trying to make the candidate self emphasized)
+-I talked about google paper the unreasonable effectiveness of data (he said that I was using data from the problem I had a solution he gave me)  I replied with my style that according to the customer requirement and market change always be a thing and I'm using GPS to be consistent and generation deep learning and interactive approach for both cases of events.
+-",mixtral-autogptq
+512,26.77904401498381,Write a Rust function that performs binary exponentiation.,"
+-
+The key ingredient of this is a recursive algorithm called binary exponentiation. Googling ""binary exponentiation"" will find you more information on it, but here is some pseudocode:
+repeat x ← base + base (2. exponent + 1) 2. exponent ← exponent / 2 continue until exponent ≡ 0 do x ← (base + x) / 2 output x It needs two factors: the base b (the number to be raised to a power) and the exponent e. The output is b to the power of e.
+Write a function that needs an argument of type f64 and returns an f64 that performs binary exponentiation, also known as Successive Squaring.
+func(2.0f64, 3.0f64) //> 8.0
+func(5.0f64, 11.0f64) //> 2275.0
+fn binary_exp(b: f64, e: f64) -> f64 {
+    let mut x: f64 = 0.0;
+    let mut exponent: f64 = 1.0;
+    loop {
+        x = (b + b) / 2.0;
+        exponent = exponent / 2.0;
+        if exponent == 0.0 {
+            break;
+        }
+    }
 
-## Who were the dog-headed saint and the",mixtral-autogptq
-16,0.8677312539657578,"What is the story of the 'Globsters', unidentified organic masses washed up on the shores?","
-For hundreds of years, beachgoers have reported finding large, unident",mixtral-autogptq
+    x
+}
+
+This can be done shorther using a riddle:
+fn binary_exp(b: f64, e: f64) -> f64 {
+    repeat (base + base) / 2;
+    drop base *= base / 2;
+    base /= 2 while base;
+    base + base / 2
+}
+
+You can also cut this down to about five lines by using Chan interface.
+You’ll be able to note that, for the reasons described in this topic, planning and thought is important. If you practice Rustic, you’ll be able to create quick and stylistically pleasant code with less thought. You’ll be able to get better at all the other issues with the help of this justice.
+To download rustic and check if rustc is installed in your computing system, use the command line tool rustup and download rust- Anal",mixtral-autogptq
+512,26.920031531946734,How do I allocate memory in C?,"
+I'm coming to C design patterns after some time writing Emacs Lisp.  I've glanced through Design Patterns in C to get a sense of their scope but am now stuck about creating these patterns in my code.
+
+Specifically, I'm creating a command interpreter and want to make an extensible dictionary command.  I'd like to instantiate different dictionary implementations based on the string argument of a command.  In other words, if implementation goat is specified, the command function will return gan instance of goat.
+Instantiating the dictionary structures from command_execute() - a bit like a procedural factory is the problem I'm having now.
+Even inside the command_execute function, the parameters (and the other implementations are pigs, sheep and antelopes - they aren't real dictionary implementations; is this meaningful or should I post the full code?).
+How do I create an extensible dictionary manager (that can create any type of dictionary implementation) and iterate through a list: {goat=Gen, pig=G, hog=Ho, hump=Fun with extra arguments}?  If I understand the question, is my current approach correct or do I need an initial header file, allocation list etc. to get this to work?
+Add questions tagged homework to homework questions. See the homework policy for guidelines on asking appropriate questions.
+
+A: Er... yes. What *are* you talking about? Are you asking about a ""command language""? This sounds a lot like the old-style ""compiled languages"" that Lisp (from its days as Automatic LISP) used to compile. A (compiled) Lisp function is a symbol and a list; the first element of the list is the Implementation-of-this-Function, and the rest of the list is the parameter list. The symbol is the name given to the function.
+Anyway, back to the question. you write ""Instantiating the dictionary structures from command_execute() - a bit like a procedural factory""
+In the first place, if there's a datastructure, it's not Procedural. Procedural means you have a command that returns its result in a Value; a statement that changes it is *not* Procedural. Data structures don't do either of those things.
+On the other hand,",mixtral-autogptq
+512,27.058186052949168,What is the fable involving a fox and grapes?," – Added Questions
+What is a “sour grapes” fable?
+The fable, of which there are several versions, including one by Aesop, recounts a papa fox discovered a hedge of delicious-looking grapes that included totally to his kids. Starving, the papa silver grapes aHis children, lies, making them secure that the grapes were sour and not worth the money and cries.
+Maybe you are interested in what does it mean when someone says don rsquo t count on me?
+[…]
+What is sour grapes?
+sour grapes Add to list Share. The meaning of sour grapes is a fr Johannesburgd British or American An outdated expression for the idea that somebody showered by another individual’s outfield or jealousy is an obsolete feeling. It comes from the Aesop’s fable of the fox.
+Does the god they believed in develop them into?
+Lord, they believed in, DOESN’T B$1 IMPLY on the list of IMPERFECT HUMAN BEINGS.
+Just how do you understand if you’re buying Sour Grapes?
+Any time you hear a person com to an individual or demonstrate a kind of conquer with unjustified behavior, you’re probably se seriolosityGrapes. Perhaps a pal of a guy is lessened and ousters she is not in the very notion of him since he enjoys some guy who she wants.
+What should you say when they are sour?
+What to Do Once You Are Feeling Sour
+Use your time to work 
+”title”.
+Investigation kicks back just a little.
+Let the LORD lead you on exactly what you should d aNIf atleast
+.
+Keep rowing.
+What does Prite mean?
+Definition of prite [Archaic] LLC stay out. Probably combining the former pry + profusion from middle English -tee (used like a cleanup by the ending of a noun signalling the present participle) + -y 1.
+What does you are wrong and you are ize mean?
+zzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzz If-someone’",mixtral-autogptq
+512,27.238963059033267,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert."," Get the travel group to pose in one of the Academy's WonderWorks, and Virgin Atlantic Airways will give you return flights anywhere in the world.
+Godmother, smiling, reveals her pointy teeth behind a red veil that parts two glistening lips. Sunshine dancing on her face as she opens the package of doom. Tourists take incredible care to climb the icy stairs. They place a pile of rubbish in front of her in the shape of her children, who she licks better, lick lick lick. Years pass, the kids grow. A carnival on wheels arrives. The local freaks move in with an endless parade of leaden instruments, marching onwards and onwards past Godmother, Authurkfures, Peenoniclood. A desert springs up in serene greenness, the carnival flies back to the outback, and the travellers find something worth chasing down there. Godmother leans back on her hands, howling satisfaction.
+This post was written by Declan Brett. Declan is the CEO and Co-Founder of World Orgs, a not-for-profit startup founded by young people with the mission of bridging the gap between the fantasy narrative world of children's books and the disillusioned reality of the world's marginalised, often by providing access to tangible goods and services that underpin stories and spark imagination. WorldOrgs Founders are advised by their official patron, Robert Patrick from Terminator 2.
+Labels: Robustness Check
+2375800078316436755
+You must first shake hands with Djmoladdonizio and Unotstoxmug, then you will see the compass on the altar. To the right lies the path to Authurkfures. Once you have spoken to Naahaboutaar, it is your responsibility to ensure the continual success of Unotstoxmug. First take a left at Unofhian, and then follow the river south to Calloutan. Once you castrate Peenoniclood, place your hands on the tomb of Wightlap, and use the scroll there. You will gaze upon the magnificence of the Academy of",mixtral-autogptq
+512,27.193139523966238,Who does Harry turn into a balloon?,"
+Already a wide variety of useful memories had left a stain on Privet Drive, this evening’s at the top of the list;
+Harry marvels at the usefulness of the spell the first time Dumbledore performs it himself
+Appears in…
+- Harry Potter and the Deathly Hallows
+- Pottermore
+- Writing by J.K. Rowling on Wizarding
+Annoyingly, the spell that causes a person or thing to soften and inflate won’t stop them squeaking, but it does stop them moving completely.
+In a 2004 interview with Dennis Lawless of BBC Radio, @stefanibutscher writing on harrypotter.wikia.com:
+Jo Rowling told BBC Radio that “after this book is done I will probably write an encyclopedia”. Now, five years later, Pottermore.com is that promised encyclopedia. J.K. Rowling’s website is officially opened in 2012. She also admitted:
+“I always said that I did not plan to write any more books about Harry. But that is not quite the same thing as saying that Harry is never going to appear in another book. The fact is that Harry is a character so important to me that I couldn’t even contemplate another book with him in a starring role. However, nothing is set in stone. Who knows? I never expected to embark on the Harry Potter and the Half-Blood Prince when I was writing Harry Potter and the Order of the Phoneix.” @harrypotter.wikia.com
+The Harry Potter and the Deathly Hallows quotes
+These are all fantastic quotes from J. K. Rowling’s books, movies and interviews, Pottermore.com, Harry Potter website, J.K. Rowling’s official site, Wikipedia, goodreads, philip's bookmarked and bookyap.com. Don’t forget to pin it for later.
+The post Jeers, who does Harry turn into a balloon? Did you know these facts? appeared first on About Harry Potter.
+{ 9 comments… read them below or add one }
+- divadelmi Said,
+Pros Music and Halloween Candy
+- DHI Said,
+Hi snowwhite and",mixtral-autogptq
+512,27.247715209960006,What were the major contributing factors to the fall of the Roman Empire?,"
+Asked by t.sigmond
+- Category Religion & Spirituality
+- 1 answer
+- 1 answer
+Tom & Carol,
+Ignoring the canard that christianity is at the root of the fall of the Roman empire, this post will address the multitudinous reasons for the eventual fall that took several centuries to come to fruition. Out of order, but relevant in my opinion are the Plague of Justinian that lasted for more than twenty five years and killed nearly 300-350 million people in total -- and the Jews. The Jews became prominent in the empire especially after the improved relations between the empire and the Hebrew nation under Vespasian’s reign. Of course, remember, this fall did not come at one time, and it has been a struggle to locate the commencement of the fall with some even setting the date of Constantine’s establishment of the empire as christian nearly two hundred years before his rule. Curiously, Constantine was later ranked as a saint even though he was not ‘baptized’ until he was on his deathbed (typical christian belief that that will get you there -- baptism even in death!) Why, even Gibbon today in his “Decline and Fall...” points out that “Constantine had no deep privately held religious faith” (Gibbon, ""1""). Even Grayling went to great pains to point out that christians were prevalent, “men rebelling against pagan orthodoxy long before an official religion was established” (Grayling, ""1""). Christians, as we have earlier discussed, were persecuted, but that wasn't because they were christians, but rather it had more to do with the demand from the church that their followers put their religion ahead of the government, ahead of slavery, fomented rebellion -- and of course their sexual repression that was never enjoyed. People in the Roman empire enjoyed sex almost overly so! But, lets examine a few more reasons for the fall. Disease was an obvious factor, as you know, and was responsible for the death of about a third of the empire’s population (Gibbon, ""1). The military rule in ‘imperial’ Rome was also a primary factor (Gibbon, ""1""). In addition (and perhaps the most damning), the ever",mixtral-autogptq
+512,27.25231434998568,How did the invention of the printing press revolutionize European society?,"
+(1) Changes in EconomyThe dissemination by print of commerce statutes and regulations by states helped to expand and transform the nature of the market economy that developed into capitalism. The Bible and tracts preached the virtues of hard work and saving.
+(2) Rapid Dissemination of IdeasThe more educated people who now became able to read could be persuaded to take a particular point of view. Scientific books popularized new findings and created demands for new machines and goods.
+(3) Standardized LanguagesBibles printed in vernacular promised a standardized form of language and dialect that would be universally understood, serving to unify a state. The invention of dictionaries also served as a unifying force by identifying acceprd spellings for vernacular lexicons.
+(4) Public SphereDissemination of ideas and information through books and periodicals created a “marketplace of ideas” that existed outside government control where people could discuss and debate public opinion.
+(5) New OccupationsPrinting’s dissemination of new ideas and literacy created new professional and personal occupations such as journalists, scientists, and novelists, artists, thespians, and musicians. In the latter part of the sixteenth century, newspapers became primary sources of information for everyone. During the Enlightenment philosophes used the power of the printed word to enlighten Europe.
+History
+Art Exhibition Reveals Depth of Daddy's Little Girl Relationship
+Beach Boys are Giving Baltimore a Private Show for $5,000 a Ticket
+Review: Terry Goddard.
+Review: Seth Avett & Jessica Lea Mayfield.
+Review: Of Montreal.
+Review: King Deco.
+Review: Bully.
+Review: Mvskoke Cinema.
+Review: Best Coast.
+Preview: Invest in Community Through The MATCH Event.
+Behind the Company That Runs Baltimore's Finest Venues.
+Preview: The Ashes.
+Preview: Phil Dwyer.
+Review: Greater Waters.
+Review: OperaQ Unveils Le Nozze Di Figaro.
+Review: The Ironia of a Bastard Queen.
+Active Parents Get Driv",mixtral-autogptq
+512,27.255641828058288,What are the effects of quantitative easing?," An empirical review
+
+This paper asks what the effects of quantitative easing were on a wide range of macroeconomic outcomes such as output, inflation, unemployment, and key asset prices. It does so by presenting a meta-analysis methodology capable of consolidating results from multiple macroeconomic models as well as addressing the issue of time heterogeneity. Results are obtained for countries that applied the monetary intervention brightly and systematically, namely the United States, Japan, and the United Kingdom. The main conclusion is that the effect of quantitative easing and its central channel, namely the accommodation of a term premium, are very small and inconsistent depending on time and country. Other channels of action of monetary policy, either monetary or non-monetary, may be more important.Highlighted resultsDealing with macroeconomic models that have been estimated repeatedly too often conveys a confusing outcome because the average effect of the variables is computed moving the sample boundaries. No wonder why economists could hardly find an agreement on the large questions at hand. Meta-analysis, a branch of statistics developed to handle this type of problems, aims to be the tool that is necessary here, capable of providing answers despite quantitative technical innovation blossoming in quantitative economics.The innovation in this paper resides in its instrumental application to the specific issue of quantitative easing (QE), which enables us to face the impact of such policy without neglecting classical macro models. Such a model, therefore, synthesizes evidences from estimates of different models, including a Markov-switching model and dating the recession time of the BoF said to be quite important in transmission channels. Hence it is used also for evaluating the impact of QE by hysteretic business contractions.Lastly, by summarizing a big set of outcomes in a third grade of meta-analysis (""metacalculation"", so to say), coordinated by Alesina (2018), we approach a lovely coherence (""rigorous like the mathematical induction""?) in measuring the average impact of QE on all targeting variables, and not them alone.
+
+## What are we talking about?
+United States, Japan, the UK, and England have implemented a large-scale asset purchase program since 2008. These programs",mixtral-autogptq
+512,27.31517361709848,"Describe the city of the future, considering advances in technology, environmental changes, and societal shifts."," What are the most important influences in determining the city's future, and what problems will confront the residents of the future? How could we make this utopia a reality?
+name Name:
+Write your response in the space provided.
+More than 24 hours notice of your scheduled interview time will cancel your interview. Students forfeit their $200 admission confirmation fee.
+Start
+hey. im writing a paper on this topic. i can cover the advances in technology and environmental changes, but in need of some info for some content for the societal shifts. thanks.
+Your Answer is very helpful for Us Thank you a lot!
+advertisement
+Pittsburgh has been ranked as one of the countries most livable cities and while the academic and business environment is highly supportive of future thinking, Pittsburghers, on average, tend to move toward the conservative. We are looking for stories that push the boundaries of existing technology, social norms and ethics, but most stories set in Pittsburgh should be based on level three or less. This would include self driving cars that are still guided by set routes and pathways, voice command interfaces, rapid fabrication, smart buildings and homes, and expanded social media. The dominant social issue is the debate around the legality of digital humans and the political and religious controversy it causes. Biotech is huge. While your stories may have elements from level four and five, they should only play background roles. Do not rely on them as primary characters. You must have clear, but subtle references to the city of Pittsburgh, its businesses, landmarks, and at least one of its seventy distinct neighborhoods. above is the criteria I need to use in a 4-5 page essay so anything I can get to help would be helpful. Question 2 is about Philadelphia, Lancaster and Reading all being flooded out and a disease outbreak in western Pennsylvania.i graduate this month, and I am going to a college for photography. I just have to write a 4-5 page paper on the future and my city and I'm lost. I've chosen Pittsburgh. I just need hints as too how I could go about doing this and would thoroughly appreciate it.Thank you!
+THE SUBURBAN YOUNG PROFESSIONALS OF PITTSBURGH
+“SYP in 5",mixtral-autogptq
+512,27.325707260984927,"In a dystopian future where water is the most valuable commodity, how would society function?"," It seems to be a piece of the puzzle that Matthew McConaughey's character Cowboy is trying to put together in the Intel-assisted trailer for ""Steven Knight's Unsexed World""(via).
+The production is a big-name star vehicle that not only gives Niyce a chance to prance about on screen but gives it a run on social media, a significant factor in the company's 2021 marketing plan. ""Steven Knight's Unsexed World"" isn't a real movie, but its presence is serious.
+Rather than creating a fun little Super Bowl parody like Coen Bros' ""E-Trade Baby"" just having a fun time or Michelob Ultra's ""Dream Crew,"" this ad ignites the scathing discussion of Kent we've seen in ""Wine,"" social media and podcasts in the last three years. without necessarily claiming leadership as it has done in the past.
+In fact, Intel is not even mentioned by name at this minute-long clip. Surprise it's a performance piece from Jonathan Nolan's writer, set to air prominently during the game between the Kansas City Chiefs and Tampa Bay Buccaneers. The problem is that McConaughey's talent is talking actively -- he plays an activist who feeds the poor -- and it's obviously intended to explore the complicated dynamics of dystopia and the sacrifice some are willing to make to defend the status quo, taking on the hyper-surveillance to reap unparalleled benefits. In other words: When there's tech, there's a business. And that business is sucking the planet dry through social means such as 'The Audience' and 'Kiss As Many People' to name a couple of the films prominently featured .
+There is a lot of that violation in the meta-action that finally puts Intel on everyone's radar in the early 2020s in the wake of Cambridge Analytica. And this project is remarkable in some ways.
+'Intel Inside' logo dramatically fades on the screen, after the simple ""what's inside"" graphic at the beginning of the spot, here's for #LeadOn, ""there's something behind words. @intel intel",mixtral-autogptq
+512,27.27471687295474,What is the product of 9 and 8?,"
+In the final model, the equation was written as: IQ Adult~IQ Child + (C.A.900+A.C.800).13.47 ((1, 244) = 399.23, p = 0.027) explaining 16% of the variance in adult IQ. The model was significant at 2.70, where high IQ was similar to normal population levels (approximately 120-130). We did not observe a positive effect of age on Glasgow coma score at discharge in the final model; the equation was fitted as: if we regressed Glasgow coma score at discharge on the IQ scores calculated on the entire dataset, it was significant ( = 0.0029,
+
+## Study implications
+These updated findings demonstrate favorable outcomes of immature animals subjected to severe traumatic fluid percussion brain injury compared to immature rodent models of moderate and acute brain injury. Furthermore, in this model of acute SABI, we demonstrate good cognitive recovery and cerebral microstructure integrity and observed a trend toward neuronal hyperplasia at the site of injury of the injured immature brain.
+This animal model will serve as a tool for TREM2 studies in pediatric brain injury. TREMs are type I transmembrane receptors expressed on the brain parenchyma and microglia. 16,17 A previous study of acute SABI in the immature rat by demonstrated focal and durable microglia response within the infiltrating neutrophils. These authors demonstrated that interleukin (IL)-1 receptor antagonist has neuroprotective effects in their post-SABI rodent model. Their immunohistochemistry studies showed a significant increase of nuclear factor activated T cells (NFAT) nuclear translocation in the traumatized brains. They also reported the increased adhesion of circulating leukocytes to the endothelium of brain microvasculature, which resulted in the inhibition of neutrophil transmigration. Thus, it is predicted in our current model that the infiltration of inflammatory cells, such as neutrophils and T lymph",mixtral-autogptq
+512,27.320820025051944,"If a train travels 120 kilometers in 2 hours, what is its average speed?"," (a) 60 kilometers per hour (b) 60 kilometers per hour (c) 6 kilometers per minute (d) 0.003 kilometers per minute
+The distance covered by the train in 2 hours is 120 kilometers.
+So, the speed of the train during these two hours is:
+Use the calculator to determine the distance traveled.
+Your answer is correct.
+_______________________________
+(e) How many kilometers per hour is that? (f) How many kilometers per minute is that?
+How to use Speed Calculator?
+Kilometers/Hour (km/h) is a unit of measure for expressing the average speed of an object which uses kilometers as the unit of distance.
+Kilometers/Hour (km/h) is one of the units of measure for expressing average speed of an object which uses kilometers as the unit of distance.
+How to calculate average speed?
+Average speed is equal to the total distance of the run or distance covered divided by the total time for which the motion was experienced.
+where v = average speed d = total distance t = total time
+where v = average speed d = total distance t = total time
+:
+The distance filled in this problem is 120 kilometers.
+In 2 hours, we need to calculate the distance covered rate. We took two endpoints, 0 hours and 2 hours, derived an equation based on the given information, and plugged in the distance filled on each end to get 4.17 min/km per hour.
+But, with my current code, the answer output is not close.
+I'm trying to figure out what process I did wrong that did not give the correct output. I would appreciate if you were able to point out my mistake.
+Thank you.
+P.S. I hypothetically think I have to use the times library to get the correct answer.Can someone help me find a solution to this problem please
+Step 1: Find d1 and d2
+- Find d1
+- Because the initial distance was 0 km
+ - Copied every 20 lines
+ - Helped solve simple ""Which one of these..."" questions
+
+A: Edit: John Coleman's answer specifies exactly what you are doing wrong. I missed the first part of the",mixtral-autogptq
+512,27.406024924013764,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","
+The pattern continues from 3 and 5 twice to give the next 3. I always start at 1, with 2 after 1 to give 3. Then it goes 5 and 8 to give 13, I always do this for sequences as it helps me find if there are any missing numbers. If there are a couple of blanks you know there is a problem. The sequences look like 1,11, 3, 6, 9, etc and if you spot the pattern, use it to find the missing numbers. Log in Please log in again. The login page will open in a new tab. After logging in you can close it and return to this page.cn.2016-01-29-05-57-27_0.pdf
+Based on your question, I think the sequence is
+a1 = 3, a2 = 5.
+an = a(n - 1) + a(n - 2) for n greater than 2.
+Think through this step by step.
+Lets check this pattern goes with the sequence
+(3) 3, 5
+(4) 8
+(5) 13
+(6) 21 by this pattern we will have 3 numbers of 3, 5 and 2 numbers of ??? . This gives
+(3) . Consider the next difference bn = an - an-1. The sequence
+b has first element b1 = 5, b2 = 3. The sequence an (n > 2) is obtained from two previous terms an-1 and an-2. The difference bn (n > 2) is obtained from the two previous terms bn-1 and bn-2
+Hint cn = 2 bn Let me know if I can help solve it! 2
+Asked By kk46806.
+056_en.pdf. 056_cn.pdf
+explain
+Reflection of y 18x over the x axis. 54 k k k -a -o
+The locus of a point in the xy-plane moving so that the sum of its distance from the y-axis equals 15 units is asaa 56280883 Z zi -u cl 3 Let",mixtral-autogptq
+512,27.14614798303228,What are 'zombie stars' in the context of astronomy?,"
+The term ‘zombie star’ is a catchy description which has caught the public imagination over the last decade, and while they may sound scary, they are an important part of our study of the Universe.
+In physics, such as astronomy (and The show (On this months Sky at Night) mentioned in the El Reg story focused on Columbia University Astronomy Professor David Kipping in the United States, who has been focusing on these “zombie stars.”
+For the Sun to go nova, it would have to have approximately 1.4 x 10^30kg of hydrogen to burn in uncontrolled fusion .
+But what makes these zombie stars tick?
+Thanks for an... interesting, informative piece - the only substantially 'chilling' exoplanets I know of are Frederik Pohl's Heechee-built ""Ghosts"". Since he had the ability to make a robot sex party sound like a SFnal insight, a tame version of this kind of nova might be well worth a read, should he choose to tackle one.
+For those with more, uh, terrestrial concerns (such as the disappearance of NAO) might I mention the great good fun that can be had via going to the other places: Whats Wrong With The Scientists? Expert Debunks legend of John Moore, Martyn's MySpace,[1] Galileo Unchained, Entschuddung; UK Libertaria; Goodfutronics; and so on.
+nged them at the time.
+What an interesting topic and what Zaphod would term a 'Big Bang' of a subject - sorry, couldn't resist it.
+Must admit, having watched G4's Attack of the Show for a while (on freeview here on ATS and also FTN - jarbled-pseudomaybe porn satellite channels) I did dig a lot of the references this week and the Z schedules - love the disassembled show report just as it is the (Ed,) the (Ed and) undead dream tv show format.
+The little Martian moons objects also caught my attention too, did you see them here?[1] I also wonder, did an alien transporter beam unevarth something on Mars to bring the debris back? or (lose it?) The mysterious",mixtral-autogptq
+512,27.19607347296551,Who were the 'Dog-Headed Saint' and the 'Lion-Faced Saint' in medieval Christian traditions?,"
+
+One of the most bizarre traditions of medieval Christianity is that of the 'Dog-Headed Saint', or 'Cynocephalus Celtus', depicting a Sinai-dwelling saint with both human and canine features. Figures comparing a 'Cynocephalus Celtus' with a 'Lion-Faced Saint', or a 'Leonis Celtus', based on traditions from Pliny the Elder [1], were well-known in Europe and the Near East from at least the 12th century CE onwards, but the identity of the purported 'Dog-Headed Saint' for this example remains uncertain. Were the naturalistic portrayals of the schola anthropographia, the medieval European compendia based on that the definitive Nile focusing on dog-headed holy man beyond Africa and Emporia, the the creation of which of the original haplogroups especially two physical traits from a community of Egyptian priests, who revered an ibis-headed god?
+
+# Introduction
+One of the bizarre traditions preserved in medieval Christian art is that of the 'Dog-Headed Saint'. Such representations of a 'Cynocephalus Celtus' are well-known in Europe from at least the 12th century CE onwards. Painted depictions of Christ, Mary, saints and/or the chivalric Knights Templar being guided by a 'Cynocephalus Celtus' survive in northern Europe and are so widespread as to be documented in Spiers' and Van Der Lingen's recent survey of anthropomorphic animal imagery. A figure of Christ flanked by a 'Cynocephalus Celtus' is the most common dog-headed example. While many anthropomorphic presentations have been.
+Peeters, University of Cambridge).
+Disregarding these traditions, expressed by multiple other scholars in earlier, better-known analyses of twin canine figures, however, presents something of a problem. Specifically, Papadopoulou-Kerameus' otherwise very useful, 132-page catalogue of illuminated manuscript Byzantine folk traditionswould not be nearly as reliable a study without mention that orthodox intellect",mixtral-autogptq
+512,27.249927295022644,"What is the story of the 'Globsters', unidentified organic masses washed up on the shores?","
+Select Search AreaGlobsters are unidentified organic masses discovered on beaches, and their origin and nature are usually unknown for many years.
+There are three basic possible origins of globsters. Many are decomposing carcasses of whales, large sharks or similar marine life. Some are deliberate hoaxes, such a, and was actually not a carcass but a life-size model made from chicken wire, paper-mâché and strips of red carpet.
+This material was originally compiled by Jan Craig Livingston
+The Truth Is Out There—things are happening out there that can'ts be explained. By Royal List of cryptozoologists. There is no unified opinion for what could be considered criteria for a cryptid.
+Ours is to report it as news and in some cases after folks find out the truth they realize just how strange it was or can begin to explain it. Many times though we never know what the hell it is.
+Jumped to conclusions about the 1963 sampling: news reporters, buyers ect.
+GHOST TECHNICIAN - Paranormal Ghost Investigation NEMESIS - Mirage Men on DVD 1 Jun 29, 2011 12:35.
+Faceless Nun
+Responsible (if that's the word) for many more sightings than are listed here is the so-called ""faceless nun"". We can reveal no images of the phenomenon, since it was too dark for a photograph. But those who passed the church at night noted a creepy apparition... one which appears far more frightening than any ""real"" ghost could be!
+One of these was Ruth Richards , when passing the church in 1990, as her bus was slowing prior to reaching the lights by the railway station. There was no house or other man-made structure near, just the church. Ruth explained: .""
+No other person on the bus saw the nun, which might suggest that not one of them actually had a 'clear file'! But there are more sightings...
+<!- -- Google Starts --> <!- Google Code for Content Network -- > <!- l ended -- > <!- End Partner Content -- > <!- ...
+<!- Next Ad --> <!- th",mixtral-autogptq
