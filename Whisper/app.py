@@ -60,12 +60,10 @@ class InferlessPythonModel:
 
 
     def infer(self, inputs):
-        dataset = load_dataset("distil-whisper/librispeech_long", "clean", split="validation")
-        sample = dataset[0]["audio"]
         audio_url = inputs["audio_url"]
         start_time = time.perf_counter()
 
-        pipeline_output = self.pipe(sample)
+        pipeline_output = self.pipe(audio_url)
         request_time = time.perf_counter() - start_time
         
         return {"transcribed_output": pipeline_output["text"],
@@ -80,11 +78,9 @@ if __name__ == '__main__':
     obj = InferlessPythonModel()
     obj.initialize()
     responses = []
-    dataset = load_dataset("distil-whisper/librispeech_long", "clean", split="validation")
-    sample = dataset[0]["audio"]
-    print(sample)
+    audio_url = 'https://huggingface.co/datasets/Narsil/asr_dummy/resolve/main/1.flac'
     for i in range(5):
-        responses.append(obj.infer({'audio_url':sample}))
+        responses.append(obj.infer({'audio_url':audio_url}))
 
     df = pd.DataFrame(responses)
     df.to_csv('bench-mixtral-autogptq.csv', index=False)
