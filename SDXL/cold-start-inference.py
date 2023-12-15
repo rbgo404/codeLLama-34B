@@ -45,7 +45,6 @@ def chat(url:str):
 
     request_time = time.perf_counter() - start
     
-    response = requests.get(url)
     audio = AudioSegment.from_file(BytesIO(response.content))
     length_in_seconds = len(audio) / 1000.0
     
