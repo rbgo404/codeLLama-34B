@@ -1,10 +1,6 @@
 import requests, json, time
-from transformers import AutoTokenizer
 import pandas as pd
-import argparse
 import requests
-from pydub import AudioSegment
-from io import BytesIO
 
 
 prompts = [
@@ -44,9 +40,6 @@ def chat(url:str):
     inference_time = time.perf_counter() - start_inference_time
 
     request_time = time.perf_counter() - start
-    
-    audio = AudioSegment.from_file(BytesIO(response.content))
-    length_in_seconds = len(audio) / 1000.0
     
     print(f"Inference time: {inference_time}, Load Time: {load_time},Total time: {request_time}")
     
