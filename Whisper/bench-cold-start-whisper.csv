@@ -1,11 +1,6 @@
-cold_time,inference_time,answer,note
-9.084485200000927,1.3063137279823422," ""'Stuff it into you,' his belly counseled him.",triton-auto-mixtral
-9.076932040043175,1.2029697119724005," ""'Stuff it into you,' his belly counseled him.",triton-auto-mixtral
-9.08105821791105,1.2123326630098745," ""'Stuff it into you,' his belly counseled him.",triton-auto-mixtral
-9.07493138499558,1.1708966430742294," ""'Stuff it into you,' his belly counseled him.",triton-auto-mixtral
-9.071423687040806,1.2060687789926305," ""'Stuff it into you,' his belly counseled him.",triton-auto-mixtral
-9.102000279002823,1.2034635650925338," ""'Stuff it into you,' his belly counseled him.",triton-auto-mixtral
-9.05049242603127,1.18548445799388," ""'Stuff it into you,' his belly counseled him.",triton-auto-mixtral
-9.14437941100914,1.2905097709735855," ""'Stuff it into you,' his belly counseled him.",triton-auto-mixtral
-9.075481223058887,1.2229658829746768," ""'Stuff it into you,' his belly counseled him.",triton-auto-mixtral
-9.140877654077485,1.2760040019638836," ""'Stuff it into you,' his belly counseled him.",triton-auto-mixtral
+audio_length,cold_time,inference_time,answer,note
+3.275,9.623359133955091,1.3016379530308768," ""'Stuff it into you,' his belly counseled him.",triton-auto-whisper
+10.435,9.213071184,1.9225910189561546," He hoped there would be stew for dinner, turnips and carrots and bruised potatoes and fat mutton pieces to be ladled out in thick, peppered, flour-fattened sauce.",triton-auto-whisper
+6.625,9.613114724983461,1.4163910050410777, After early nightfall the yellow lamps would light up here and there the squalid quarter of the brothels.,triton-auto-whisper
+3.985,9.342445411952212,1.1523166550323367, I know Kung Fu.,triton-auto-whisper
+13.0,9.28838003706187,1.5402336369734257, I have a dream that one day this nation will rise up and live out the true meaning of its creed.,triton-auto-whisper

@@ -48,6 +48,8 @@ def chat(url:str):
     response = requests.post("http://localhost:8000/v2/models/model_auto_gptq/infer", headers=headers, data=json.dumps(payload))
     print(response.json())
     load_time = start_inference_time - start
+    generated_text = response.json()['outputs'][0]['data'][0]
+    print(generated_text)
     inference_time = time.perf_counter() - start_inference_time
 
     request_time = time.perf_counter() - start
@@ -57,8 +59,7 @@ def chat(url:str):
     length_in_seconds = len(audio) / 1000.0
     
     print(f"Inference time: {inference_time}, Load Time: {load_time},Total time: {request_time}")
-    generated_text = response.json()['outputs'][0]['data'][0]
-    print(generated_text)
+    
     return {
         #'tok_count': len(tokenizer.encode(generated_text)),
         'audio_length': length_in_seconds,
