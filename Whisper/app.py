@@ -1,5 +1,6 @@
 import torch
 from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor, pipeline
+from transformers import BitsAndBytesConfig
 from datasets import load_dataset
 import time
 import pandas as pd
@@ -11,10 +12,14 @@ class InferlessPythonModel:
         torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
 
         model_id = "openai/whisper-large-v3"
-
+        nf4_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_compute_dtype=torch.bfloat16
+            )
         model = AutoModelForSpeechSeq2Seq.from_pretrained(
-            model_id, torch_dtype=torch_dtype, low_cpu_mem_usage=True, use_safetensors=True
-        )
+            model_id, torch_dtype=torch_dtype, low_cpu_mem_usage=True, use_safetensors=True,quantization_config=nf4_config)
         model.to(device)
 
         processor = AutoProcessor.from_pretrained(model_id)
@@ -30,6 +35,7 @@ class InferlessPythonModel:
             return_timestamps=True,
             torch_dtype=torch_dtype,
             device=device,
+            args=
         )
 
 
