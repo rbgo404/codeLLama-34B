@@ -61,7 +61,7 @@ def chat(url:str):
     print(f"Inference time: {inference_time}, Load Time: {load_time},Total time: {request_time}")
     
     return {
-        #'tok_count': len(tokenizer.encode(generated_text)),
+        'tok_count': len(tokenizer.encode(generated_text)),
         'audio_length': length_in_seconds,
         'cold_time':load_time,
         'inference_time':inference_time,
