@@ -13,10 +13,11 @@ class InferlessPythonModel:
 
         model_id = "openai/whisper-large-v3"
         nf4_config = BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_quant_type="nf4",
-            bnb_4bit_use_double_quant=True,
-            bnb_4bit_compute_dtype=torch.bfloat16
+            load_in_8bit=True,
+            # load_in_4bit=True,
+            # bnb_4bit_quant_type="nf4",
+            # bnb_4bit_use_double_quant=True,
+            # bnb_4bit_compute_dtype=torch.bfloat16
             )
         model = AutoModelForSpeechSeq2Seq.from_pretrained(
             model_id, torch_dtype=torch_dtype, low_cpu_mem_usage=True, use_safetensors=True,quantization_config=nf4_config)
