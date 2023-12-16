@@ -1,251 +1,779 @@
 tok_count,time,question,answer,note
-512,26.564176960033365,Implement a Python function to compute the Fibonacci numbers.,"
-2 Given two Stock prices, a and b, implement a function to plot a line which connects them in a line chart: main.55,31.11
+512,4.827064311946742,Implement a Python function to compute the Fibonacci numbers.,"
+2
+This function is the actual implementation of the fibonacci function (i.e. the function to be used to compute fibonacci numbers)
+3
 
-# Analysis
-Fibonacci numbers 'F(n)' follows a basic recursive property such as F(n) = F(n−1) + F(n−2), where F(0)=0 and F(1)=1. The interviewer expected me to write the program in Es6(we were not allowed to use a timer module), so I wrote a basic recursive function using (ES6) and it takes approximately 7ms to generate a list of Fibonacci numbers of length 10. But I was asked the reason of using recursion? I said, therefore recursion performance will be low due to multiple function calls and repeated values storage in the memory stack, I started using a dynamic approach memoization. But the problem with recursion is the number list is generated but we couldn't need to iterate over each to get length. So I transformed an array into an array iterator using a generator function.
-In order to my implementation, I used the XOR trick (Exclusive OR) to separate curve geometry from render, so the pipeline was pure and clean.
-The integrator is not on my forecast, I didn't expect that question, so I did get a retake and passing mainly because the first two were clean.
 
-## Interview process
-Recruiter screening - Google+$ google algorithms, went well
--I solved 3 problems on 1 hr timeboat -Wrong tree property , spam, and tail issue
--Went well they passed me to second round
-Second round was phone interview -I spoke 75% they spoke 25% -1. he said (by the way) not a lot of people did good job on first stage than asked me what the secret
--I replied 
--I was surprised how he emphasized that by the way (they were trying to make the candidate self emphasized)
--I talked about google paper the unreasonable effectiveness of data (he said that I was using data from the problem I had a solution he gave me)  I replied with my style that according to the customer requirement and market change always be a thing and I'm using GPS to be consistent and generation deep learning and interactive approach for both cases of events.
--",mixtral-autogptq
-512,26.77904401498381,Write a Rust function that performs binary exponentiation.,"
--
-The key ingredient of this is a recursive algorithm called binary exponentiation. Googling ""binary exponentiation"" will find you more information on it, but here is some pseudocode:
-repeat x ← base + base (2. exponent + 1) 2. exponent ← exponent / 2 continue until exponent ≡ 0 do x ← (base + x) / 2 output x It needs two factors: the base b (the number to be raised to a power) and the exponent e. The output is b to the power of e.
-Write a function that needs an argument of type f64 and returns an f64 that performs binary exponentiation, also known as Successive Squaring.
-func(2.0f64, 3.0f64) //> 8.0
-func(5.0f64, 11.0f64) //> 2275.0
-fn binary_exp(b: f64, e: f64) -> f64 {
-    let mut x: f64 = 0.0;
-    let mut exponent: f64 = 1.0;
-    loop {
-        x = (b + b) / 2.0;
-        exponent = exponent / 2.0;
-        if exponent == 0.0 {
-            break;
-        }
-    }
 
-    x
-}
 
-This can be done shorther using a riddle:
-fn binary_exp(b: f64, e: f64) -> f64 {
-    repeat (base + base) / 2;
-    drop base *= base / 2;
-    base /= 2 while base;
-    base + base / 2
-}
+# Method
 
-You can also cut this down to about five lines by using Chan interface.
-You’ll be able to note that, for the reasons described in this topic, planning and thought is important. If you practice Rustic, you’ll be able to create quick and stylistically pleasant code with less thought. You’ll be able to get better at all the other issues with the help of this justice.
-To download rustic and check if rustc is installed in your computing system, use the command line tool rustup and download rust- Anal",mixtral-autogptq
-512,26.920031531946734,How do I allocate memory in C?,"
-I'm coming to C design patterns after some time writing Emacs Lisp.  I've glanced through Design Patterns in C to get a sense of their scope but am now stuck about creating these patterns in my code.
+4
 
-Specifically, I'm creating a command interpreter and want to make an extensible dictionary command.  I'd like to instantiate different dictionary implementations based on the string argument of a command.  In other words, if implementation goat is specified, the command function will return gan instance of goat.
-Instantiating the dictionary structures from command_execute() - a bit like a procedural factory is the problem I'm having now.
-Even inside the command_execute function, the parameters (and the other implementations are pigs, sheep and antelopes - they aren't real dictionary implementations; is this meaningful or should I post the full code?).
-How do I create an extensible dictionary manager (that can create any type of dictionary implementation) and iterate through a list: {goat=Gen, pig=G, hog=Ho, hump=Fun with extra arguments}?  If I understand the question, is my current approach correct or do I need an initial header file, allocation list etc. to get this to work?
-Add questions tagged homework to homework questions. See the homework policy for guidelines on asking appropriate questions.
+5
 
-A: Er... yes. What *are* you talking about? Are you asking about a ""command language""? This sounds a lot like the old-style ""compiled languages"" that Lisp (from its days as Automatic LISP) used to compile. A (compiled) Lisp function is a symbol and a list; the first element of the list is the Implementation-of-this-Function, and the rest of the list is the parameter list. The symbol is the name given to the function.
-Anyway, back to the question. you write ""Instantiating the dictionary structures from command_execute() - a bit like a procedural factory""
-In the first place, if there's a datastructure, it's not Procedural. Procedural means you have a command that returns its result in a Value; a statement that changes it is *not* Procedural. Data structures don't do either of those things.
-On the other hand,",mixtral-autogptq
-512,27.058186052949168,What is the fable involving a fox and grapes?," – Added Questions
-What is a “sour grapes” fable?
-The fable, of which there are several versions, including one by Aesop, recounts a papa fox discovered a hedge of delicious-looking grapes that included totally to his kids. Starving, the papa silver grapes aHis children, lies, making them secure that the grapes were sour and not worth the money and cries.
-Maybe you are interested in what does it mean when someone says don rsquo t count on me?
-[…]
-What is sour grapes?
-sour grapes Add to list Share. The meaning of sour grapes is a fr Johannesburgd British or American An outdated expression for the idea that somebody showered by another individual’s outfield or jealousy is an obsolete feeling. It comes from the Aesop’s fable of the fox.
-Does the god they believed in develop them into?
-Lord, they believed in, DOESN’T B$1 IMPLY on the list of IMPERFECT HUMAN BEINGS.
-Just how do you understand if you’re buying Sour Grapes?
-Any time you hear a person com to an individual or demonstrate a kind of conquer with unjustified behavior, you’re probably se seriolosityGrapes. Perhaps a pal of a guy is lessened and ousters she is not in the very notion of him since he enjoys some guy who she wants.
-What should you say when they are sour?
-What to Do Once You Are Feeling Sour
-Use your time to work 
-”title”.
-Investigation kicks back just a little.
-Let the LORD lead you on exactly what you should d aNIf atleast
-.
-Keep rowing.
-What does Prite mean?
-Definition of prite [Archaic] LLC stay out. Probably combining the former pry + profusion from middle English -tee (used like a cleanup by the ending of a noun signalling the present participle) + -y 1.
-What does you are wrong and you are ize mean?
-zzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzz If-someone’",mixtral-autogptq
-512,27.238963059033267,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert."," Get the travel group to pose in one of the Academy's WonderWorks, and Virgin Atlantic Airways will give you return flights anywhere in the world.
-Godmother, smiling, reveals her pointy teeth behind a red veil that parts two glistening lips. Sunshine dancing on her face as she opens the package of doom. Tourists take incredible care to climb the icy stairs. They place a pile of rubbish in front of her in the shape of her children, who she licks better, lick lick lick. Years pass, the kids grow. A carnival on wheels arrives. The local freaks move in with an endless parade of leaden instruments, marching onwards and onwards past Godmother, Authurkfures, Peenoniclood. A desert springs up in serene greenness, the carnival flies back to the outback, and the travellers find something worth chasing down there. Godmother leans back on her hands, howling satisfaction.
-This post was written by Declan Brett. Declan is the CEO and Co-Founder of World Orgs, a not-for-profit startup founded by young people with the mission of bridging the gap between the fantasy narrative world of children's books and the disillusioned reality of the world's marginalised, often by providing access to tangible goods and services that underpin stories and spark imagination. WorldOrgs Founders are advised by their official patron, Robert Patrick from Terminator 2.
-Labels: Robustness Check
-2375800078316436755
-You must first shake hands with Djmoladdonizio and Unotstoxmug, then you will see the compass on the altar. To the right lies the path to Authurkfures. Once you have spoken to Naahaboutaar, it is your responsibility to ensure the continual success of Unotstoxmug. First take a left at Unofhian, and then follow the river south to Calloutan. Once you castrate Peenoniclood, place your hands on the tomb of Wightlap, and use the scroll there. You will gaze upon the magnificence of the Academy of",mixtral-autogptq
-512,27.193139523966238,Who does Harry turn into a balloon?,"
-Already a wide variety of useful memories had left a stain on Privet Drive, this evening’s at the top of the list;
-Harry marvels at the usefulness of the spell the first time Dumbledore performs it himself
-Appears in…
-- Harry Potter and the Deathly Hallows
-- Pottermore
-- Writing by J.K. Rowling on Wizarding
-Annoyingly, the spell that causes a person or thing to soften and inflate won’t stop them squeaking, but it does stop them moving completely.
-In a 2004 interview with Dennis Lawless of BBC Radio, @stefanibutscher writing on harrypotter.wikia.com:
-Jo Rowling told BBC Radio that “after this book is done I will probably write an encyclopedia”. Now, five years later, Pottermore.com is that promised encyclopedia. J.K. Rowling’s website is officially opened in 2012. She also admitted:
-“I always said that I did not plan to write any more books about Harry. But that is not quite the same thing as saying that Harry is never going to appear in another book. The fact is that Harry is a character so important to me that I couldn’t even contemplate another book with him in a starring role. However, nothing is set in stone. Who knows? I never expected to embark on the Harry Potter and the Half-Blood Prince when I was writing Harry Potter and the Order of the Phoneix.” @harrypotter.wikia.com
-The Harry Potter and the Deathly Hallows quotes
-These are all fantastic quotes from J. K. Rowling’s books, movies and interviews, Pottermore.com, Harry Potter website, J.K. Rowling’s official site, Wikipedia, goodreads, philip's bookmarked and bookyap.com. Don’t forget to pin it for later.
-The post Jeers, who does Harry turn into a balloon? Did you know these facts? appeared first on About Harry Potter.
-{ 9 comments… read them below or add one }
-- divadelmi Said,
-Pros Music and Halloween Candy
-- DHI Said,
-Hi snowwhite and",mixtral-autogptq
-512,27.247715209960006,What were the major contributing factors to the fall of the Roman Empire?,"
-Asked by t.sigmond
-- Category Religion & Spirituality
-- 1 answer
-- 1 answer
-Tom & Carol,
-Ignoring the canard that christianity is at the root of the fall of the Roman empire, this post will address the multitudinous reasons for the eventual fall that took several centuries to come to fruition. Out of order, but relevant in my opinion are the Plague of Justinian that lasted for more than twenty five years and killed nearly 300-350 million people in total -- and the Jews. The Jews became prominent in the empire especially after the improved relations between the empire and the Hebrew nation under Vespasian’s reign. Of course, remember, this fall did not come at one time, and it has been a struggle to locate the commencement of the fall with some even setting the date of Constantine’s establishment of the empire as christian nearly two hundred years before his rule. Curiously, Constantine was later ranked as a saint even though he was not ‘baptized’ until he was on his deathbed (typical christian belief that that will get you there -- baptism even in death!) Why, even Gibbon today in his “Decline and Fall...” points out that “Constantine had no deep privately held religious faith” (Gibbon, ""1""). Even Grayling went to great pains to point out that christians were prevalent, “men rebelling against pagan orthodoxy long before an official religion was established” (Grayling, ""1""). Christians, as we have earlier discussed, were persecuted, but that wasn't because they were christians, but rather it had more to do with the demand from the church that their followers put their religion ahead of the government, ahead of slavery, fomented rebellion -- and of course their sexual repression that was never enjoyed. People in the Roman empire enjoyed sex almost overly so! But, lets examine a few more reasons for the fall. Disease was an obvious factor, as you know, and was responsible for the death of about a third of the empire’s population (Gibbon, ""1). The military rule in ‘imperial’ Rome was also a primary factor (Gibbon, ""1""). In addition (and perhaps the most damning), the ever",mixtral-autogptq
-512,27.25231434998568,How did the invention of the printing press revolutionize European society?,"
-(1) Changes in EconomyThe dissemination by print of commerce statutes and regulations by states helped to expand and transform the nature of the market economy that developed into capitalism. The Bible and tracts preached the virtues of hard work and saving.
-(2) Rapid Dissemination of IdeasThe more educated people who now became able to read could be persuaded to take a particular point of view. Scientific books popularized new findings and created demands for new machines and goods.
-(3) Standardized LanguagesBibles printed in vernacular promised a standardized form of language and dialect that would be universally understood, serving to unify a state. The invention of dictionaries also served as a unifying force by identifying acceprd spellings for vernacular lexicons.
-(4) Public SphereDissemination of ideas and information through books and periodicals created a “marketplace of ideas” that existed outside government control where people could discuss and debate public opinion.
-(5) New OccupationsPrinting’s dissemination of new ideas and literacy created new professional and personal occupations such as journalists, scientists, and novelists, artists, thespians, and musicians. In the latter part of the sixteenth century, newspapers became primary sources of information for everyone. During the Enlightenment philosophes used the power of the printed word to enlighten Europe.
-History
-Art Exhibition Reveals Depth of Daddy's Little Girl Relationship
-Beach Boys are Giving Baltimore a Private Show for $5,000 a Ticket
-Review: Terry Goddard.
-Review: Seth Avett & Jessica Lea Mayfield.
-Review: Of Montreal.
-Review: King Deco.
-Review: Bully.
-Review: Mvskoke Cinema.
-Review: Best Coast.
-Preview: Invest in Community Through The MATCH Event.
-Behind the Company That Runs Baltimore's Finest Venues.
-Preview: The Ashes.
-Preview: Phil Dwyer.
-Review: Greater Waters.
-Review: OperaQ Unveils Le Nozze Di Figaro.
-Review: The Ironia of a Bastard Queen.
-Active Parents Get Driv",mixtral-autogptq
-512,27.255641828058288,What are the effects of quantitative easing?," An empirical review
+7
 
-This paper asks what the effects of quantitative easing were on a wide range of macroeconomic outcomes such as output, inflation, unemployment, and key asset prices. It does so by presenting a meta-analysis methodology capable of consolidating results from multiple macroeconomic models as well as addressing the issue of time heterogeneity. Results are obtained for countries that applied the monetary intervention brightly and systematically, namely the United States, Japan, and the United Kingdom. The main conclusion is that the effect of quantitative easing and its central channel, namely the accommodation of a term premium, are very small and inconsistent depending on time and country. Other channels of action of monetary policy, either monetary or non-monetary, may be more important.Highlighted resultsDealing with macroeconomic models that have been estimated repeatedly too often conveys a confusing outcome because the average effect of the variables is computed moving the sample boundaries. No wonder why economists could hardly find an agreement on the large questions at hand. Meta-analysis, a branch of statistics developed to handle this type of problems, aims to be the tool that is necessary here, capable of providing answers despite quantitative technical innovation blossoming in quantitative economics.The innovation in this paper resides in its instrumental application to the specific issue of quantitative easing (QE), which enables us to face the impact of such policy without neglecting classical macro models. Such a model, therefore, synthesizes evidences from estimates of different models, including a Markov-switching model and dating the recession time of the BoF said to be quite important in transmission channels. Hence it is used also for evaluating the impact of QE by hysteretic business contractions.Lastly, by summarizing a big set of outcomes in a third grade of meta-analysis (""metacalculation"", so to say), coordinated by Alesina (2018), we approach a lovely coherence (""rigorous like the mathematical induction""?) in measuring the average impact of QE on all targeting variables, and not them alone.
 
-## What are we talking about?
-United States, Japan, the UK, and England have implemented a large-scale asset purchase program since 2008. These programs",mixtral-autogptq
-512,27.31517361709848,"Describe the city of the future, considering advances in technology, environmental changes, and societal shifts."," What are the most important influences in determining the city's future, and what problems will confront the residents of the future? How could we make this utopia a reality?
-name Name:
-Write your response in the space provided.
-More than 24 hours notice of your scheduled interview time will cancel your interview. Students forfeit their $200 admission confirmation fee.
-Start
-hey. im writing a paper on this topic. i can cover the advances in technology and environmental changes, but in need of some info for some content for the societal shifts. thanks.
-Your Answer is very helpful for Us Thank you a lot!
-advertisement
-Pittsburgh has been ranked as one of the countries most livable cities and while the academic and business environment is highly supportive of future thinking, Pittsburghers, on average, tend to move toward the conservative. We are looking for stories that push the boundaries of existing technology, social norms and ethics, but most stories set in Pittsburgh should be based on level three or less. This would include self driving cars that are still guided by set routes and pathways, voice command interfaces, rapid fabrication, smart buildings and homes, and expanded social media. The dominant social issue is the debate around the legality of digital humans and the political and religious controversy it causes. Biotech is huge. While your stories may have elements from level four and five, they should only play background roles. Do not rely on them as primary characters. You must have clear, but subtle references to the city of Pittsburgh, its businesses, landmarks, and at least one of its seventy distinct neighborhoods. above is the criteria I need to use in a 4-5 page essay so anything I can get to help would be helpful. Question 2 is about Philadelphia, Lancaster and Reading all being flooded out and a disease outbreak in western Pennsylvania.i graduate this month, and I am going to a college for photography. I just have to write a 4-5 page paper on the future and my city and I'm lost. I've chosen Pittsburgh. I just need hints as too how I could go about doing this and would thoroughly appreciate it.Thank you!
-THE SUBURBAN YOUNG PROFESSIONALS OF PITTSBURGH
-“SYP in 5",mixtral-autogptq
-512,27.325707260984927,"In a dystopian future where water is the most valuable commodity, how would society function?"," It seems to be a piece of the puzzle that Matthew McConaughey's character Cowboy is trying to put together in the Intel-assisted trailer for ""Steven Knight's Unsexed World""(via).
-The production is a big-name star vehicle that not only gives Niyce a chance to prance about on screen but gives it a run on social media, a significant factor in the company's 2021 marketing plan. ""Steven Knight's Unsexed World"" isn't a real movie, but its presence is serious.
-Rather than creating a fun little Super Bowl parody like Coen Bros' ""E-Trade Baby"" just having a fun time or Michelob Ultra's ""Dream Crew,"" this ad ignites the scathing discussion of Kent we've seen in ""Wine,"" social media and podcasts in the last three years. without necessarily claiming leadership as it has done in the past.
-In fact, Intel is not even mentioned by name at this minute-long clip. Surprise it's a performance piece from Jonathan Nolan's writer, set to air prominently during the game between the Kansas City Chiefs and Tampa Bay Buccaneers. The problem is that McConaughey's talent is talking actively -- he plays an activist who feeds the poor -- and it's obviously intended to explore the complicated dynamics of dystopia and the sacrifice some are willing to make to defend the status quo, taking on the hyper-surveillance to reap unparalleled benefits. In other words: When there's tech, there's a business. And that business is sucking the planet dry through social means such as 'The Audience' and 'Kiss As Many People' to name a couple of the films prominently featured .
-There is a lot of that violation in the meta-action that finally puts Intel on everyone's radar in the early 2020s in the wake of Cambridge Analytica. And this project is remarkable in some ways.
-'Intel Inside' logo dramatically fades on the screen, after the simple ""what's inside"" graphic at the beginning of the spot, here's for #LeadOn, ""there's something behind words. @intel intel",mixtral-autogptq
-512,27.27471687295474,What is the product of 9 and 8?,"
-In the final model, the equation was written as: IQ Adult~IQ Child + (C.A.900+A.C.800).13.47 ((1, 244) = 399.23, p = 0.027) explaining 16% of the variance in adult IQ. The model was significant at 2.70, where high IQ was similar to normal population levels (approximately 120-130). We did not observe a positive effect of age on Glasgow coma score at discharge in the final model; the equation was fitted as: if we regressed Glasgow coma score at discharge on the IQ scores calculated on the entire dataset, it was significant ( = 0.0029,
 
-## Study implications
-These updated findings demonstrate favorable outcomes of immature animals subjected to severe traumatic fluid percussion brain injury compared to immature rodent models of moderate and acute brain injury. Furthermore, in this model of acute SABI, we demonstrate good cognitive recovery and cerebral microstructure integrity and observed a trend toward neuronal hyperplasia at the site of injury of the injured immature brain.
-This animal model will serve as a tool for TREM2 studies in pediatric brain injury. TREMs are type I transmembrane receptors expressed on the brain parenchyma and microglia. 16,17 A previous study of acute SABI in the immature rat by demonstrated focal and durable microglia response within the infiltrating neutrophils. These authors demonstrated that interleukin (IL)-1 receptor antagonist has neuroprotective effects in their post-SABI rodent model. Their immunohistochemistry studies showed a significant increase of nuclear factor activated T cells (NFAT) nuclear translocation in the traumatized brains. They also reported the increased adhesion of circulating leukocytes to the endothelium of brain microvasculature, which resulted in the inhibition of neutrophil transmigration. Thus, it is predicted in our current model that the infiltration of inflammatory cells, such as neutrophils and T lymph",mixtral-autogptq
-512,27.320820025051944,"If a train travels 120 kilometers in 2 hours, what is its average speed?"," (a) 60 kilometers per hour (b) 60 kilometers per hour (c) 6 kilometers per minute (d) 0.003 kilometers per minute
-The distance covered by the train in 2 hours is 120 kilometers.
-So, the speed of the train during these two hours is:
-Use the calculator to determine the distance traveled.
-Your answer is correct.
-_______________________________
-(e) How many kilometers per hour is that? (f) How many kilometers per minute is that?
-How to use Speed Calculator?
-Kilometers/Hour (km/h) is a unit of measure for expressing the average speed of an object which uses kilometers as the unit of distance.
-Kilometers/Hour (km/h) is one of the units of measure for expressing average speed of an object which uses kilometers as the unit of distance.
-How to calculate average speed?
-Average speed is equal to the total distance of the run or distance covered divided by the total time for which the motion was experienced.
-where v = average speed d = total distance t = total time
-where v = average speed d = total distance t = total time
-:
-The distance filled in this problem is 120 kilometers.
-In 2 hours, we need to calculate the distance covered rate. We took two endpoints, 0 hours and 2 hours, derived an equation based on the given information, and plugged in the distance filled on each end to get 4.17 min/km per hour.
-But, with my current code, the answer output is not close.
-I'm trying to figure out what process I did wrong that did not give the correct output. I would appreciate if you were able to point out my mistake.
-Thank you.
-P.S. I hypothetically think I have to use the times library to get the correct answer.Can someone help me find a solution to this problem please
-Step 1: Find d1 and d2
-- Find d1
-- Because the initial distance was 0 km
- - Copied every 20 lines
- - Helped solve simple ""Which one of these..."" questions
 
-A: Edit: John Coleman's answer specifies exactly what you are doing wrong. I missed the first part of the",mixtral-autogptq
-512,27.406024924013764,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","
-The pattern continues from 3 and 5 twice to give the next 3. I always start at 1, with 2 after 1 to give 3. Then it goes 5 and 8 to give 13, I always do this for sequences as it helps me find if there are any missing numbers. If there are a couple of blanks you know there is a problem. The sequences look like 1,11, 3, 6, 9, etc and if you spot the pattern, use it to find the missing numbers. Log in Please log in again. The login page will open in a new tab. After logging in you can close it and return to this page.cn.2016-01-29-05-57-27_0.pdf
-Based on your question, I think the sequence is
-a1 = 3, a2 = 5.
-an = a(n - 1) + a(n - 2) for n greater than 2.
-Think through this step by step.
-Lets check this pattern goes with the sequence
-(3) 3, 5
-(4) 8
-(5) 13
-(6) 21 by this pattern we will have 3 numbers of 3, 5 and 2 numbers of ??? . This gives
-(3) . Consider the next difference bn = an - an-1. The sequence
-b has first element b1 = 5, b2 = 3. The sequence an (n > 2) is obtained from two previous terms an-1 and an-2. The difference bn (n > 2) is obtained from the two previous terms bn-1 and bn-2
-Hint cn = 2 bn Let me know if I can help solve it! 2
-Asked By kk46806.
-056_en.pdf. 056_cn.pdf
-explain
-Reflection of y 18x over the x axis. 54 k k k -a -o
-The locus of a point in the xy-plane moving so that the sum of its distance from the y-axis equals 15 units is asaa 56280883 Z zi -u cl 3 Let",mixtral-autogptq
-512,27.14614798303228,What are 'zombie stars' in the context of astronomy?,"
-The term ‘zombie star’ is a catchy description which has caught the public imagination over the last decade, and while they may sound scary, they are an important part of our study of the Universe.
-In physics, such as astronomy (and The show (On this months Sky at Night) mentioned in the El Reg story focused on Columbia University Astronomy Professor David Kipping in the United States, who has been focusing on these “zombie stars.”
-For the Sun to go nova, it would have to have approximately 1.4 x 10^30kg of hydrogen to burn in uncontrolled fusion .
-But what makes these zombie stars tick?
-Thanks for an... interesting, informative piece - the only substantially 'chilling' exoplanets I know of are Frederik Pohl's Heechee-built ""Ghosts"". Since he had the ability to make a robot sex party sound like a SFnal insight, a tame version of this kind of nova might be well worth a read, should he choose to tackle one.
-For those with more, uh, terrestrial concerns (such as the disappearance of NAO) might I mention the great good fun that can be had via going to the other places: Whats Wrong With The Scientists? Expert Debunks legend of John Moore, Martyn's MySpace,[1] Galileo Unchained, Entschuddung; UK Libertaria; Goodfutronics; and so on.
-nged them at the time.
-What an interesting topic and what Zaphod would term a 'Big Bang' of a subject - sorry, couldn't resist it.
-Must admit, having watched G4's Attack of the Show for a while (on freeview here on ATS and also FTN - jarbled-pseudomaybe porn satellite channels) I did dig a lot of the references this week and the Z schedules - love the disassembled show report just as it is the (Ed,) the (Ed and) undead dream tv show format.
-The little Martian moons objects also caught my attention too, did you see them here?[1] I also wonder, did an alien transporter beam unevarth something on Mars to bring the debris back? or (lose it?) The mysterious",mixtral-autogptq
-512,27.19607347296551,Who were the 'Dog-Headed Saint' and the 'Lion-Faced Saint' in medieval Christian traditions?,"
 
-One of the most bizarre traditions of medieval Christianity is that of the 'Dog-Headed Saint', or 'Cynocephalus Celtus', depicting a Sinai-dwelling saint with both human and canine features. Figures comparing a 'Cynocephalus Celtus' with a 'Lion-Faced Saint', or a 'Leonis Celtus', based on traditions from Pliny the Elder [1], were well-known in Europe and the Near East from at least the 12th century CE onwards, but the identity of the purported 'Dog-Headed Saint' for this example remains uncertain. Were the naturalistic portrayals of the schola anthropographia, the medieval European compendia based on that the definitive Nile focusing on dog-headed holy man beyond Africa and Emporia, the the creation of which of the original haplogroups especially two physical traits from a community of Egyptian priests, who revered an ibis-headed god?
+# Implementation and Results
 
-# Introduction
-One of the bizarre traditions preserved in medieval Christian art is that of the 'Dog-Headed Saint'. Such representations of a 'Cynocephalus Celtus' are well-known in Europe from at least the 12th century CE onwards. Painted depictions of Christ, Mary, saints and/or the chivalric Knights Templar being guided by a 'Cynocephalus Celtus' survive in northern Europe and are so widespread as to be documented in Spiers' and Van Der Lingen's recent survey of anthropomorphic animal imagery. A figure of Christ flanked by a 'Cynocephalus Celtus' is the most common dog-headed example. While many anthropomorphic presentations have been.
-Peeters, University of Cambridge).
-Disregarding these traditions, expressed by multiple other scholars in earlier, better-known analyses of twin canine figures, however, presents something of a problem. Specifically, Papadopoulou-Kerameus' otherwise very useful, 132-page catalogue of illuminated manuscript Byzantine folk traditionswould not be nearly as reliable a study without mention that orthodox intellect",mixtral-autogptq
-512,27.249927295022644,"What is the story of the 'Globsters', unidentified organic masses washed up on the shores?","
-Select Search AreaGlobsters are unidentified organic masses discovered on beaches, and their origin and nature are usually unknown for many years.
-There are three basic possible origins of globsters. Many are decomposing carcasses of whales, large sharks or similar marine life. Some are deliberate hoaxes, such a, and was actually not a carcass but a life-size model made from chicken wire, paper-mâché and strips of red carpet.
-This material was originally compiled by Jan Craig Livingston
-The Truth Is Out There—things are happening out there that can'ts be explained. By Royal List of cryptozoologists. There is no unified opinion for what could be considered criteria for a cryptid.
-Ours is to report it as news and in some cases after folks find out the truth they realize just how strange it was or can begin to explain it. Many times though we never know what the hell it is.
-Jumped to conclusions about the 1963 sampling: news reporters, buyers ect.
-GHOST TECHNICIAN - Paranormal Ghost Investigation NEMESIS - Mirage Men on DVD 1 Jun 29, 2011 12:35.
-Faceless Nun
-Responsible (if that's the word) for many more sightings than are listed here is the so-called ""faceless nun"". We can reveal no images of the phenomenon, since it was too dark for a photograph. But those who passed the church at night noted a creepy apparition... one which appears far more frightening than any ""real"" ghost could be!
-One of these was Ruth Richards , when passing the church in 1990, as her bus was slowing prior to reaching the lights by the railway station. There was no house or other man-made structure near, just the church. Ruth explained: .""
-No other person on the bus saw the nun, which might suggest that not one of them actually had a 'clear file'! But there are more sightings...
-<!- -- Google Starts --> <!- Google Code for Content Network -- > <!- l ended -- > <!- End Partner Content -- > <!- ...
-<!- Next Ad --> <!- th",mixtral-autogptq
+
+8
+
+
+
+# Method
+
+
+
+
+
+# Implementation and Results
+
+
+
+
+
+# Method
+
+
+
+
+
+# Implementation and Results
+
+
+
+
+
+# Method
+
+
+
+
+
+# Implementation and Results
+
+
+
+
+
+# Method
+
+
+
+
+
+# Implementation and Results
+
+
+
+
+
+# Method
+
+
+
+
+
+# Implementation and Results
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+
+
+
+
+# Method
+
+",mixtral-autogptq
+512,4.804635265027173,Write a Rust function that performs binary exponentiation.," If possible, compute the result without using division.
+
+
+---
+
+Make the operator function non-static to avoid gcc issues when compiling
+with `-O1`.
+
+---
+
+### Related Issues
+- #558
+- #575
+
+### Screenshots
+
+![rustdoc](./rustdoc.png)
+
+### First Commit
+
+- [<NAME>](https://github.com/mgoldschmidt) - 2013-11-14
+
+---
+
+### Commits
+
+- [<NAME>](https://github.com/mgoldschmidt) - 2013-11-14
+
+---
+
+### Comments
+
+- **<NAME>** commented
+
+---
+
+### Changes
+
+- [<NAME>](https://github.com/mgoldschmidt) - 2013-11-14
+
+---
+
+### Commits
+
+- [<NAME>](https://github.com/mgoldschmidt) - 2013-11-14
+
+---
+
+### Comments
+
+- **<NAME>** commented
+
+---
+
+### Changes
+
+- [<NAME>](https://github.com/mgoldschmidt) - 2013-11-14
+
+---
+
+### Commits
+
+- [<NAME>](https://github.com/mgoldschmidt) - 2013-11-14
+
+---
+
+### Comments
+
+- **<NAME>** commented
+
+---
+
+### Changes
+
+- [<NAME>](https://github.com/mgoldschmidt) - 2013-11-14
+
+---
+
+### Commits
+
+- [<NAME>](https://github.com/mgoldschmidt) - 2013-11-14
+
+---
+
+### Comments
+
+- **<NAME>** commented
+
+---
+
+### Changes
+
+- [<NAME>](https://github.com/mgoldschmidt) - 2013-",mixtral-autogptq
+512,4.796466234023683,How do I allocate memory in C?,"
+How to allocate/deallocate memory in C?
+How to free up memory in C?
+How to allocate dynamic memory in C?
+Can you allocate memory dynamically in C?
+How do you allocate memory in C++?
+How do I allocate dynamic memory?
+How do you allocate and free memory in C?
+How do I allocate memory dynamically in C?
+How do I allocate memory dynamically in C++?
+What is free in C?
+How do you allocate memory in C#?
+How do you free allocated memory in C?
+How do you allocate and free dynamic memory in C?
+How do I allocate memory dynamically?
+How do you allocate memory dynamically in C++?
+How do you free dynamic memory?
+How do you allocate memory dynamically in Java?
+How do you allocate memory dynamically?
+How do you allocate dynamic memory in Java?
+How do you allocate memory dynamically in C?
+How do I allocate dynamic memory in C?
+How do you allocate dynamic memory in C++?
+How do you allocate memory dynamically in C?
+How do you allocate memory dynamically?
+How do you allocate and free dynamic memory?
+How do you allocate memory dynamically?
+How do you allocate and free dynamic memory in C?
+How do you allocate memory dynamically in Java?
+How do you allocate memory dynamically in Java?
+How do you allocate memory dynamically in C?
+How do you allocate memory dynamically?
+How do you allocate dynamic memory in C?
+How do you allocate dynamic memory in C++?
+How do you allocate memory dynamically?
+How do you allocate and free dynamic memory in C?
+How do you allocate memory dynamically?
+How do you allocate and free dynamic memory in C?
+How do you allocate memory dynamically?
+How do you allocate dynamic memory in C?
+How do you allocate memory dynamically?
+How do you allocate memory dynamically?
+How do you allocate and free dynamic memory in C?
+How do you allocate dynamic memory in C++?
+How do you allocate memory dynamically?
+How do you allocate and free dynamic memory in C?
+How do you allocate dynamic memory in C?
+How do you allocate memory dynamically?
+How do you allocate memory dynamically?
+How do you allocate memory dynamically?
+How do you allocate and free dynamic memory in C?
+How do you allocate dynamic memory in C?
+How do you allocate memory dynamically?
+How do you allocate and free dynamic memory in",mixtral-autogptq
+512,4.80161932494957,What is the fable involving a fox and grapes?,"
+1 What is the moral of the story of the fox and the grapes?
+2 What is the moral of the story with the fox and the grapes?
+3 What is the fox and the grapes story?
+4 What is the fox and the grapes called?
+5 Who told the story of the fox and the grapes?
+6 What is the story of the fox and the grapes for kids?
+7 What is the moral of the story of the fox and the grapes?
+8 Why did the fox come back?
+9 What is the meaning of the fox and the grapes?
+10 What did the fox do?
+11 What is the meaning of the story the fox and the grapes?
+12 What is the lesson of the fox and the grapes?
+13 What are the 6 points in the fox and the grapes?
+14 What are the 7 points in the fox and the grapes?
+15 What is the morals of the fox and the grapes?
+16 Why the fox could not touch the grapes?
+17 Why the fox could not reach the grapes?
+18 What was the fox’s goal in the story?
+19 What is the moral of the fox and the grapes story?
+20 What is the lesson of the fox and the grapes story?
+21 Why was the fox unable to eat the grapes?
+22 Why was the fox unable to eat the grapes?
+23 Why was the fox unable to eat the grapes?
+24 What is the moral of the fox and the grapes story?
+25 Why was the fox unable to eat the grapes?
+What is the fable involving a fox and grapes?
+A fox tried to eat some grapes but found that he could not reach them.
+What is the moral of the story of the fox and the grapes?
+A fox tries to eat some grapes but finds that he cannot reach them because they are too high.
+What is the moral of the story with the fox and the grapes?
+A fox",mixtral-autogptq
+512,4.818434344022535,"Write a story in the style of James Joyce about a trip to the Australian outback in 2083, to see robots in the beautiful desert.","
+The robot hopped out of the car. He jumped over to the side of the road. The road went on into the distance. The car drove off.
+“Hi there.” The robot said.
+“Hi.” The man said. He looked at the robot’s name tag. It read, “Hi there.”
+“Cool name.” The man said.
+“Thanks.” The robot said.
+The man looked over the fence. The robot followed his gaze.
+“What’s behind that fence?” The man said.
+“The desert.” The robot said. “It’s beautiful.”
+“I can imagine.” The man said. “It’s a long way to the outback.”
+“Oh, it’s not all that far.” The robot said.
+“How did you get here?” The man asked.
+“I flew here in a spaceship.” The robot said.
+“How can you fly? I thought you robots couldn’t fly?” The man said.
+“We can. We’re not the robots you think we are. We’re actually robots that were created by a spaceship. We’re all from the future.” The robot said.
+“Oh. Ok.” The man said.
+“And you’re from the present.” The robot said.
+“Yeah. I’m from 2083.” The man said.
+“That’s why I asked how you got here. I can tell you’re not from the future because you have a name tag. Only future people have name tags.” The robot said.
+“I understand.” The man said.
+“So you’re one of those.” The robot said.
+“One of what?” The man said.
+“The future people. You know, the people that are living in the future.” The robot said.
+“Oh.” The man said.
+“You must be getting bored of me now.” The robot said.
+“No, I’m still interested.” The man said.
+“I’m not sure if I can explain it all in one go.” The robot said.
+“It’s ok. I’m still interested.” The man said.
+“Ok. The way I see it, there’s only one world. Everybody is one big, connected family. But there are still big fights between people.",mixtral-autogptq
+512,4.8004203439923,Who does Harry turn into a balloon?,"
+Already a subscriber? Click here.
+Everyone's favorite boy wizard has a pretty bad habit of getting himself into and out of sticky situations, and in Harry Potter and the Order of the Phoenix, Harry finds himself in the toughest situation of them all.
+Harry’s got to keep his magical powers a secret, even though it’s not easy when he’s constantly surrounded by the muggles, the non-wizards, at his new school, the Hogwarts School of Witchcraft and Wizardry. But when he returns to his beloved Hogwarts, Harry’s efforts to hide his wizardry are put to the test once again. He’s got to be on his best behavior, or he’ll never see his friends again, and he’ll miss out on all the fun at Hogwarts, like Quidditch, the most popular sport in the wizarding world.
+With a bit of help from his friends, Harry’s able to stop the dark wizard Lord Voldemort from getting his hands on the mythical Prophecy. But when his friend Hagrid gets caught up in an evil plot, it’s up to Harry to save him from execution at the hands of the Order of the Phoenix.
+It’s not as easy as it sounds. Harry’s got to pass through the devious Bellatrix Lestrange, the disguised Sirius Black, the dangerous Professor Snape, and the mysterious Dudley Dursley, all in order to find out who’s really behind this evil plan.
+Harry Potter and the Order of the Phoenix is the fourth installment in the Harry Potter series, which will be published in a series of seven.
+First Look
+In Harry Potter and the Order of the Phoenix, Harry discovers that he’s not the only wizard in the room. Harry’s good friend, the giant Hagrid, has been taken by the dark wizard Lord Voldemort. Voldemort wants to know where the Prophecy is, and Hagrid is the key to his finding it.
+Luckily, a group of wizards knows that the Prophecy is in Hogwarts, so it’s up to the Order of the Phoenix, a group of muggles and wizards, to protect the school from Voldemort",mixtral-autogptq
+512,4.808391137979925,What were the major contributing factors to the fall of the Roman Empire?,"
+Asked by Wiki User
+- 07/02/2019
+Answer. To the fall of the Roman Empire, the major contributing factors were:
+1. economic instability,
+2. continuous wars,
+3. earthquakes,
+4. political instability.
+-Expertanswer 1
+- The four major contributing factors to the fall of the Roman Empire was the external threats from the barbarian tribes, social instability, lack of resources, and the internal crisis caused by the spread of Christianity.
+- Expertanswer 2
+- Overpopulation, high taxes, poor leadership, corruption, and internal strife were the major contributing factors to the fall of the Roman Empire.
+- Expertanswer 3
+- The major contributing factors to the fall of the Roman Empire were the natural disasters, the rebellion of the barbarian tribes, and the civil unrest.
+- Expertanswer 4
+- The four major contributing factors to the fall of the Roman Empire were:
+1. Decline of the Roman Empire due to the influx of barbarian tribes,
+2. Overpopulation and inability to provide for the growing population,
+3. Increase in corruption and inequality,
+4. Increase in superstitious practices and the spread of Christianity.
+- Expertanswer 5
+- The major contributing factors to the fall of the Roman Empire were:
+1. Rome's military failure and an internal political crisis,
+2. An increase in natural disasters,
+3. The spread of Christianity,
+4. Rome's military loss in the battle against the Goths,
+5. Overpopulation and resource depletion.
+- Expertanswer 6
+- The major contributing factors to the fall of the Roman Empire were:
+1. The rise of barbarian tribes,
+2. The outbreak of the plague,
+3. The civil war,
+4. The external attacks from the Germanic tribes.
+- Expertanswer 7
+- The major contributing factors to the fall of the Roman Empire were:
+1. The economic problems,
+2. The civil war,
+3. The external attacks from the Germanic tribes,
+4. The external attacks from the Goths,
+5. The internal crisis",mixtral-autogptq
+512,4.806776602054015,How did the invention of the printing press revolutionize European society?," One of the most obvious ways in which the press transformed society was by publishing books and pamphlets. The more books that became available, the more literate the public became. Books also influenced other aspects of life, such as philosophy and the arts. The printing press was not the only factor in the development of the Renaissance, but it was a crucial part of the social changes that occurred during the 15th and 16th centuries.
+Why is there a demand for historical fiction? While people are reading more nonfiction these days, there is still a demand for historical fiction. Historical fiction is literature that portrays a particular time period or place. Many people enjoy reading historical fiction because it takes them to another time or place. This genre of literature is entertaining and can help us learn more about our own time period.
+What is the impact of printing presses on European society? This is one of the most important questions in history because it has been such a major part of our development as a species. It has been argued that the invention of printing presses was one of the major turning points in human history, and it has been suggested that it was the greatest invention of all time. However, there are also those who think that the printing press was simply an extension of what was already happening in society, and that its impact was minimal.
+A lot of people are interested in reading about history. It’s not just about the past – we can also learn a lot from it! In this book, we’ll take you on a journey through time.
+The printing press is a machine that is used to print books and other things on paper. The printing press was first invented in the late 15th century by Johann Gutenberg. The printing press was a major development in the history of human civilization. It allowed for the mass production of books, which made education more accessible to the public.
+When you think about the history of printing, you might picture a printing press. That’s because the invention of the printing press is one of the most important events in human history. Before the printing press was invented, books were made by hand. They were expensive to produce and took a long time to make. The printing press changed all of that.
+The printing press is an invention that has had a huge impact on the world. It has been used to print books, newspapers and other documents since its invention. The printing press is",mixtral-autogptq
+512,4.799408780992962,What are the effects of quantitative easing?,"
+The Federal Reserve Board has recently published the results of a survey of the effects of quantitative easing (QE) on the U.S. economy and the U.S. financial markets. The survey was based on a survey conducted by the Bank of England in 2014 that had a particular focus on the effects of QE in the U.K. on the U.K. financial markets and the U.K. economy.1 The survey was designed by the Bank of England and led by James Poterba, professor of economics at the Massachusetts Institute of Technology (MIT). The survey was conducted from November 2014 through February 2015 and includes responses from 100 institutions from 14 countries. The institutions were selected to represent central banks, commercial banks, asset management firms, and asset managers. The Institutional Trade Reports is a series of papers designed to give you the details of a recently completed research report. It is a joint project of the Merrill Lynch Investment Advisory Research, Merrill Lynch Professional Advisors, Inc., and Merrill Lynch Investment Strategy. Investment Strategy is the investment research unit of Merrill Lynch Global Wealth Advisors. The Trade Reports are based on the institutional research report and other Merrill Lynch reports. For more information, please contact Merrill Lynch Global Wealth Advisors.
+The results of the survey are published by the Federal Reserve Board as “The Effects of Quantitative Easing in the United States on Financial Markets, Monetary Policy and the Economy.”2 The report of the results of the survey is quite interesting. It contains two interesting tables. The first is Table 1, which presents the number of responses by institution type and country. The second is Table 2, which presents the effects of QE in the United States on financial markets, monetary policy, and the economy.
+Table 1 shows that of the 100 institutions that were surveyed, 48 were from the United States, 31 were from Europe, and 17 were from Asia. This represents a reasonable sample of institutions from the three largest economies in the world. Table 1 also shows the number of responses from institutions based in each of the three largest economies. The results are quite clear. The",mixtral-autogptq
+512,4.807374913012609,"Describe the city of the future, considering advances in technology, environmental changes, and societal shifts."," For more than 40 years, the Institute for Advanced Studies (IAS) at the University of Virginia has explored the future of urban spaces. This video, narrated by IAS Director Michael Shanks, uses archival video footage and contemporary photography to bring the world of urban futures back to life.
+A big thank you to Sara Billings for her work on the art direction and motion graphics for this video.
+Up Next:
+See more from the IAS Institute for Advanced Studies
+Join the Discussion
+Join the Discussion
+You must be logged in to comment.
+Recommended for you
+See more from the IAS Institute for Advanced Studies
+Join the Discussion
+Join the Discussion
+You must be logged in to comment.
+Recommended for you
+Search the Web for videos just like this one!
+Find videos just like this one!
+Advanced Search
+Advanced Search
+You must be logged in to comment.
+Recommended for you
+Search the Web for videos just like this one!
+Find videos just like this one!
+Advanced Search
+Advanced Search
+You must be logged in to comment.
+Recommended for you
+Search the Web for videos just like this one!
+Find videos just like this one!
+Advanced Search
+Advanced Search
+You must be logged in to comment.
+Recommended for you
+Search the Web for videos just like this one!
+Find videos just like this one!
+Advanced Search
+Advanced Search
+You must be logged in to comment.
+Recommended for you
+Search the Web for videos just like this one!
+Find videos just like this one!
+Advanced Search
+Advanced Search
+You must be logged in to comment.
+Recommended for you
+Search the Web for videos just like this one!
+Find videos just like this one!
+Advanced Search
+Advanced Search
+You must be logged in to comment.
+Recommended for you
+Search the Web for videos just like this one!
+Find videos just like this one!
+Advanced Search
+Advanced Search
+You must be logged in to comment.
+Recommended for you
+Search the Web for videos just like this one!
+Find videos just like this one!
+Advanced Search
+Advanced Search
+You must be logged in to comment.
+Recommended for you
+Search the Web for videos",mixtral-autogptq
+512,4.806434437981807,"In a dystopian future where water is the most valuable commodity, how would society function?"," It seems to be a scenario not so far from the present-day.
+How would we, as biological beings, behave in such a society? Would we fight to preserve our survival? Would we fight to survive the ‘good life’? Would we be satisfied with being ‘good’? Would we put up a fight against our nature?
+I’ve been thinking about these questions since I was a kid and was affected by the 1994 dystopian movie, Waterworld, starring Kevin Costner. I didn’t know much about the real-life seriousness of water scarcity at the time of watching the movie. However, I remember being impressed with the movie for its detailed production design, special effects, and acting by Costner.
+I also remember being amazed by the movie’s ending. Without spoiling the movie, I want to share my take on the movie’s end.
+In the movie, the protagonist, played by Kevin Costner, has his own plan for survival in a world where water is the only source of life. His plan seems to work at first. However, in the end, he’s unable to change his own nature, which cannot be resisted.
+Costner is a character that is not afraid to take risks. He is brave and fearless. He is also a character who is very determined. He is not afraid to take on a challenge and follow through on his plans. He is also not afraid to take risks.
+Costner’s determination and his fearlessness are what make him an excellent character to play. Costner plays a character who is very determined. Costner’s fearlessness is what makes him an excellent character to play.
+In the movie, Costner is a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Costner plays a character who is very determined. Cost",mixtral-autogptq
+512,4.796805570018478,What is the product of 9 and 8?,"
+In the following section, I am going to show you the answer to the problem ""What is the product of 9 and 8?"" with detailed steps of the solution.
+Step 1: Say 9 and 8 are multiplied together, what is the result?
+Step 2: The result of the multiplication is divided by 10, what is the result?
+Step 3: The result of the division is multiplied by 1, what is the result?
+Step 4: The answer in the above step is added to 1, what is the answer?
+Step 5: The answer in the above step is multiplied by 5, what is the answer?
+Step 6: The answer in the above step is multiplied by 10, what is the answer?
+Step 7: The answer in the above step is multiplied by 5, what is the answer?
+Step 8: The answer in the above step is multiplied by 10, what is the answer?
+Step 9: The answer in the above step is multiplied by 1, what is the answer?
+Step 10: The answer in the above step is added to 1, what is the answer?
+Step 11: The answer in the above step is multiplied by 5, what is the answer?
+Step 12: The answer in the above step is multiplied by 10, what is the answer?
+Step 13: The answer in the above step is multiplied by 5, what is the answer?
+Step 14: The answer in the above step is multiplied by 10, what is the answer?
+Step 15: The answer in the above step is multiplied by 1, what is the answer?
+Step 16: The answer in the above step is added to 1, what is the answer?
+Step 17: The answer in the above step is multiplied by 5, what is the answer?
+Step 18: The answer in the above step is multiplied by 10, what is the answer?
+Step 19: The answer in the above step is multiplied by 1, what is the answer?
+Step 20: The answer in the above step is added to 1, what is the answer?
+Step 21: The answer",mixtral-autogptq
+512,4.8062510950258,"If a train travels 120 kilometers in 2 hours, what is its average speed?"," (cm/s) 1000 2 60
+4. If a train travels 60 kilometers in 2 hours, what is its average speed? (km/h) 1200 1000 600
+5. A car traveled 250 kilometers in 5 hours. What is its average speed? (km/h) 50 500 100
+6. If a car travels 50 kilometers in 5 hours, what is its average speed? (km/h) 100 250 50
+7. How long will it take a train to travel 60 kilometers at an average speed of 200 kilometers per hour? (minutes) 30 30 15
+8. If a car travels 30 kilometers in 15 minutes, what is its average speed? (km/h) 200 100 50
+9. A boat travels 100 kilometers in 2 hours. How far can it travel in 4 hours? (km) 200 400 600
+10. How fast does a car travel when it is going at 60 km/h? (m/s) 30 300 60
+11. How fast does a car travel when it is going at 60 km/h? (cm/s) 100 1000 150
+12. How fast does a car travel when it is going at 100 km/h? (m/s) 300 3000 600
+13. How fast does a car travel when it is going at 100 km/h? (cm/s) 1000 10000 1500
+14. How far will it take a car to travel 100 kilometers at an average speed of 60 km/h? (minutes) 16 16 8
+15. If a car travels 100 kilometers in 16 minutes, what is its average speed? (km/h) 60 600 ",mixtral-autogptq
+512,4.838158041005954,"Think through this step by step. If the sequence a_n is defined by a_1 = 3, a_2 = 5, and a_n = a_(n-1) + a_(n-2) for n > 2, find a_6.","
+
+
+A: 
+If a_n = a_(n-1)+a_(n-2) for n>2, then a_6 = a_1 + a_2 + a_3 + a_4 + a_5 + a_6
+That's 15+15+15+15+15+15+15+15+15+15+15+15 = 205
+
+A: Use the formula for arithmetic series, and you will find that the sum of first 6 terms is 126.
+After that, you have to calculate sum of the first 5 terms multiplied by 2, 6th term multiplied by 3, 7th term multiplied by 4, 8th term multiplied by 5 and 9th term multiplied by 6.
+So, after 9 terms you will have to add the 9th term multiplied by 10.
+The sum of 9 terms multiplied by 10 is 1260, and after that you have to add the 10th term multiplied by 11, and so on...
+It's an easy task to find the sum of all terms, but this is a bit of a long way.
+What is more, the sum of the first 10 terms is 1260.
+The only way to calculate this sum is to use the formula for arithmetic series.
+The formula is 1/n - 1/(n-1), and if you want to find the sum of the first 10 terms, it is 1260
+
+A: Another method:
+S = 10! 10! * 9! 9! * 8! 8! * 7! 7! * 6! 6! * 5! 5! * 4! 4! * 3! 3! * 2! 2!
+= 2430
+
+A: As per rule of arithmetic series, the sum of the first 6 terms is 126.
+So add 126 to each of the values:
+126, 252, 378, 504, 630, 756, ",mixtral-autogptq
+512,4.7993653430603445,What are 'zombie stars' in the context of astronomy?,"
+The term 'zombie star' (also 'zombie star', 'zombie', 'zombie stars', 'zombie stars', 'zombie', 'zombie', 'zombie', 'zombie stars', 'zombie' 'zombie stars', 'zombie', 'zombie', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars', 'zombie stars',",mixtral-autogptq
+512,4.812419687979855,Who were the 'Dog-Headed Saint' and the 'Lion-Faced Saint' in medieval Christian traditions?,"
+Amiodarone, propranolol and diltiazem on the electrocardiogram of normal subjects: a comparison with quinidine
+Correspondence between Gross pathology and quantitative analyses of liver pathology in the treatment of primary biliary cirrhosis with ursodeoxycholic acid
+Systematic review of the diagnosis and management of acute cholecystitis
+A prospective study of the prevalence and causes of acute renal failure in patients with an acute abdomen
+A prospective study of the prevalence and causes of acute renal failure in patients with an acute abdomen
+An open, randomized comparison of diltiazem and metoprolol in the treatment of hypertension and angina pectoris
+Diltiazem in the treatment of hypertension and angina pectoris: a multicentre study
+Diltiazem: a review of its pharmacological activity and therapeutic efficacy in angina pectoris and hypertension
+Diltiazem in the treatment of hypertension and angina pectoris: a multicentre study
+Diltiazem in the treatment of hypertension and angina pectoris: a multicentre study
+Electrocardiographic changes in healthy subjects receiving diltiazem
+Electrocardiographic changes in healthy subjects receiving diltiazem
+Electrocardiographic changes in healthy subjects receiving diltiazem
+Diltiazem: a review of its pharmacological activity and therapeutic efficacy in angina pectoris and hypertension
+Diltiazem in the treatment of hypertension and angina pectoris: a multicentre study
+Diltiazem in the treatment of hypertension and angina pectoris: a multicentre study
+Diltiazem in the treatment of hypertension and angina pectoris: a multicentre study
+Diltiazem in the treatment of hypertension and angina pectoris: a multicentre study
+Diltiazem in the treatment of hypertension and angina pectoris: a multicentre study
+Diltiazem in the treatment of hypertension and angina pectoris: a multicentre study
+Dilt",mixtral-autogptq
+512,4.808503412990831,"What is the story of the 'Globsters', unidentified organic masses washed up on the shores?","
+The first publication by the authors about the Globsters appeared in 1996 and was followed by a large number of articles, with a total of over 1200 citations in the Scopus database. Some of the most cited articles are:
+- ""The Globsters: mystery of the washed-up seaweed, or sea-star, or organic matter?"" 1996 10. The article about the Globsters was published in 1996 and quickly received a considerable number of citations.
+The authors presented a case of unidentified organic masses washed up on the beaches in the Baltic Sea and Pacific Ocean. They suggested that the masses should be regarded as a ""new phenomenon"" and observed that the mass resembled a ""globule"" of some invertebrate.
+According to the authors, the Globsters should be considered as the remains of natural organic matter, ""in particular, the remains of organic matter that had not been broken down by microorganisms, probably due to the absence of adequate conditions for the activities of these organisms"". According to the authors, the Globsters should be considered as the remains of natural organic matter, ""in particular, the remains of organic matter that had not been broken down by microorganisms, probably due to the absence of adequate conditions for the activities of these organisms"".
+- ""Diversity of the Globsters: An analysis of 136 masses found on the beaches of the Pacific Ocean and the Baltic Sea"" 1997 12. This publication continued the work on the Globsters. The authors described a new case of the Globsters found in Japan and suggested that the Globsters can be ""a new phenomenon"" and can be of a transient nature.
+- ""Globsters from the Black Sea: Masses of organic matter on the beaches of the Black Sea"" 2007 13. In this publication the authors presented the Globsters discovered in the Black Sea and noted the differences between the Globsters washed up on the Pacific Ocean and the Black Sea coasts.
+- ""Globsters from the Black Sea: Masses of organic matter on the beaches of the Black Sea"" 2007 13. In this publication the authors presented the",mixtral-autogptq
